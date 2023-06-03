@@ -1,0 +1,146 @@
+/*General body style*/
+body[b-3ij3p7wwc4] {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background: #f44336;
+    font-family: Oxygen, sans-serif;
+  }
+  
+  .date[b-3ij3p7wwc4] {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    background: white;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .footer[b-3ij3p7wwc4] {
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 8%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footerText[b-3ij3p7wwc4] {
+    text-align: center;
+    color: black;
+    width:100%;
+    margin:auto;
+    padding-left:5%;
+    padding-bottom:15px;
+  }
+  
+  .bestBetHeader[b-3ij3p7wwc4]{
+    width:100%;
+    height: 10%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    margin:auto;
+    padding-top: 10px;
+  }
+  
+  .headerText[b-3ij3p7wwc4] {
+    text-align: center;
+    color: black;
+    width:100%;
+    margin:auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4vh;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mobileScreen[b-3ij3p7wwc4] {
+      width: 96% !important;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .mobileposition[b-3ij3p7wwc4] {
+      position: relative !important;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .mobileHeader[b-3ij3p7wwc4] {
+      font-size: 50px!important;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mobileNavbar[b-3ij3p7wwc4] {
+      display: none;
+      position: fixed !important;
+      right: 5% !important;
+      width: 25% !important;
+      float: right !important;
+      align-content: center !important;
+      background-color: black !important;
+      border-color: white;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+  }
+  }
+  
+  /*General style for score and bet containers across the site*/
+  .team[b-3ij3p7wwc4] {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    color: white;
+    letter-spacing: 1px;
+    padding-left: 10px;
+  }
+  
+  .team .score[b-3ij3p7wwc4] {
+    flex-shrink: 0;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    letter-spacing: 2px;
+  }
+  
+  .win .score[b-3ij3p7wwc4] {
+    color: #eabf4f;
+  }
+  
+  .win .team[b-3ij3p7wwc4] {
+    color: #eabf4f;
+  }
+  
+  .lose .score[b-3ij3p7wwc4] {
+    color: white;
+  }
+  
+  .lose .team[b-3ij3p7wwc4] {
+    color: white;
+  }
+  
+  .divider[b-3ij3p7wwc4]{
+    border-bottom:gray;
+    border-width: 1px;
+    border-style:solid;
+  }
+  
+  .act-divider[b-3ij3p7wwc4]{
+    border-bottom:white;
+    border-width: 1px;
+    border-style:solid;
+  }
+  
