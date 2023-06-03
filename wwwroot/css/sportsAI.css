@@ -1,0 +1,55 @@
+.chatbox{
+    background-color: white;
+    font-size: 20px;
+    font-family: 'circular';
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 90%;
+    margin-left:5%;
+    margin-top: 1%;
+    min-height: 65vh;
+    max-height: 65vh;
+    padding: 2%;
+    overflow:auto;
+    overflow-anchor:auto;
+}
+
+.chatbot{
+    color: #f44336;
+    margin-top:5px;
+    margin-bottom:5px
+}
+
+@media screen and (max-width: 600px) {
+    .mobileChat {
+      height:60% !important;
+    }
+  }
+
+  .formContainer{
+    height: 12%;
+    width: 90%;
+    margin-left:5%;
+    padding-top: 1%;
+  }
+
+.textinput{
+    width: 80%;
+    height: 75%;
+    float: left;
+    border-radius: 5px;
+
+}
+
+.submitBtn{
+    border-radius: 5px;
+    height: 75%;
+    width: 15%;
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

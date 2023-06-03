@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorApp
+build_property.RootNamespace = BlazorApp
+build_property.ProjectDir = /Users/kolbyboesel/Desktop/SportScores/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/kolbyboesel/Desktop/SportScores
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/kolbyboesel/Desktop/SportScores/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/AccountHome.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/ChangeEmail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhbmdlRW1haWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/ChangePsw.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhbmdlUHN3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/ConfirmPayment.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29uZmlybVBheW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/MLB.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTUxCLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/MongoDb/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTW9uZ29EYi9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/MongoDb/Signup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTW9uZ29EYi9TaWdudXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/NBA.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTkJBLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/NFL.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTkZMLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/NHL.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTkhMLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/Payment.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGF5bWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/Signout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lnbm91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/SportsAI.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRzQUkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScores/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3ij3p7wwc4
+
+[/Users/kolbyboesel/Desktop/SportScores/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wk4bcz64v1
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

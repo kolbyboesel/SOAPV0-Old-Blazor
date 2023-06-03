@@ -1,0 +1,221 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/obj/Debug/net7.0/scopedcss/projectbundle/BlazorApp.bundle.scp.css",
+      "PackagePath": "staticwebassets/BlazorApp.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/account.css",
+      "PackagePath": "staticwebassets/css/account.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/bestBet.css",
+      "PackagePath": "staticwebassets/css/bestBet.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/betBoard.css",
+      "PackagePath": "staticwebassets/css/betBoard.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/kolbyPicks.css",
+      "PackagePath": "staticwebassets/css/kolbyPicks.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/loginSignup.css",
+      "PackagePath": "staticwebassets/css/loginSignup.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/news.css",
+      "PackagePath": "staticwebassets/css/news.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/open-iconic/README.md"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/css/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/scoreboard.css",
+      "PackagePath": "staticwebassets/css/scoreboard.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/sportsAI.css",
+      "PackagePath": "staticwebassets/css/sportsAI.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/font/icomoon.eot",
+      "PackagePath": "staticwebassets/font/icomoon.eot"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/font/icomoon.svg",
+      "PackagePath": "staticwebassets/font/icomoon.svg"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/font/icomoon.ttf",
+      "PackagePath": "staticwebassets/font/icomoon.ttf"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/font/icomoon.woff",
+      "PackagePath": "staticwebassets/font/icomoon.woff"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/backgroundimage.jpg",
+      "PackagePath": "staticwebassets/images/backgroundimage.jpg"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/brLogo.png",
+      "PackagePath": "staticwebassets/images/brLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/espnLogo.png",
+      "PackagePath": "staticwebassets/images/espnLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/favicon.png",
+      "PackagePath": "staticwebassets/images/favicon.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/logo_transparent.png",
+      "PackagePath": "staticwebassets/images/logo_transparent.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/mlbLogo.png",
+      "PackagePath": "staticwebassets/images/mlbLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nbaLogo.png",
+      "PackagePath": "staticwebassets/images/nbaLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/slamLogo.png",
+      "PackagePath": "staticwebassets/images/slamLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/yahooLogo.png",
+      "PackagePath": "staticwebassets/images/yahooLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/bestBets.js",
+      "PackagePath": "staticwebassets/js/bestBets.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/betBoard.js",
+      "PackagePath": "staticwebassets/js/betBoard.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/cookieInterop.js",
+      "PackagePath": "staticwebassets/js/cookieInterop.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets/js/jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/jquery.sticky.js",
+      "PackagePath": "staticwebassets/js/jquery.sticky.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/kolbysBets.js",
+      "PackagePath": "staticwebassets/js/kolbysBets.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/mlbNews.js",
+      "PackagePath": "staticwebassets/js/mlbNews.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/nbaNews.js",
+      "PackagePath": "staticwebassets/js/nbaNews.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/js/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/popper.min.js",
+      "PackagePath": "staticwebassets/js/popper.min.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/scoreboard.js",
+      "PackagePath": "staticwebassets/js/scoreboard.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/sportsAI.js",
+      "PackagePath": "staticwebassets/js/sportsAI.js"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.BlazorApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.BlazorApp.props",
+      "PackagePath": "build\\BlazorApp.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.BlazorApp.props",
+      "PackagePath": "buildMultiTargeting\\BlazorApp.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.BlazorApp.props",
+      "PackagePath": "buildTransitive\\BlazorApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

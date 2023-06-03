@@ -1,0 +1,112 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+    
+<div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body" style="position: fixed;">
+        <ul class="site-nav-wrap">
+          <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a onclick=showAccountNBA()>Live Scores</a></li>
+              <li><a onclick=showTopScores()>Betting Odds</a></li>
+              <li class="has-children">
+                <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
+                <a>Sports</a>
+                <ul class="dropdown">
+                  <li><a href="/MLB">MLB</a></li>
+                  <li><a href="/NFL">NFL</a></li>
+                  <li><a href="/NBA">NBA</a></li>
+                  <li><a href="/NHL">NHL</a></li>
+                  </ul>
+              </li>
+              @if (cookieValue == "true")
+              {
+              <li><a href="/Signout">Sign Out</a></li>
+              <li><a href="/AccountHome">Account</a></li>
+              }
+              else
+              {
+              <li><a href="/Signup">Sign Up</a></li>
+              <li><a href="/Login">Log In</a></li>
+              }
+        </ul>
+      </div>
+    </div> <!-- .site-mobile-menu -->
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3" style="position:fixed">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6"><a href="/"><img src="/images/logo_transparent.png" style="height: 6vh"></a></div>
+
+          <nav class="mx-auto site-navigation" style="width:auto!important">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a onclick=showAccountNBA()>Live Scores</a></li>
+              <li><a onclick=showTopScores()>Betting Odds</a></li>
+              <li class="has-children">
+                <a>Sports</a>
+                <ul class="dropdown">
+                  <li><a href="/MLB">MLB</a></li>
+                  <li><a href="/NFL">NFL</a></li>
+                  <li><a href="/NBA">NBA</a></li>
+                  <li><a href="/NHL">NHL</a></li>
+                  </ul>
+              </li>
+              <li><a>Contact</a></li>
+              @if (cookieValue == "true")
+              {
+              <li class="d-lg-none"><a href="/Signout">Sign Out</a></li>
+              <li class="d-lg-none"><a href="/AccountHome">Account</a></li>
+              }
+              else
+              {
+              <li class="d-lg-none"><a href="/Signup">Sign Up</a></li>
+              <li class="d-lg-none"><a href="/Login">Log In</a></li>
+              }
+            </ul>
+          </nav>
+          
+          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+            <div class="ml-auto" style="margin-left:auto!important">
+              @if (cookieValue == "true")
+              {
+              <a href="/Signout" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Out</a>
+              <a href="/AccountHome" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Account</a>
+              }
+              else
+              {
+              <a href="/Signup" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Up</a>
+              <a href="/Login" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              }
+            </div>
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    
+@code {
+
+  private void goToLogin()
+  {
+    var context = HttpContextAccessor.HttpContext;
+        if (context != null)
+        {
+            context.Response.Redirect("/Login");
+        }
+  }
+  string cookieValue = "";
+  protected override async Task OnInitializedAsync()
+  {
+        cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+  }
+}

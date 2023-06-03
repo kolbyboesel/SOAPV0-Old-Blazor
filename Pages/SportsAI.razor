@@ -1,0 +1,30 @@
+@page "/SportsAI"
+
+<PageTitle>Sports AI</PageTitle>
+
+<head>
+  <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
+  <link rel="stylesheet" href="/css/sportsAI.css" asp-append-version="true" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-color: beige;">
+
+<header class=" w3-container w3-red w3-center" style="height: 25%; padding-top: 40px;">
+        <h1 class="w3-margin mobileHeader"
+          style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size:64px">Sport Scores AI</h1>
+        <h2 class="w3-margin w3-large" style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">-- Only Functional On Localhost Currently --</h2>
+        </header>
+	<div class="AIContainer" style="width: 100vw;height: 75vh; display:inline-block">
+
+   <div class="chatbox" style="flex-direction: column-reverse; display: flex"><div id="chatbox"></div></div>
+   <div class="formContainer">
+    <form id="message-form" style="height: 100%;">
+      <input class="textinput" type="text" id="message-input" placeholder="Type your message...">
+      <button class="submitBtn" type="submit">Send</button>
+    </form>
+    </div>
+    </div>
+</body>

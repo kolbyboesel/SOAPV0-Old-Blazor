@@ -1,0 +1,179 @@
+@page "/Login"
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+
+<PageTitle>Login</PageTitle>
+<head>
+    <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<style>
+body {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5b352a76f93fd4a1745161a8/1530580533507-XFJITGNH91P5QQGMSX4Q/layout-background.jpg?format=2500w');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+    <!-- The Modal -->
+<div class="modal" style="height: 100%;">
+
+<div class="container">
+  <!-- Modal Content -->
+  
+      <!-- Put error message here -->
+  <EditForm Model="@formData" OnValidSubmit="HandleFormSubmit" style="border: none; height:82%" class="modal-content animate mobileScreen">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <InputText @bind-Value="@formData.Email" type="text" class="form-control" placeholder="Enter Username" id="uname" name="uname" required/>
+
+      <label for="psw"><b>Password</b></label>
+      <InputText @bind-Value="@formData.Password" type="password" class="form-control" placeholder="Enter Password" id="psw" name="psw" required/>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <a type="button" href="/" class="cancelbtn">Cancel</a>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </EditForm>
+  </div>
+</div>
+
+<footer class="footer text-muted" style="position: absolute;">
+        <div class="container footerText" style="color: white;">
+            &copy; 2023 - SportsScores - <a style="color: white;" asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+</footer>
+
+</body>
+
+@code{
+
+  public class LoginInfoResponseModel
+  {
+    [JsonPropertyName("LoginID")]
+
+    public string LoginId { get; set; }
+
+    [JsonPropertyName("PasswordID")]
+    public string PasswordId { get; set; }
+    [JsonPropertyName("PaidConfirm")]
+
+    public string PaidConfirm { get; set; }
+  }
+
+  public class DocumentModel
+  {
+    [JsonPropertyName("document")]
+    public LoginInfoResponseModel Document { get; set; }
+  }
+
+  public class DocumentsModel
+  {
+    [JsonPropertyName("documents")]
+    public List<LoginInfoResponseModel> Documents { get; set; }
+  }
+
+  public class MongoDbRequestModel
+  {
+    public string collection { get; set; }
+    public string database { get; set; }
+    public string dataSource { get; set; }
+  }
+  public class FormDataModel
+  {
+    public string Email { get; set; }
+    public string Password { get; set; }
+  }
+  private FormDataModel formData = new FormDataModel();
+
+  private async void HandleFormSubmit()
+  {
+        var username = formData.Email;
+        var password = formData.Password;
+
+        // Retrieve the user's data from MongoDB
+        var client = new RestClient("https://eastus2.azure.data.mongodb-api.com/app/data-sdfbt/endpoint/data/v1/action/find");
+        var result = await GetData(client);
+
+        if (result != null)
+        {
+            DocumentsModel users = System.Text.Json.JsonSerializer.Deserialize<DocumentsModel>(result.Content);
+            var currentUser = users.Documents.FirstOrDefault(x => string.Equals(x.LoginId, username, StringComparison.OrdinalIgnoreCase));
+
+            if (currentUser == null)
+            {
+                string firstErr = "Invalid username";
+            }
+            else
+            {
+                if (currentUser.PasswordId == password && currentUser.PaidConfirm == "Yes")
+                {
+                    var context = HttpContextAccessor.HttpContext;
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "true", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "Yes", null, null, null, null);
+                    NavigationManager.NavigateTo("/AccountHome");
+                } else if(currentUser.PaidConfirm == "No")
+                {
+                    HttpContextAccessor.HttpContext.Response.Cookies.Append("PaidConfirm", "No");
+                    NavigationManager.NavigateTo("/Payment");
+
+                }
+                else{
+                   string secondErr = "Invalid password";
+                }
+            }
+        }
+  }
+
+  public static LoginInfoResponseModel FindOneModel { get; set; }
+  public static List<LoginInfoResponseModel> FindModel { get; set; }
+  protected override async Task OnInitializedAsync()
+  {
+    var result = await FindOne();
+    var documentModel = JsonSerializer.Deserialize<DocumentModel>(result.Content);
+    FindOneModel = documentModel.Document;
+
+    var documentsModel = JsonSerializer.Deserialize<DocumentsModel>(result.Content);
+    FindModel = documentsModel.Documents;
+  }
+
+  private static async Task<RestResponse> FindOne()
+  {
+    var client = new RestClient("https://eastus2.azure.data.mongodb-api.com/app/data-sdfbt/endpoint/data/v1/action/findOne");
+    return await GetData(client);
+  }
+  private static async Task<RestResponse> Find()
+  {
+    var client = new RestClient("https://eastus2.azure.data.mongodb-api.com/app/data-sdfbt/endpoint/data/v1/action/find");
+    return await GetData(client);
+  }
+
+  private static async Task<RestResponse> GetData(RestClient client)
+  {
+    var request = new RestRequest();
+    request.AddHeader("Content-Type", "application/json");
+    request.AddHeader("Access-Control-Request-Headers", "*");
+    request.AddHeader("api-key", "KjIhB7ZvgPZ9i0DfnrU27gsf7uiWOdq91F8MIacza4y3mg80PI7Vw4xzzGm5B4rp");
+
+    var requestModel = new MongoDbRequestModel
+    {
+        collection = "Login_Info",
+        dataSource = "SportsScores",
+        database = "Login_Data",
+    };
+
+    var body = JsonSerializer.Serialize(requestModel);
+    request.AddStringBody(body, DataFormat.Json);
+    var result = await client.PostAsync(request);
+    return result;
+  }
+  
+}

@@ -1,0 +1,112 @@
+@page "/MLB"
+@inject IJSRuntime JSRuntime
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+<PageTitle>MLB</PageTitle>
+
+<head>
+    <link rel="icon" type="images/x-icon" href="https://banner2.cleanpng.com/20180219/ssw/kisspng-sport-baseball-play-clip-art-sports-star-cliparts-5a8a64433d6d00.6495583115190190752516.jpg">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bestBet.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/scoreboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/news.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/kolbyPicks.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/betBoard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" asp-append-version="true" />
+      <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css.map" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<style>
+    .headerImage {
+      padding-top: 3vh;
+      width: 100%!important;
+      position: fixed;
+      text-align: center;
+      align-content: center;
+      width: 50%;
+      font-weight: bold;
+      font-size: 4rem;
+      display: block;
+    }
+    @@media screen and (min-width: 766px) {
+    .mobilePadding {
+      padding-top: 0vh;
+    }
+    }
+    @@media screen and (max-width: 766px) {
+    .containerPad {
+      padding-top: 90px;
+    }
+    }
+    @@media screen and (min-width: 1184px) {
+    .mobileSetting {
+      display: none!important;
+    }
+  }
+</style>
+<div class="headerImage mobileSetting mobilePadding"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
+<div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
+<div class="site-mobile-menu site-navbar-target" >
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body">
+        <ul class="site-nav-wrap">
+              <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a onclick=showMLBNews()>MLB News</a></li>
+              <li><a onclick=showMLBScores()>MLB Scores</a></li>
+              <li><a onclick=showMLBOdds()>MLB Betting Odds</a></li>
+              @if (cookieValue == "true")
+              {
+              <li><a href="/Signout">Sign Out</a></li>
+              <li><a href="/AccountHome">Account</a></li>
+              } else {
+                <li><a href="/Signup">Sign Up</a></li>
+                <li><a href="/Login">Login</a></li>
+              }
+        </ul>
+      </div>
+    </div> <!-- .site-mobile-menu -->
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3" style="top:1rem!important">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6" style="width: 40%;"></div>
+
+          <nav class="mx-auto site-navigation" style="width:auto!important; left:15%; ">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li class="has-children" style="position:relative;top:1rem;left:50%">
+                <a class="nav-link active"><img src="/images/mlbLogo.png" style="height: 6vh;"></a>
+                <ul class="dropdown">
+                  <li><a onclick=showMLBNews()>News</a></li>
+                  <li><a onclick=showMLBScores()>Scores</a></li>
+                  <li><a onclick=showMLBOdds()>Betting Odds</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="center-cta-menu text-center d-flex aligin-items-center col-6">
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileScreenNav largeScreenNav" style="margin-top: 0!important;"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+        <div class="containerMLB containerPad"></div>
+
+@code {
+  string cookieValue = "";
+  protected override async Task OnInitializedAsync()
+  {
+        cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+  }
+}
