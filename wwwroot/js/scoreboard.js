@@ -56,6 +56,7 @@ async function showNFLScores() {
     ),
     "containerNFL"
   );
+
   let container = document.querySelector("." + "containerNFL");
   container.innerHTML = html;
 }
@@ -73,8 +74,29 @@ async function showNHLScores() {
   container.innerHTML = html;
 }
 
-async function showTopScores() {
-  let html = `<br><div style="width: 100%; height: 1%; text-align: center; display: inline-block; font-size: 3vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;text-decoration: underline">Live Scores</div>`;
+async function showLiveMLB() {
+  let html = `<div class="container" style="width: 100%; align-content:center">
+  <div class="scrollmenu mobileScroll">
+  <a onclick=showLiveNBA() class="w3-hover-text-black">NBA</a>
+  <a onclick=showLiveMLB() style="color:black">MLB</a>
+  <a onclick=showLiveNHL() class="w3-hover-text-black">NHL</a>
+  </div></div>`
+  html += buildScoreboard(
+    await getData("https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores"),
+    "liveScoresContainer"
+  );
+
+  let container = document.querySelector(".liveScoresContainer");
+  container.innerHTML = html;
+}
+
+async function showLiveNBA() {
+  let html = `<div class="container" style="width: 100%; align-content:center">
+  <div class="scrollmenu mobileScroll">
+  <a onclick=showLiveNBA() class="color:black">NBA</a>
+  <a onclick=showLiveMLB() style="w3-hover-text-black">MLB</a>
+  <a onclick=showLiveNHL() class="w3-hover-text-black">NHL</a>
+  </div></div>`
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores"
@@ -82,24 +104,45 @@ async function showTopScores() {
     "liveScoresContainer"
   );
 
-  html += buildScoreboard(
-    await getData("https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores"),
-    "liveScoresContainer"
-  );
-
-  html += buildScoreboard(
-    await getData("https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores"),
-    "liveScoresContainer"
-  );
-
-  html += buildScoreboard(
-    await getData("https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores"),
-    "liveScoresContainer"
-  );
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
+async function showLiveNHL() {
+  let html = `<div class="container" style="width: 100%; align-content:center">
+  <div class="scrollmenu mobileScroll">
+  <a onclick=showLiveNBA() class="w3-hover-text-black">NBA</a>
+  <a onclick=showLiveMLB() style="w3-hover-text-black">MLB</a>
+  <a onclick=showLiveNHL() class="color:black">NHL</a>
+  </div></div>`
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores"
+    ),
+    "liveScoresContainer"
+  );
+
+  let container = document.querySelector(".liveScoresContainer");
+  container.innerHTML = html;
+}
+
+async function showLiveNFL() {
+  let html = `<div class="container" style="width: 100%; align-content:center">
+  <div class="scrollmenu mobileScroll">
+  <a onclick=showLiveNBA() class="w3-hover-text-black">NBA</a>
+  <a onclick=showLiveMLB() style="w3-hover-text-black">MLB</a>
+  <a onclick=showLiveNHL() class="w3-hover-text-black">NHL</a>
+  </div></div>`
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores"
+    ),
+    "liveScoresContainer"
+  );
+
+  let container = document.querySelector(".liveScoresContainer");
+  container.innerHTML = html;
+}
 function buildScoreboard(allScores, containerName) {
   let html = "";
   allScores.forEach((currentScore) => {

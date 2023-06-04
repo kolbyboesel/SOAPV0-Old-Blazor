@@ -35,3 +35,4 @@
 /Users/kolbyboesel/Desktop/SportScores/obj/Debug/net6.0/BlazorApp.pdb
 /Users/kolbyboesel/Desktop/SportScores/obj/Debug/net6.0/BlazorApp.genruntimeconfig.cache
 /Users/kolbyboesel/Desktop/SportScores/obj/Debug/net6.0/ref/BlazorApp.dll
+/Users/kolbyboesel/Desktop/SportScores/bin/Debug/net6.0/Newtonsoft.Json.dll
