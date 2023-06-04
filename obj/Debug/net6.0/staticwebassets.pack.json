@@ -137,6 +137,14 @@
       "PackagePath": "staticwebassets/images/nbaLogo.png"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nflLogo.png",
+      "PackagePath": "staticwebassets/images/nflLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nhlLogo.png",
+      "PackagePath": "staticwebassets/images/nhlLogo.png"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/slamLogo.png",
       "PackagePath": "staticwebassets/images/slamLogo.png"
     },

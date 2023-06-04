@@ -1,4 +1,6 @@
 @page "/NHL"
+@inject IHttpContextAccessor HttpContextAccessor
+
 
 <PageTitle>NHL</PageTitle>
 
@@ -13,20 +15,88 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
-<body style="background-color: beige;">
-<header class=" w3-container w3-red w3-center" style="height: 25%; padding-top: 35px;">
-        <h1 class="w3-margin mobileHeader"
-          style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size:64px">NHL</h1>
-        </header>
+  <style>
+    .headerImage {
+      padding-top: 3vh;
+      width: 100%!important;
+      position: fixed;
+      text-align: center;
+      align-content: center;
+      font-weight: bold;
+      font-size: 4rem;
+      display: block;
+    }
+    @@media screen and (min-width: 766px) {
+    .mobilePadding {
+      padding-top: 0vh;
+    }
+    }
+    @@media screen and (max-width: 766px) {
+    .containerPad {
+      padding-top: 90px!important;
+    }
+    }
+    @@media screen and (min-width: 1184px) {
+    .mobileSetting {
+      display: none!important;
+    }
+  }
+</style>
+<div class="headerImage mobileSetting mobilePadding" style="z-index: 1!important;"><img src="/images/nhlLogo.png" style="height: 6vh;"></div>
+<div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
+<div class="site-mobile-menu site-navbar-target" >
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body">
+        <ul class="site-nav-wrap">
+              <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a onclick=showNHLScores()>NHL Scores</a></li>
+              <li><a onclick=showNHLOdds()>NHL Betting Odds</a></li>
+              @if (cookieValue == "true")
+              {
+              <li><a href="/Signout">Sign Out</a></li>
+              <li><a href="/AccountHome">Account</a></li>
+              } else {
+                <li><a href="/Signup">Sign Up</a></li>
+                <li><a href="/Login">Login</a></li>
+              }
+        </ul>
+      </div>
+    </div> <!-- .site-mobile-menu -->
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3" style="top:1rem!important">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6" style="width: 40%;"></div>
 
-          <div class="w3-bar w3-red" width=100%>
-            <a onclick="" class="w3-bar-item w3-button w3-mobile w3-hover-white"
-              style="width: 33.3%;">Home</a>
-            <a onclick=showNHLScores() class="w3-bar-item w3-button w3-mobile w3-hover-white"
-              style="width: 33.3%;">Today's Scores</a>
-            <a onclick=showNHLOdds() class="w3-bar-item w3-button w3-mobile w3-hover-white"
-              style="width: 33.3%;">Betting Odds</a>
+          <nav class="mx-auto site-navigation" style="width:auto!important; left:15%; ">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li class="has-children" style="position:relative;top:1rem;left:50%">
+                <a class="nav-link active"><img src="/images/nhlLogo.png" style="height: 6vh;"></a>
+                <ul class="dropdown">
+                  <li><a onclick=showNHLScores()>NHL Scores</a></li>
+                  <li><a onclick=showNHLOdds()>NHL Betting Odds</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="center-cta-menu text-center d-flex aligin-items-center col-6">
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileScreenNav largeScreenNav" style="margin-top: 0!important;"></a>
           </div>
+        </div>
+      </div>
+    </header>
 
-        <div class="containerNHL"></div>
-</body>
+        <div class="containerNHL containerPad" style="padding-top: 65px;"></div>
+
+@code {
+  string cookieValue = "";
+  protected override async Task OnInitializedAsync()
+  {
+        cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+  }
+}

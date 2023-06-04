@@ -16,19 +16,22 @@
 
 <style>
     .headerImage {
-      padding-top: 3vh;
+      padding-top: 4vh;
       width: 100%!important;
+      left: 5%;
       position: fixed;
       text-align: center;
       align-content: center;
       width: 50%;
+      color: white;
       font-weight: bold;
-      font-size: 4rem;
+      font-size: 2.5rem;
       display: block;
     }
     @@media screen and (min-width: 766px) {
     .mobilePadding {
-      padding-top: 0vh;
+      padding-top: 1.5vh;
+      left: 0!important;
     }
     }
     @@media screen and (max-width: 766px) {
@@ -42,7 +45,7 @@
     }
   }
 </style>
-<div class="headerImage mobileSetting mobilePadding"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
+<div class="headerImage mobileSetting mobilePadding" style="z-index: 1;">Account Home</div>
 <div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
 <div class="site-mobile-menu site-navbar-target" >
       <div class="site-mobile-menu-header">
@@ -53,8 +56,8 @@
       <div class="site-mobile-menu-body">
         <ul class="site-nav-wrap">
           <li><a href="/" class="nav-link active">Home</a></li>
-          <li><a onclick=showAccountNBA() class="nav-link active">Live Scores</a></li>
-          <li><a onclick=showTopScores() class="nav-link active">Betting Odds</a></li>
+          <li><a href="/LiveScores" class="nav-link active">Live Scores</a></li>
+          <li><a href="/AllBetOdds" class="nav-link active">Betting Odds</a></li>
 
 
               <li class="has-children">
@@ -62,7 +65,7 @@
                 <a>AI Best Bets</a>
                 <ul class="dropdown">
                   <li><a onclick=showMLBBets()>MLB</a></li>
-                  <li><a href="/NFL">NFL</a></li>
+                  <li><a onclick=showNFLBets()>NFL</a></li>
                   <li><a onclick=showNBABets()>NBA</a></li>
                   <li><a onclick=showNHLBets()>NHL</a></li>
                   </ul>

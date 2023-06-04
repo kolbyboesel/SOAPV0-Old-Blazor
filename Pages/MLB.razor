@@ -28,7 +28,6 @@
       position: fixed;
       text-align: center;
       align-content: center;
-      width: 50%;
       font-weight: bold;
       font-size: 4rem;
       display: block;
@@ -40,7 +39,7 @@
     }
     @@media screen and (max-width: 766px) {
     .containerPad {
-      padding-top: 90px;
+      padding-top: 90px!important;
     }
     }
     @@media screen and (min-width: 1184px) {
@@ -49,7 +48,7 @@
     }
   }
 </style>
-<div class="headerImage mobileSetting mobilePadding"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
+<div class="headerImage mobileSetting mobilePadding" style="z-index: 1!important;"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
 <div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
 <div class="site-mobile-menu site-navbar-target" >
       <div class="site-mobile-menu-header">
@@ -85,9 +84,9 @@
               <li class="has-children" style="position:relative;top:1rem;left:50%">
                 <a class="nav-link active"><img src="/images/mlbLogo.png" style="height: 6vh;"></a>
                 <ul class="dropdown">
-                  <li><a onclick=showMLBNews()>News</a></li>
-                  <li><a onclick=showMLBScores()>Scores</a></li>
-                  <li><a onclick=showMLBOdds()>Betting Odds</a></li>
+                  <li><a onclick=showMLBNews()>MLB News</a></li>
+                  <li><a onclick=showMLBScores()>MLB Scores</a></li>
+                  <li><a onclick=showMLBOdds()>MLB Betting Odds</a></li>
                   </ul>
               </li>
             </ul>

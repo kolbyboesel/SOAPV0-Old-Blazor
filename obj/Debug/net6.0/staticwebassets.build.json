@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KRwiMLH0Zq8R/uMZayMP0RbtuMGq8vIJOxjwKRONy1Y=",
+  "Hash": "Q7JS7sl5iYrK1jafTXuJ99mfZVLTw4i+ocGnYD9wIUA=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -610,6 +610,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/nbaLogo.png"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nflLogo.png",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "images/nflLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/nflLogo.png"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nhlLogo.png",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "images/nhlLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/nhlLogo.png"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/slamLogo.png",

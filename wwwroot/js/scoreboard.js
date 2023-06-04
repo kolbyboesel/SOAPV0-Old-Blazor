@@ -74,32 +74,29 @@ async function showNHLScores() {
 }
 
 async function showTopScores() {
-  let html = `<div style="width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 4vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;">Thanks for subscribing to Kolby's Picks!</div>`;
-  html += `<div style="width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;">Click one of the buttons above to view AI moneyline bets or my daily picks</div>`;
-
-  html += `<br><div style="width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;text-decoration: underline">Live Scores</div>`;
+  let html = `<br><div style="width: 100%; height: 1%; text-align: center; display: inline-block; font-size: 3vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;text-decoration: underline">Live Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores"
     ),
-    "AccountContainer"
+    "liveScoresContainer"
   );
 
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores"),
-    "AccountContainer"
+    "liveScoresContainer"
   );
 
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores"),
-    "AccountContainer"
+    "liveScoresContainer"
   );
 
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores"),
-    "AccountContainer"
+    "liveScoresContainer"
   );
-  let container = document.querySelector(".AccountContainer");
+  let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
