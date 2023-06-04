@@ -4,64 +4,105 @@
 
 <head>
   <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
-  <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
   <link rel="stylesheet" href="/css/account.css" asp-append-version="true" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
+<style>
+    .headerImage {
+      padding-top: 3vh;
+      width: 100%!important;
+      position: fixed;
+      text-align: center;
+      align-content: center;
+      width: 50%;
+      font-weight: bold;
+      font-size: 4rem;
+      display: block;
+    }
+    @@media screen and (min-width: 766px) {
+    .mobilePadding {
+      padding-top: 0vh;
+    }
+    }
+    @@media screen and (max-width: 766px) {
+    .containerPad {
+      padding-top: 90px;
+    }
+    }
+    @@media screen and (min-width: 1184px) {
+    .mobileSetting {
+      display: none!important;
+    }
+  }
+</style>
+
 <body style="background-color: beige;">
+<div class="headerImage mobileSetting mobilePadding"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
+<div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
+<div class="site-mobile-menu site-navbar-target" >
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body">
+        <ul class="site-nav-wrap">
+          <li><a href="/" class="nav-link active">Home</a></li>
+          <li><a onclick=showAccountNBA() class="nav-link active">Live Scores</a></li>
+          <li><a onclick=showTopScores() class="nav-link active">Betting Odds</a></li>
 
-<header class=" w3-container w3-red w3-center" style="height: 25%; padding-top: 35px;">
-        <h1 class="w3-margin w3-jumbo"
-          style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Account Hub</h1>
-        </header>
 
-        <div class="w3" width=100%>
-          <div class="w3-bar w3-red" width=100%>
+              <li class="has-children">
+                <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
+                <a>AI Best Bets</a>
+                <ul class="dropdown">
+                  <li><a onclick=showMLBBets()>MLB</a></li>
+                  <li><a href="/NFL">NFL</a></li>
+                  <li><a onclick=showNBABets()>NBA</a></li>
+                  <li><a onclick=showNHLBets()>NHL</a></li>
+                  </ul>
+              </li>
 
-            <div class="dropdown w3-mobile w3-red w3-hover-white" style="width: 25%; position: unset">
-              <button class="dropbtn w3-hover-text-black" onclick="">Home
-                <span class="caret"></span>
-              </button>
-              <div class="dropdown-content w3-mobile mobileposition" id="HomeDropdown" style="display: none;">
-                <a class="dropdown-link w3-red w3-hover-white act-divider" onclick="" style="border-left: none; border-top:none; border-right:none;">Betting Odds</a>
-                <a class="dropdown-link w3-red w3-hover-white" onclick="">Live Scores</a>
-              </div>
-            </div>
-            
-            <div class="dropdown w3-mobile w3-red w3-hover-white" style="width: 25%; position: unset">
-              <button class="dropbtn w3-hover-text-black" onclick="">AI Best Bets
-                <span class="caret"></span>
-              </button>
-              <div class="dropdown-content w3-mobile mobileposition" id="BestDropdown" style="display: none;">
-                <a class="dropdown-link w3-red w3-hover-white act-divider" onclick="" style="border-left: none; border-top:none; border-right:none;">NBA</a>
-                <a class="dropdown-link w3-red w3-hover-white act-divider" onclick="" style="border-left: none; border-top:none; border-right:none;">MLB</a>
-                <a class="dropdown-link w3-red w3-hover-white" onclick="">NHL</a>
-              </div>
-            </div>
+              <li class="has-children">
+                <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem1" aria-expanded="false"></span>
+                <a>Manage Account</a>
+                <ul class="dropdown">
+                  <li><a href="/ChangeEmail">Update Email</a></li>
+                  <li><a href="/ChangePsw">Change Password</a></li>
+                  </ul>
+              </li>
+              <li><a href="/Signout">Sign Out</a></li>
+        </ul>
+      </div>
+    </div> <!-- .site-mobile-menu -->
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3" style="top:1rem!important">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6" style="width: 40%;"></div>
 
-            <div class="dropdown w3-mobile w3-red w3-hover-white" style="width: 25%; position: unset">
-              <button class="dropbtn w3-hover-text-black" onclick="">Kolby's Picks
-                <span class="caret"></span>
-              </button>
-              <div class="dropdown-content w3-mobile mobileposition" id="KolbysDropdown" style="display: none;">
-                <a class="dropdown-link w3-red w3-hover-white act-divider" onclick="" style="border-left: none; border-top:none; border-right:none;">NBA</a>
-                <a class="dropdown-link w3-red w3-hover-white act-divider" onclick="" style="border-left: none; border-top:none; border-right:none;">MLB</a>
-                <a class="dropdown-link w3-red w3-hover-white" onclick="">NHL</a>
-              </div>
-            </div>
-
-             <div class="dropdown w3-mobile w3-red w3-hover-white" style="width: 25%; position: unset">
-              <button class="dropbtn w3-hover-text-black" onclick="">Account Settings
-                <span class="caret"></span>
-              </button>
-              <div class="dropdown-content w3-mobile mobileposition" id="settingsDropdown" style="display: none;">
-                <a class="dropdown-link w3-red w3-hover-white act-divider" onclick="" style="border-left: none; border-top:none; border-right:none;">Update Email</a>
-                <a class="dropdown-link w3-red w3-hover-white" onclick="">Change Password</a>
-              </div>
-            </div>
+          <nav class="mx-auto site-navigation" style="width:auto!important; left:15%; ">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li class="has-children" style="position:relative;top:1rem;left:50%">
+                <a class="nav-link active">Account Hub</a>
+                <ul class="dropdown">
+                  <li><a onclick=showMLBBets()>MLB Best Bets</a></li>
+                  <li><a onclick=showNBABets()>NBA Best Bets</a></li>
+                  <li><a onclick=showNHLBets()>NHL Best Bets</a></li>
+                  <li><a href="/ChangeEmail">Update Email</a></li>
+                  <li><a href="/ChangePsw">Change Password</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="center-cta-menu text-center d-flex aligin-items-center col-6">
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileScreenNav largeScreenNav" style="margin-top: 0!important;"></a>
           </div>
         </div>
-
+      </div>
+    </header>
    <!-- The Modal -->
 <div class="modal" style="height: 100%; display: block" >
 
