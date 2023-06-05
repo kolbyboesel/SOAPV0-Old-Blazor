@@ -90,6 +90,32 @@
         }
 
     </script>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AUd0qQwqx3a99eudXSf4m25OmVuxGGw9b-ta3NHgrE4yyMypxcyaVEm3R5wAXUw8kdewVwJP6zngFxWi&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+async function renderPaypal()
+{
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-6TS59700HA1617635MRDVNHY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert("Subscription Successful! Whenever you want to view the picks, log in and navigate to your desired choice."); // You can add optional success message for the subscriber here
+        window.location.href = "/ConfirmPayment";
+      }
+  }).render('#paypal-button-container-P-6TS59700HA1617635MRDVNHY'); // Renders the PayPal button
+}
+</script>
+
     <script src="_framework/blazor.server.js"></script>
     <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
     <script src="/js/jquery-3.3.1.min.js"></script>
@@ -107,6 +133,5 @@
     <script src="/js/scoreboard.js"></script>
     <script src="/js/sportsAI.js"></script>
     <script src="/js/cookieInterop.js"></script>
-
 </body>
 </html>

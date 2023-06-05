@@ -1,5 +1,6 @@
 @page "/NHL"
 @inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
 
 
 <PageTitle>NHL</PageTitle>
@@ -94,9 +95,17 @@
         <div class="containerNHL containerPad" style="padding-top: 65px;"></div>
 
 @code {
-  string cookieValue = "";
+   string cookieValue = "";
   protected override async Task OnInitializedAsync()
   {
         cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
   }
+  private string innerHtmlValue = "";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        innerHtmlValue = "";
+        await JSRuntime.InvokeVoidAsync("showNHLScores");
+    }
+
 }

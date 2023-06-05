@@ -1,6 +1,7 @@
 ﻿@page "/"
 @inject IJSRuntime JSRuntime
-
+@inject IHttpContextAccessor HttpContextAccessor
+@inject NavigationManager NavigationManager
 
 <PageTitle>Home</PageTitle>
 
@@ -28,9 +29,5 @@ body {
 
 @code
 {
-protected override async Task OnInitializedAsync()
-{
-}
-
 }
 

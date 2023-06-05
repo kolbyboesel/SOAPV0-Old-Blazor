@@ -103,9 +103,17 @@
         <div class="containerMLB containerPad" style="padding-top: 65px;"></div>
 
 @code {
+
   string cookieValue = "";
   protected override async Task OnInitializedAsync()
   {
         cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
   }
+  private string innerHtmlValue = "";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        innerHtmlValue = "";
+        await JSRuntime.InvokeVoidAsync("showMLBNews");
+    }
 }

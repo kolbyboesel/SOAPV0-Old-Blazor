@@ -42,6 +42,6 @@ body {
   protected override async Task OnInitializedAsync()
   {
     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "false", null, null, null, null);
-    NavigationManager.NavigateTo("/");
+    NavigationManager.NavigateTo("/", forceLoad:true);
   }
 }

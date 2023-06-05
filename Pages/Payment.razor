@@ -1,4 +1,7 @@
 @page "/Payment"
+@inject NavigationManager NavigationManager
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Payment</PageTitle>
 
@@ -25,10 +28,21 @@ body {
         <h6 style="text-align: center;">Please Click one of the links below to proceed with payment!</h6>
         </div>
     <div class="paypalBtnHolder">
-    <div id="paypal-button-container-P-6TS59700HA1617635MRDVNHY"></div>
+    <div id="paypal-button-container-P-6TS59700HA1617635MRDVNHY">@innerHtmlValue</div>
     </div>
     <div class="container" style="background-color:#f1f1f1">
-      <a type="button" href="/Index" class="cancelbtn">Cancel</a>
+      <a type="button" href="/" class="cancelbtn">Cancel</a>
     </div>
   </div>
 </div>
+
+@code
+{
+  private string innerHtmlValue = "";
+
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+  {
+  innerHtmlValue = "";
+  await JSRuntime.InvokeVoidAsync("renderPaypal");
+  }
+}

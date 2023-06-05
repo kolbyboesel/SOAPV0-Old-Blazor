@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29uZmlybVBheW1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/kolbyboesel/Desktop/SportScores/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kolbyboesel/Desktop/SportScores/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -99,6 +103,10 @@ build_metadata.AdditionalFiles.CssScope = b-3ij3p7wwc4
 [/Users/kolbyboesel/Desktop/SportScores/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wk4bcz64v1
+
+[/Users/kolbyboesel/Desktop/SportScores/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/kolbyboesel/Desktop/SportScores/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s

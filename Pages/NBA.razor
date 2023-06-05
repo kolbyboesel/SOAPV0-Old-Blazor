@@ -104,4 +104,11 @@
   {
         cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
   }
+  private string innerHtmlValue = "";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        innerHtmlValue = "";
+        await JSRuntime.InvokeVoidAsync("showNBANews");
+    }
 }
