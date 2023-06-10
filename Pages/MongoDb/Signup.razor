@@ -145,16 +145,19 @@ body {
               }
               else if(password != confirm_password)
               {
-                <!--"Passwords do not match" -->
+                NavigationManager.NavigateTo("/Signup", forceLoad: true);
+                await JSRuntime.InvokeAsync<object>("Alert", "Passwords Do Not Match!");
               }
             }
             else if (_newUser.Find(filter).FirstOrDefault() != null)
             {
-              <!-- "Username already taken" -->            
+              NavigationManager.NavigateTo("/Signup", forceLoad: true);
+              await JSRuntime.InvokeAsync<object>("Alert", "Username Already Taken!");     
             }
         }else if(!username.ToString().Contains("@"))
         {
-          <!-- "Error: Invalid username format" -->
+          NavigationManager.NavigateTo("/Signup", forceLoad: true);
+          await JSRuntime.InvokeAsync<object>("Alert", "Invalid Email, Please Include " + "@" + " Symbol!");
         }
   }
 }

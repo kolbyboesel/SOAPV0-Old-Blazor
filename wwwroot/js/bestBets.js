@@ -50,7 +50,13 @@ function getDatePlusOne() {
 async function showNBABets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
-  let html = `<div class="bestBetHeader"><div class="headerText"> Pick Your Bets Based on AI Data!</div></div>`;
+  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
+  <a onclick=showNBABets() style="color:black">NBA</a>
+  <a onclick=showMLBBets() class="w3-hover-text-black">MLB</a>
+  <a onclick=showNHLBets() class="w3-hover-text-black">NHL</a>
+  <a onclick=showNFLBets() class="w3-hover-text-black">NFL</a>
+  </div>
+  </div>`;
 
 
   html += buildBestBetBoard(
@@ -74,7 +80,13 @@ async function showNBABets() {
 async function showMLBBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
-  let html = `<div class="bestBetHeader"><div class="headerText"> Pick Your Bets Based on AI Data!</div></div>`;
+  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
+  <a onclick=showNBABets() class="w3-hover-text-black">NBA</a>
+  <a onclick=showMLBBets() style="color:black">MLB</a>
+  <a onclick=showNHLBets() class="w3-hover-text-black">NHL</a>
+  <a onclick=showNFLBets() class="w3-hover-text-black">NFL</a>
+  </div>
+  </div>`;
 
 
   html += buildBestBetBoard(
@@ -98,7 +110,13 @@ async function showMLBBets() {
 async function showNFLBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
-  let html = `<div class="bestBetHeader"><div class="headerText"> Pick Your Bets Based on AI Data!</div></div>`;
+  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
+  <a onclick=showNBABets() class="w3-hover-text-black">NBA</a>
+  <a onclick=showMLBBets() class="w3-hover-text-black">MLB</a>
+  <a onclick=showNHLBets() class="w3-hover-text-black">NHL</a>
+  <a onclick=showNFLBets() style="color:black">NFL</a>
+  </div>
+  </div>`;
 
 
   html += buildBestBetBoard(
@@ -123,7 +141,13 @@ async function showNHLBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
   
-  let html = `<div class="bestBetHeader"><div class="headerText"> Pick Your Bets Based on AI Data!</div></div>`;
+  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
+  <a onclick=showNBABets() class="w3-hover-text-black">NBA</a>
+  <a onclick=showMLBBets() class="w3-hover-text-black">MLB</a>
+  <a onclick=showNHLBets() style="color:black">NHL</a>
+  <a onclick=showNFLBets() class="w3-hover-text-black">NFL</a>
+  </div>
+  </div>`;
 
   html += buildBestBetBoard(
     await getBetData(

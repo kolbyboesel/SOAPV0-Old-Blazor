@@ -87,43 +87,6 @@
         }
       },
       {
-        "HashCode": -483613348,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.ChangePsw",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ChangePsw"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.ChangePsw",
-          "Common.TypeNameIdentifier": "ChangePsw",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -2036039417,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.ChangePsw",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.ChangePsw"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.ChangePsw",
-          "Common.TypeNameIdentifier": "ChangePsw",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1519702695,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.ConfirmPayment",
@@ -155,6 +118,265 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.ConfirmPayment",
           "Common.TypeNameIdentifier": "ConfirmPayment",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -187990727,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Signout",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Signout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Signout",
+          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1125487989,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Signout",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Signout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Signout",
+          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1487196603,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.SportsAI",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportsAI"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.SportsAI",
+          "Common.TypeNameIdentifier": "SportsAI",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 840087354,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.SportsAI",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.SportsAI"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.SportsAI",
+          "Common.TypeNameIdentifier": "SportsAI",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1147674736,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Error",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Error"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Error",
+          "Common.TypeNameIdentifier": "Error",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -535512605,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Error",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Error"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Error",
+          "Common.TypeNameIdentifier": "Error",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -939564994,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Payment",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Payment"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Payment",
+          "Common.TypeNameIdentifier": "Payment",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2089488952,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Payment",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Payment"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Payment",
+          "Common.TypeNameIdentifier": "Payment",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 297190104,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AllBetOdds",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AllBetOdds"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1919354268,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AllBetOdds",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.AllBetOdds"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1813904842,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AIBets",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AIBets"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AIBets",
+          "Common.TypeNameIdentifier": "AIBets",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1304943476,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AIBets",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.AIBets"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AIBets",
+          "Common.TypeNameIdentifier": "AIBets",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1398301286,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.LiveScores",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "LiveScores"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -915054522,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.LiveScores",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.LiveScores"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -309,37 +531,74 @@
         }
       },
       {
-        "HashCode": -187990727,
+        "HashCode": 799754232,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Signout",
+        "Name": "BlazorApp.Pages.AccountHome",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Signout"
+            "TagName": "AccountHome"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Signout",
-          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeName": "BlazorApp.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1125487989,
+        "HashCode": 2027536994,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Signout",
+        "Name": "BlazorApp.Pages.AccountHome",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Signout"
+            "TagName": "BlazorApp.Pages.AccountHome"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Signout",
-          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeName": "BlazorApp.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -483613348,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.ChangePsw",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChangePsw"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.ChangePsw",
+          "Common.TypeNameIdentifier": "ChangePsw",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -2036039417,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.ChangePsw",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.ChangePsw"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.ChangePsw",
+          "Common.TypeNameIdentifier": "ChangePsw",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -383,43 +642,6 @@
         }
       },
       {
-        "HashCode": 776846065,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MongoDb.Signup",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Signup"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
-          "Common.TypeNameIdentifier": "Signup",
-          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 384896536,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MongoDb.Signup",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.MongoDb.Signup"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
-          "Common.TypeNameIdentifier": "Signup",
-          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 57390338,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.MongoDb.Login",
@@ -457,223 +679,38 @@
         }
       },
       {
-        "HashCode": -1487196603,
+        "HashCode": 776846065,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.SportsAI",
+        "Name": "BlazorApp.Pages.MongoDb.Signup",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportsAI"
+            "TagName": "Signup"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.SportsAI",
-          "Common.TypeNameIdentifier": "SportsAI",
-          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
+          "Common.TypeNameIdentifier": "Signup",
+          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 840087354,
+        "HashCode": 384896536,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.SportsAI",
+        "Name": "BlazorApp.Pages.MongoDb.Signup",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.SportsAI"
+            "TagName": "BlazorApp.Pages.MongoDb.Signup"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.SportsAI",
-          "Common.TypeNameIdentifier": "SportsAI",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1147674736,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Error",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Error"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Error",
-          "Common.TypeNameIdentifier": "Error",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -535512605,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Error",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.Error"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Error",
-          "Common.TypeNameIdentifier": "Error",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1398301286,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.LiveScores",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -915054522,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.LiveScores",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -939564994,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Payment",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Payment"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Payment",
-          "Common.TypeNameIdentifier": "Payment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2089488952,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Payment",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.Payment"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Payment",
-          "Common.TypeNameIdentifier": "Payment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 799754232,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AccountHome",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2027536994,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AccountHome",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 297190104,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AllBetOdds",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AllBetOdds"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1919354268,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AllBetOdds",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.AllBetOdds"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
+          "Common.TypeNameIdentifier": "Signup",
+          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -19222,6 +19259,11 @@
     {
       "FilePath": "/Users/kolbyboesel/Desktop/SportScores/Shared/MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScores/Pages/AIBets.razor",
+      "TargetPath": "Pages\\AIBets.razor",
       "FileKind": "component"
     },
     {

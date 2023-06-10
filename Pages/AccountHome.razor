@@ -28,7 +28,6 @@
       width: 50%;
       color: white;
       font-size: 2rem;
-      font-family: 'circular';
       display: block;
     }
     @@media screen and (min-width: 766px) {
@@ -39,7 +38,7 @@
     }
     @@media screen and (max-width: 766px) {
     .containerPad {
-      padding-top: 90px!important;
+      padding-top: 110px!important;
     }
     }
     @@media screen and (min-width: 1184px) {
@@ -61,19 +60,7 @@
           <li><a href="/" class="nav-link active">Home</a></li>
           <li><a href="/LiveScores" class="nav-link active">Live Scores</a></li>
           <li><a href="/AllBetOdds" class="nav-link active">Betting Odds</a></li>
-
-
-              <li class="has-children">
-                <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
-                <a>AI Best Bets</a>
-                <ul class="dropdown">
-                  <li><a onclick=showMLBBets()>MLB</a></li>
-                  <li><a onclick=showNFLBets()>NFL</a></li>
-                  <li><a onclick=showNBABets()>NBA</a></li>
-                  <li><a onclick=showNHLBets()>NHL</a></li>
-                  </ul>
-              </li>
-
+          <li><a href="/AccountHome" class="nav-link active">AI Best Bets</a></li>
               <li class="has-children">
                 <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false"></span>
                 <a>Manage Account</a>
@@ -97,9 +84,7 @@
               <li class="has-children" style="position:relative;top:1rem;left:50%">
                 <a class="nav-link active">Account Hub</a>
                 <ul class="dropdown">
-                  <li><a onclick=showMLBBets()>MLB Best Bets</a></li>
-                  <li><a onclick=showNBABets()>NBA Best Bets</a></li>
-                  <li><a onclick=showNHLBets()>NHL Best Bets</a></li>
+                  <li><a href="/AccountHome">AI Best Bets</a></li>
                   <li><a href="/ChangeEmail">Update Email</a></li>
                   <li><a href="/ChangePsw">Change Password</a></li>
                   </ul>
@@ -115,7 +100,12 @@
     </header>
 <!-- Add Alert -->
 
-        <div class="AccountContainer containerPad" style="padding-top: 65px;"></div>
+        <div class="containerPad" style="width: 100%; height: 1%; padding-top: 80px; text-align: center; display: inline-block; font-size: 3vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;text-decoration: underline">AI Best Bets</div>
+        <div style="width: 100%; height: 1%; padding-top: 10px; text-align: center; display: inline-block; font-size: 2vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;">The account hub contains all bets from the NBA, NHL, MLB, and NFL, and provides the most likely outcome for each game based on a variety of data, to provide +EV betting opportunities</div>
+        <div style="width: 100%; height: 1%; padding-top: 10px; text-align: center; display: inline-block; font-size: 2vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;">Expected value (EV) in sports betting is a way to measure the probability gap between a bettor’s expectations and the sportsbook’s</div>
+
+        <div class="AccountContainer">
+        </div>
 
 @code
 {
@@ -124,7 +114,10 @@
               
               string isLoggedIn = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
               string confirmPayment = HttpContextAccessor.HttpContext.Request.Cookies["PaidConfirm"];
-
+              string changedPassword = HttpContextAccessor.HttpContext.Request.Cookies["ChangedPassword"];
+              string changedEmail = HttpContextAccessor.HttpContext.Request.Cookies["ChangedEmail"];
+              string signedUp = HttpContextAccessor.HttpContext.Request.Cookies["signedUp"];
+              string loggedIn = HttpContextAccessor.HttpContext.Request.Cookies["loggedIn"];
               if(isLoggedIn != "true")
               {
                 NavigationManager.NavigateTo("/Index", forceLoad:true);
@@ -137,5 +130,6 @@
               {
                 await JSRuntime.InvokeVoidAsync("showMLBBets");
               }
+
             }
 }

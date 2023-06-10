@@ -6,15 +6,121 @@
 
 <PageTitle>Contact</PageTitle>
 <head>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/contact.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
             
-<header class=" w3-container w3-red w3-center" style="height: 25%; padding-top: 35px;">
-    <h1 class="w3-margin w3-jumbo"
-          style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Contact</h1>
-</header>
+<style>
+body {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5b352a76f93fd4a1745161a8/1530580533507-XFJITGNH91P5QQGMSX4Q/layout-background.jpg?format=2500w');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+    <!-- The Modal -->
+<div class="modal" style="height: 100%; display: block!important">
+
+<div class="container">
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Get in touch</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Full Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email">Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject">Subject</label>
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="#">Message</label>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+                                                    <a class="btn btn-primary" href="/">Cancel</a>
+													<input type="submit" value="Send Message" class="btn btn-primary" style="float: right">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap bg-primary w-100 p-md-5 p-4" style="background-color: #f44336!important;">
+									<h3>Let's get in touch</h3>
+									<p class="mb-4" style="color: white;">We're open for any suggestions or bug fixes!</p>
+				        	
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> <a href="tel://4148288543">(414)-828-8543</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> <a href="mailto:kolbyzboesel@gmail.com">kolbyzboesel@gmail.com</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Website</span> <a href="#">sportscores.azurewebsites.net</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    </div>
+</div>
 

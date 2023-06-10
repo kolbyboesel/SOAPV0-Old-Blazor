@@ -111,8 +111,8 @@ body {
 
             if (currentUser == null)
             {
-                await JSRuntime.InvokeAsync<object>("Alert", "Invalid Username!");
                 NavigationManager.NavigateTo("/Login", forceLoad: true);
+                await JSRuntime.InvokeAsync<object>("Alert", "Invalid Username!");
             }
             else
             {
@@ -129,7 +129,8 @@ body {
 
                 }
                 else{
-                   string secondErr = "Invalid password";
+                   NavigationManager.NavigateTo("/Login", forceLoad: true);
+                await JSRuntime.InvokeAsync<object>("Alert", "Invalid Password!");
                 }
             }
         }
