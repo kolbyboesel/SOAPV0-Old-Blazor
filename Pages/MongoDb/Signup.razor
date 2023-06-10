@@ -141,7 +141,7 @@ body {
                 await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "No", null, null, null, null);
                 await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "signedUp", "yes", null, null, null, null);
 
-                NavigationManager.NavigateTo("/Payment", forceLoad:false);
+                NavigationManager.NavigateTo("/Payment");
               }
               else if(password != confirm_password)
               {

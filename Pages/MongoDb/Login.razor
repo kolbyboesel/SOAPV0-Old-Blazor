@@ -55,6 +55,7 @@ body {
 </body>
 
 @code{
+  private string ErrorMessage { get; set; }
 
   public class LoginInfoResponseModel
   {
@@ -110,6 +111,8 @@ body {
 
             if (currentUser == null)
             {
+                await JSRuntime.InvokeAsync<object>("Alert", "Invalid Username!");
+                
                 string firstErr = "Invalid username";
             }
             else
@@ -119,7 +122,6 @@ body {
                     var context = HttpContextAccessor.HttpContext;
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "true", null, null, null, null);
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "Yes", null, null, null, null);
-                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "isPageRefreshed", "false", null, null, null, null);
                     NavigationManager.NavigateTo("/AccountHome", forceLoad: true);
                 } else if(currentUser.PaidConfirm == "No")
                 {
@@ -176,5 +178,4 @@ body {
     var result = await client.PostAsync(request);
     return result;
   }
-  
 }

@@ -1,6 +1,9 @@
 @page "/AccountHome"
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
 
-<PageTitle>Account Home</PageTitle>
+<PageTitle>Account Hub</PageTitle>
 
 <head>
   <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
@@ -16,21 +19,21 @@
 
 <style>
     .headerImage {
-      padding-top: 4vh;
+      padding-top: 5vh;
       width: 100%!important;
-      left: 5%;
+      left: 1%;
       position: fixed;
       text-align: center;
       align-content: center;
       width: 50%;
       color: white;
-      font-weight: bold;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      font-family: 'circular';
       display: block;
     }
     @@media screen and (min-width: 766px) {
     .mobilePadding {
-      padding-top: 1.5vh;
+      padding-top: 2.5vh;
       left: 0!important;
     }
     }
@@ -45,7 +48,7 @@
     }
   }
 </style>
-<div class="headerImage mobileSetting mobilePadding" style="z-index: 1;">Account Home</div>
+<div class="headerImage mobileSetting mobilePadding" style="z-index: 1;">Account Hub</div>
 <div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
 <div class="site-mobile-menu site-navbar-target" >
       <div class="site-mobile-menu-header">
@@ -114,7 +117,25 @@
 
         <div class="AccountContainer containerPad" style="padding-top: 65px;"></div>
 
-        @code
-        {
-          
-        }
+@code
+{
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+            {
+              
+              string isLoggedIn = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+              string confirmPayment = HttpContextAccessor.HttpContext.Request.Cookies["PaidConfirm"];
+
+              if(isLoggedIn != "true")
+              {
+                NavigationManager.NavigateTo("/Index", forceLoad:true);
+              }
+              else if(confirmPayment == "No")
+              {
+                NavigationManager.NavigateTo("/Payment", forceLoad:true);
+              }
+              else 
+              {
+                await JSRuntime.InvokeVoidAsync("showMLBBets");
+              }
+            }
+}
