@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/contact.css",
+      "PackagePath": "staticwebassets/css/contact.css"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/kolbyPicks.css",
       "PackagePath": "staticwebassets/css/kolbyPicks.css"
     },

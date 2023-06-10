@@ -140,6 +140,7 @@ body {
                 await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentPassword", password, null, null, null, null);
                 await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "No", null, null, null, null);
                 await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "signedUp", "yes", null, null, null, null);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "loggedIn");
 
                 NavigationManager.NavigateTo("/Payment");
               }

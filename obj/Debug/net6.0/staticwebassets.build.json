@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q7JS7sl5iYrK1jafTXuJ99mfZVLTw4i+ocGnYD9wIUA=",
+  "Hash": "ofwM/6aoI9skHBRbOexHCm/lawBEEqoHgm1cXXsBDnM=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/contact.css",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "css/contact.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/contact.css"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/kolbyPicks.css",

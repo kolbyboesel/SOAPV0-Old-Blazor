@@ -120,7 +120,9 @@ body {
                 {
                     var context = HttpContextAccessor.HttpContext;
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "true", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedIn", "yes", null, null, null, null);
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "Yes", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "signedUp");
                     NavigationManager.NavigateTo("/AccountHome", forceLoad: true);
                 } else if(currentUser.PaidConfirm == "No")
                 {
@@ -129,8 +131,8 @@ body {
 
                 }
                 else{
-                   NavigationManager.NavigateTo("/Login", forceLoad: true);
-                await JSRuntime.InvokeAsync<object>("Alert", "Invalid Password!");
+                  NavigationManager.NavigateTo("/Login", forceLoad: true);
+                  await JSRuntime.InvokeAsync<object>("Alert", "Invalid Password!");
                 }
             }
         }
