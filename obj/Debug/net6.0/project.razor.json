@@ -568,6 +568,43 @@
         }
       },
       {
+        "HashCode": 776846065,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.MongoDb.Signup",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Signup"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
+          "Common.TypeNameIdentifier": "Signup",
+          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 384896536,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.MongoDb.Signup",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.MongoDb.Signup"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
+          "Common.TypeNameIdentifier": "Signup",
+          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": 57390338,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.MongoDb.Login",
@@ -605,38 +642,38 @@
         }
       },
       {
-        "HashCode": 776846065,
+        "HashCode": 799754232,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MongoDb.Signup",
+        "Name": "BlazorApp.Pages.AccountHome",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Signup"
+            "TagName": "AccountHome"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
-          "Common.TypeNameIdentifier": "Signup",
-          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
+          "Common.TypeName": "BlazorApp.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "BlazorApp.Pages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 384896536,
+        "HashCode": 2027536994,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MongoDb.Signup",
+        "Name": "BlazorApp.Pages.AccountHome",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.MongoDb.Signup"
+            "TagName": "BlazorApp.Pages.AccountHome"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MongoDb.Signup",
-          "Common.TypeNameIdentifier": "Signup",
-          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
+          "Common.TypeName": "BlazorApp.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -710,43 +747,6 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.ConfirmPayment",
           "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 799754232,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AccountHome",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2027536994,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AccountHome",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
