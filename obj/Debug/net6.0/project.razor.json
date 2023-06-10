@@ -87,43 +87,6 @@
         }
       },
       {
-        "HashCode": 1519702695,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.ConfirmPayment",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ConfirmPayment"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.ConfirmPayment",
-          "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1956466440,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.ConfirmPayment",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.ConfirmPayment"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.ConfirmPayment",
-          "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -187990727,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Signout",
@@ -531,43 +494,6 @@
         }
       },
       {
-        "HashCode": 799754232,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AccountHome",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2027536994,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AccountHome",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -483613348,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.ChangePsw",
@@ -747,6 +673,80 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.Contact",
           "Common.TypeNameIdentifier": "Contact",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1519702695,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.ConfirmPayment",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ConfirmPayment"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.ConfirmPayment",
+          "Common.TypeNameIdentifier": "ConfirmPayment",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1956466440,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.ConfirmPayment",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.ConfirmPayment"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.ConfirmPayment",
+          "Common.TypeNameIdentifier": "ConfirmPayment",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 799754232,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AccountHome",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2027536994,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AccountHome",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
