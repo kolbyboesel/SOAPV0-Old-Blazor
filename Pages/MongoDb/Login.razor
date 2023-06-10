@@ -112,8 +112,7 @@ body {
             if (currentUser == null)
             {
                 await JSRuntime.InvokeAsync<object>("Alert", "Invalid Username!");
-                
-                string firstErr = "Invalid username";
+                NavigationManager.NavigateTo("/Login", forceLoad: true);
             }
             else
             {

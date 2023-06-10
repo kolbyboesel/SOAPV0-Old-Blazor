@@ -50,43 +50,6 @@
         }
       },
       {
-        "HashCode": 297190104,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AllBetOdds",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AllBetOdds"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1919354268,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AllBetOdds",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.AllBetOdds"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 370091669,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.ChangeEmail",
@@ -192,43 +155,6 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.ConfirmPayment",
           "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 209033533,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Contact",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Contact"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Contact",
-          "Common.TypeNameIdentifier": "Contact",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -2084571861,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Contact",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.Contact"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Contact",
-          "Common.TypeNameIdentifier": "Contact",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -710,6 +636,80 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.AccountHome",
           "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 297190104,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AllBetOdds",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AllBetOdds"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1919354268,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AllBetOdds",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.AllBetOdds"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 209033533,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Contact",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Contact"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Contact",
+          "Common.TypeNameIdentifier": "Contact",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -2084571861,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Contact",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Contact"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.Contact",
+          "Common.TypeNameIdentifier": "Contact",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
