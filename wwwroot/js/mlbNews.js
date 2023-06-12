@@ -31,7 +31,7 @@ async function buildMLBHomepage(allNews, containerName) {
   clear(containerName);
 
   let html =
-    '<div style="width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 4vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;">Click Any Of The Boxes Below To View The Latest Stories!</div>';
+    '<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">Click Any Of The Boxes Below To View The Latest Stories!</div>';
   allNews.forEach((currentGame) => {
     let newsTitle = currentGame.Title;
     let url = currentGame.Url;

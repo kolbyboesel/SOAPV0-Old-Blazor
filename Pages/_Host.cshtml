@@ -115,6 +115,11 @@ async function renderPaypal()
   }).render('#paypal-button-container-P-6TS59700HA1617635MRDVNHY'); // Renders the PayPal button
 }
 </script>
+<script>
+  public void hideLogin(){
+    JSRuntime.InvokeVoidAsync("hideLogin", "IndexLogin");
+  }
+  </script>
     <script src="_framework/blazor.server.js"></script>
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/popper.min.js"></script>
@@ -130,6 +135,7 @@ async function renderPaypal()
     <script src="/js/nbaNews.js"></script>
     <script src="/js/scoreboard.js"></script>
     <script src="/js/sportsAI.js"></script>
+    <script src="/js/login.js"></script>
     <script src="/js/cookieInterop.js"></script>
 </body>
 </html>

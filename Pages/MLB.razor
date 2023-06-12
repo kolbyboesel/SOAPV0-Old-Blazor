@@ -30,13 +30,21 @@
       align-content: center;
       font-weight: bold;
       font-size: 4rem;
+      top:0;
       display: block;
     }
+    @@media screen and (max-width: 766px) {
+    .mobileMargin {
+      top: 100px!important
+    }
+    }
+
     @@media screen and (min-width: 766px) {
     .mobilePadding {
       padding-top: 0vh;
     }
     }
+
     @@media screen and (max-width: 766px) {
     .containerPad {
       padding-top: 90px!important;
@@ -48,9 +56,9 @@
     }
   }
 </style>
-<div class="headerImage mobileSetting mobilePadding" style="z-index: 1!important;"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
-<div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
-<div class="site-mobile-menu site-navbar-target" >
+<body>
+<div class="headerImage mobileSetting mobilePadding"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
+<div class="site-mobile-menu site-navbar-target" style="top:0">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
           <span class="icon-close2 js-menu-toggle"></span>
@@ -58,7 +66,9 @@
       </div>
       <div class="site-mobile-menu-body">
         <ul class="site-nav-wrap">
-              <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/LiveScores">Live Scores</a></li>
+              <li><a href="/AllBetOdds">Betting Odds</a></li>
               <li><a onclick=showMLBNews()>MLB News</a></li>
               <li><a onclick=showMLBScores()>MLB Scores</a></li>
               <li><a onclick=showMLBOdds()>MLB Betting Odds</a></li>
@@ -99,8 +109,9 @@
       </div>
     </header>
 
+  <div class="containerMLB largeScreenContainer"></div>
 
-        <div class="containerMLB containerPad" style="padding-top: 65px;"></div>
+</body>
 
 @code {
 

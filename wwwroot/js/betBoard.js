@@ -21,24 +21,28 @@ let completedDate = 0;
 
 async function showNBAOdds() {
   let html = "";
+  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">NBA Betting Odds</div>`
   html += buildOddsBoard(await getData(NBA_URL));
   let container = document.querySelector("." + "containerNBA");
   container.innerHTML = html;
 }
 async function showMLBOdds() {
   let html = "";
+  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">MLB Betting Odds</div>`
   html += buildOddsBoard(await getData(MLB_URL));
   let container = document.querySelector("." + "containerMLB");
   container.innerHTML = html;
 }
 async function showNFLOdds() {
   let html = "";
+  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">NFL Betting Odds</div>`
   html += buildOddsBoard(await getData(NFL_URL));
   let container = document.querySelector("." + "containerNFL");
   container.innerHTML = html;
 }
 async function showNHLOdds() {
   let html = "";
+  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">NHL Betting Odds</div>`
   html += buildOddsBoard(await getData(NHL_URL));
   let container = document.querySelector("." + "containerNHL");
   container.innerHTML = html;

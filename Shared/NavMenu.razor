@@ -1,11 +1,35 @@
 ﻿@inject IHttpContextAccessor HttpContextAccessor
 @inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-    
+<style>
+  @@media screen and (max-width: 766px) {
+    .mobileDivider {
+        display: none!important;
+    }
+    }
+
+  @@media screen and (max-width: 766px) {
+    .mobileHeight {
+        height:100px!important;
+    }
+    }
+
+    .navBarContainer{
+      height: 60px;
+      width: 100vw;
+      background-color: #4e54c8;
+      position: initial;
+      z-index: 0;
+    }
+
+</style>
 <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -42,7 +66,8 @@
       </div>
     </div> <!-- .site-mobile-menu -->
     <!-- NAVBAR -->
-    <header class="site-navbar mt-3" style="position:fixed">
+    <div class="navBarContainer mobileHeight">
+    <header class="site-navbar mt-3" style="position:fixed;z-index:1">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="site-logo col-6"><a href="/"><img src="/images/logo_transparent.png" style="height: 6vh"></a></div>
@@ -93,17 +118,50 @@
 
         </div>
       </div>
+      <div class="mobileDivider" style="border-bottom:white; border-bottom-width: 1px; border-bottom-style:solid; height:30px; width:89%; margin-left:5.5%"></div>
     </header>
-    
+  </div>
 @code {
-
-  private void goToLogin()
+  private void showLogin()
   {
-    var context = HttpContextAccessor.HttpContext;
-        if (context != null)
-        {
-            context.Response.Redirect("/Login");
-        }
+    string currentUrl = NavigationManager.Uri;
+    string pageName = "";
+    string containerName = "";
+    if(currentUrl.Contains("/"))
+    {
+      pageName = currentUrl.Substring(currentUrl.LastIndexOf("/"));
+      if(pageName.StartsWith("LiveScores")){
+        containerName = "LiveScoresLogin";
+
+      }
+      if(pageName.StartsWith("AllBetOdds")){
+              containerName = "AllBetOddsLogin";
+
+      }
+      if(pageName.StartsWith("MLB")){
+              containerName = "MLBLogin";
+
+      }
+      if(pageName.StartsWith("NBA")){
+              containerName = "NBALogin";
+
+      }
+      if(pageName.StartsWith("NHL")){
+              containerName = "NHLLogin";
+
+      }
+      if(pageName.StartsWith("NFL")){
+              containerName = "NFLLogin";
+
+      }
+      containerName = "IndexLogin";
+
+    }
+    else
+    {
+      containerName = "IndexLogin";
+    }
+    JSRuntime.InvokeVoidAsync("showLogin", containerName);
   }
   string cookieValue = "";
   protected override async Task OnInitializedAsync()

@@ -10,20 +10,17 @@
     <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
 <style>
-body {
-  background-image: url('https://images.squarespace-cdn.com/content/v1/5b352a76f93fd4a1745161a8/1530580533507-XFJITGNH91P5QQGMSX4Q/layout-background.jpg?format=2500w');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+  body{
+    background-color: #4e54c8!important;
+  }
 </style>
 
+<body>
     <!-- The Modal -->
 <div class="modal" style="height: 100%;">
 
-<div class="container">
+<div class="container" style="padding-top: 50px;">
 
     <!-- Put error message here -->
   <EditForm Model="@formData" OnValidSubmit="HandleFormSubmit" style="border: none; height:82%" class="modal-content animate mobileScreen">
@@ -44,14 +41,14 @@ body {
 
         <button type="submit" >Sign Up</button>
 
-        <div class="container" style="background-color:#f1f1f1; padding-left: 0">
+        <div class="container" style="background-color:white; padding-left: 0">
           <a type="button" href="/" class="cancelbtn">Cancel</a>
         </div>
        </div>
   </EditForm>
   </div>
 </div>
-
+</body>
 @code
 {
   private IMongoCollection<User> _newUser;

@@ -27,10 +27,9 @@
       font-size: 2.5rem;
       display: block;
     }
-    @@media screen and (min-width: 766px) {
+    @@media screen and (max-width: 766px) {
     .mobilePadding {
-      padding-top: 1.5vh;
-      left: 0!important;
+      margin-top: 100px!important
     }
     }
     @@media screen and (max-width: 766px) {
@@ -44,11 +43,11 @@
     }
   }
 </style>
-<div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
+<body>
+<div style="color:black;width: 100%; height: 1%; padding-top: 20px; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration: underline;">Live Scores</div>
 
-<div class="containerPad" style="width: 100%; height: 1%; padding-top: 80px; text-align: center; display: inline-block; font-size: 3vh; font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;text-decoration: underline">Live Scores</div>
-
-<div class="liveScoresContainer">@innerHtmlValue</div>
+<div class="liveScoresContainer largeScreenContainer">@innerHtmlValue</div>
+</body>
 
 @code
 {

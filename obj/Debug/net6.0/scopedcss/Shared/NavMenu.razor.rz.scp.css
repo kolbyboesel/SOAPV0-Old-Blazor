@@ -466,12 +466,13 @@ body[b-wk4bcz64v1] {
     box-shadow: none !important; }
   
   .btn.btn-primary[b-wk4bcz64v1] {
-    color: #fff;
-    background: #f44336;
-    border-color: #f44336; }
+    color: white;
+    background: #8f94fb;
+    border-color: #8f94fb; }
     .btn.btn-primary:hover[b-wk4bcz64v1] {
-      background: #f44336;
-      border-color: #f44336; }
+      background: white;
+      border-color: white; 
+      color:black;}
   
   .btn.btn-outline-white[b-wk4bcz64v1] {
     background: transparent;

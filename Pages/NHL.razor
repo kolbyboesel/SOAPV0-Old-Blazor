@@ -26,6 +26,7 @@
       font-weight: bold;
       font-size: 4rem;
       display: block;
+      top:0;
     }
     @@media screen and (min-width: 766px) {
     .mobilePadding {
@@ -43,9 +44,8 @@
     }
   }
 </style>
-<div class="headerImage mobileSetting mobilePadding" style="z-index: 1!important;"><img src="/images/nhlLogo.png" style="height: 6vh;"></div>
-<div class="mobileNavHeight" style="height: 65px; background-color: red; position:fixed; width: 100%"></div>
-<div class="site-mobile-menu site-navbar-target" >
+<div class="headerImage mobileSetting mobilePadding"><img src="/images/nhlLogo.png" style="height: 6vh;"></div>
+<div class="site-mobile-menu site-navbar-target" style="top:0">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
           <span class="icon-close2 js-menu-toggle"></span>
@@ -53,7 +53,9 @@
       </div>
       <div class="site-mobile-menu-body">
         <ul class="site-nav-wrap">
-              <li><a href="/" class="nav-link active">Home</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/LiveScores">Live Scores</a></li>
+              <li><a href="/AllBetOdds">Betting Odds</a></li>
               <li><a onclick=showNHLScores()>NHL Scores</a></li>
               <li><a onclick=showNHLOdds()>NHL Betting Odds</a></li>
               @if (cookieValue == "true")
@@ -92,7 +94,7 @@
       </div>
     </header>
 
-        <div class="containerNHL containerPad" style="padding-top: 65px;"></div>
+        <div class="containerNHL largeScreenContainer"></div>
 
 @code {
    string cookieValue = "";
