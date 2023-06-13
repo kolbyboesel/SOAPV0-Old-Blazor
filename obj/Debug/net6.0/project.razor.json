@@ -859,43 +859,6 @@
         }
       },
       {
-        "HashCode": 1590369268,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Properties.ConfirmPayment",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ConfirmPayment"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Properties.ConfirmPayment",
-          "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "BlazorApp.Properties",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -619049789,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Properties.ConfirmPayment",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Properties.ConfirmPayment"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Properties.ConfirmPayment",
-          "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "BlazorApp.Properties",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -1143653920,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
@@ -19289,11 +19252,6 @@
     {
       "FilePath": "/Users/kolbyboesel/Desktop/SportScores/Pages/Contact.razor",
       "TargetPath": "Pages\\Contact.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScores/Properties/ConfirmPayment.razor",
-      "TargetPath": "Properties\\ConfirmPayment.razor",
       "FileKind": "component"
     },
     {
