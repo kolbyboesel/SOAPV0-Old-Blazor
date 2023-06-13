@@ -105,6 +105,7 @@
 
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentUser", newEmail, null, null, null, null);
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "ChangedEmail", "yes", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "ChangedPassword");
                     NavigationManager.NavigateTo("/AccountHome");
                 } else {
                     NavigationManager.NavigateTo("/ChangeEmail", forceLoad: true);

@@ -457,38 +457,38 @@
         }
       },
       {
-        "HashCode": -1673390953,
+        "HashCode": 1342959912,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MongoDb.Login",
+        "Name": "BlazorApp.Pages.Payment",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Login"
+            "TagName": "Payment"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MongoDb.Login",
-          "Common.TypeNameIdentifier": "Login",
-          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
+          "Common.TypeName": "BlazorApp.Pages.Payment",
+          "Common.TypeNameIdentifier": "Payment",
+          "Common.TypeNamespace": "BlazorApp.Pages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -471544327,
+        "HashCode": -741331705,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MongoDb.Login",
+        "Name": "BlazorApp.Pages.Payment",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.MongoDb.Login"
+            "TagName": "BlazorApp.Pages.Payment"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MongoDb.Login",
-          "Common.TypeNameIdentifier": "Login",
-          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
+          "Common.TypeName": "BlazorApp.Pages.Payment",
+          "Common.TypeNameIdentifier": "Payment",
+          "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -531,75 +531,38 @@
         }
       },
       {
-        "HashCode": 1342959912,
+        "HashCode": -1673390953,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Payment",
+        "Name": "BlazorApp.Pages.MongoDb.Login",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Payment"
+            "TagName": "Login"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Payment",
-          "Common.TypeNameIdentifier": "Payment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeName": "BlazorApp.Pages.MongoDb.Login",
+          "Common.TypeNameIdentifier": "Login",
+          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -741331705,
+        "HashCode": -471544327,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Payment",
+        "Name": "BlazorApp.Pages.MongoDb.Login",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.Payment"
+            "TagName": "BlazorApp.Pages.MongoDb.Login"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.Payment",
-          "Common.TypeNameIdentifier": "Payment",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -824116303,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.ChangeEmail",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ChangeEmail"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.ChangeEmail",
-          "Common.TypeNameIdentifier": "ChangeEmail",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 831153444,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.ChangeEmail",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.ChangeEmail"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.ChangeEmail",
-          "Common.TypeNameIdentifier": "ChangeEmail",
-          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeName": "BlazorApp.Pages.MongoDb.Login",
+          "Common.TypeNameIdentifier": "Login",
+          "Common.TypeNamespace": "BlazorApp.Pages.MongoDb",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -710,6 +673,43 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.ChangePsw",
           "Common.TypeNameIdentifier": "ChangePsw",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -824116303,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.ChangeEmail",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChangeEmail"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.ChangeEmail",
+          "Common.TypeNameIdentifier": "ChangeEmail",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 831153444,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.ChangeEmail",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.ChangeEmail"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.ChangeEmail",
+          "Common.TypeNameIdentifier": "ChangeEmail",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

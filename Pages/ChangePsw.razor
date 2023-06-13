@@ -106,6 +106,7 @@
                 await _newUser.ReplaceOneAsync(filter, updateUser);
 
                 await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "ChangedPassword", "yes", null, null, null, null);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "ChangedEmail");
                 NavigationManager.NavigateTo("/AccountHome");
             }
             else
