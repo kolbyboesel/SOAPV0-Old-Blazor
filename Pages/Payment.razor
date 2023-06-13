@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
 <style>
-body {
-  background-image: url('https://images.squarespace-cdn.com/content/v1/5b352a76f93fd4a1745161a8/1530580533507-XFJITGNH91P5QQGMSX4Q/layout-background.jpg?format=2500w');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+  body{
+    background-color: #4e54c8!important;
+  }
+
+@@media screen and (min-width: 1184px) {
+        .largeScreenAdjust {
+          width:80%;
+          margin-left: 10%;
+        }
+      }
 </style>
 
 <!-- The Modal (contains the Sign Up form) -->
@@ -28,10 +31,10 @@ body {
         <h6 style="text-align: center;">Please Click one of the links below to proceed with payment!</h6>
         </div>
     <div class="paypalBtnHolder">
-<div id="paypal-button-container-P-6TS59700HA1617635MRDVNHY"></div>
+<div class="largeScreenAdjust" id="paypal-button-container-P-6TS59700HA1617635MRDVNHY"></div>
     </div>
-    <div class="container" style="background-color:#f1f1f1">
-      <a type="button" href="/" class="cancelbtn">Cancel</a>
+    <div class="container">
+      <a type="button" href="/" class="cancelbtn" style="border-radius:5px">Cancel</a>
     </div>
   </div>
 </div>

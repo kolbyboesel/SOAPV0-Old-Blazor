@@ -24,7 +24,7 @@ async function getData(url) {
 
 async function showNBAScores() {
   let html = "";
-  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">NBA Scores</div>`
+  html += `<div class="pageHeader containerPad">NBA Scores</div>`
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores?daysFrom=1"
@@ -38,7 +38,7 @@ async function showNBAScores() {
 
 async function showMLBScores() {
   let html = "";
-  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">MLB Scores</div>`
+  html += `<div class="pageHeader containerPad">MLB Scores</div>`
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores?daysFrom=1"
@@ -52,7 +52,7 @@ async function showMLBScores() {
 
 async function showNFLScores() {
   let html = "";
-  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">NFL Scores</div>`
+  html += `<div class="pageHeader containerPad">NFL Scores</div>`
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores?daysFrom=1"
@@ -66,7 +66,7 @@ async function showNFLScores() {
 
 async function showNHLScores() {
   let html = "";
-  html += `<div style="color:black;width: 100%; height: 1%; padding-top: 2%; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration:underline">NHL Scores</div>`
+  html += `<div class="pageHeader containerPad"ß>NHL Scores</div>`
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores?daysFrom=1"

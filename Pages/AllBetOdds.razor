@@ -10,43 +10,12 @@
     <link rel="stylesheet" href="/css/betBoard.css" asp-append-version="true" />
     <link rel="stylesheet" href="/css/scoreboard.css" asp-append-version="true" />
     <link rel="stylesheet" href="/css/account.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
-<style>
-    .headerImage {
-      padding-top: 4vh;
-      width: 100%!important;
-      left: 5%;
-      position: fixed;
-      text-align: center;
-      align-content: center;
-      width: 50%;
-      color: white;
-      font-weight: bold;
-      font-size: 2.5rem;
-      display: block;
-    }
-    @@media screen and (max-width: 766px) {
-    .mobilePadding {
-      margin-top: 100px!important
-    }
-    }
-    @@media screen and (max-width: 766px) {
-    .containerPad {
-      padding-top: 110px!important;
-    }
-    }
-    @@media screen and (min-width: 1184px) {
-    .mobileSetting {
-      display: none!important;
-    }
-  }
-</style>
-
-<div style="color:black;width: 100%; height: 1%; padding-top: 20px; text-align: center; display: inline-block; font-size: 3vh; font-family:system-ui;text-decoration: underline">Betting Odds</div>
+<div class="pageHeader containerPad">Betting Odds</div>
 
 <div class="betOddsContainer largeScreenContainer">@innerHtmlValue</div>
 

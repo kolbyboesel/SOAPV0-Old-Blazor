@@ -1,4 +1,7 @@
 @page "/ChangeEmail"
+@inject NavigationManager NavigationManager
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Change Email</PageTitle>
 
@@ -7,129 +10,114 @@
   <link rel="stylesheet" href="/css/account.css" asp-append-version="true" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
 <style>
   body{
     background-color: #4e54c8!important;
   }
-    .headerImage {
-      padding-top: 3vh;
-      width: 100%!important;
-      position: fixed;
-      text-align: center;
-      align-content: center;
-      width: 50%;
-      font-weight: bold;
-      font-size: 4rem;
-      display: block;
-    }
-    @@media screen and (min-width: 766px) {
-    .mobilePadding {
-      padding-top: 0vh;
-    }
-    }
-    @@media screen and (max-width: 766px) {
-    .containerPad {
-      padding-top: 90px;
-    }
-    }
-    @@media screen and (min-width: 1184px) {
-    .mobileSetting {
-      display: none!important;
-    }
-  }
 </style>
-
 <body>
-<div class="headerImage mobileSetting mobilePadding"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
-<div class="site-mobile-menu site-navbar-target" >
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body">
-        <ul class="site-nav-wrap">
-          <li><a href="/" class="nav-link active">Home</a></li>
-          <li><a onclick=showAccountNBA() class="nav-link active">Live Scores</a></li>
-          <li><a onclick=showTopScores() class="nav-link active">Betting Odds</a></li>
-
-
-              <li class="has-children">
-                <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
-                <a>AI Best Bets</a>
-                <ul class="dropdown">
-                  <li><a onclick=showMLBBets()>MLB</a></li>
-                  <li><a href="/NFL">NFL</a></li>
-                  <li><a onclick=showNBABets()>NBA</a></li>
-                  <li><a onclick=showNHLBets()>NHL</a></li>
-                  </ul>
-              </li>
-
-              <li class="has-children">
-                <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem1" aria-expanded="false"></span>
-                <a>Manage Account</a>
-                <ul class="dropdown">
-                  <li><a href="/ChangeEmail">Update Email</a></li>
-                  <li><a href="/ChangePsw">Change Password</a></li>
-                  </ul>
-              </li>
-              <li><a href="/Signout">Sign Out</a></li>
-        </ul>
-      </div>
-    </div> <!-- .site-mobile-menu -->
-    <!-- NAVBAR -->
-    <header class="site-navbar mt-3" style="top:1rem!important">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="site-logo col-6" style="width: 40%;"></div>
-
-          <nav class="mx-auto site-navigation" style="width:auto!important; left:15%; ">
-            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li class="has-children" style="position:relative;top:1rem;left:50%">
-                <a class="nav-link active">Account Hub</a>
-                <ul class="dropdown">
-                  <li><a onclick=showMLBBets()>MLB Best Bets</a></li>
-                  <li><a onclick=showNBABets()>NBA Best Bets</a></li>
-                  <li><a onclick=showNHLBets()>NHL Best Bets</a></li>
-                  <li><a href="/ChangeEmail">Update Email</a></li>
-                  <li><a href="/ChangePsw">Change Password</a></li>
-                  </ul>
-              </li>
-            </ul>
-          </nav>
-          
-          <div class="center-cta-menu text-center d-flex aligin-items-center col-6">
-            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileScreenNav largeScreenNav" style="margin-top: 0!important;"></a>
-          </div>
-        </div>
-      </div>
-    </header>
    <!-- The Modal -->
 <div class="modal" style="height: 100%; display: block" >
 
 <div class="container">
   <!-- Modal Content -->
       <!-- Put error message here -->
-  <form class="modal-content animate mobileScreen" method="post" style="height:82%">
+  <EditForm Model="@formData" OnValidSubmit="HandleFormSubmit" class="modal-content animate mobileScreen" style="height:82%">
 
     <div class="container">
       <label for="email"><b>New Email</b></label>
-      <input type="text" class="form-control" placeholder="Enter New Email" id="email" name="email" required>
+      <InputText @bind-Value="@formData.Email" type="text" class="form-control" placeholder="Enter New Email" id="email" name="email" required/>
 
       <label for="confirmEmail"><b>Confirm New Email</b></label>
-      <input type="text" class="form-control" placeholder="Reenter Email" id="confirmEmail" name="confirmEmail" required>
+      <InputText @bind-Value="@formData.EmailRepeat" type="text" class="form-control" placeholder="Reenter Email" id="confirmEmail" name="confirmEmail" required/>
 
     <label for="password"><b>Enter Password to Verify</b></label>
-      <input type="password" class="form-control" placeholder="Enter Password" id="password" name="password" required>
+      <InputText @bind-Value="@formData.Password" type="password" class="form-control" placeholder="Enter Password" id="password" name="password" required/>
 
-      <button type="submit" >Confirm</button>
+      <button type="submit" style="border-radius:5px">Confirm</button>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <a type="button" href="/AccountHome" class="cancelbtn">Cancel</a>
+    <div class="container" style="border-radius:10px">
+      <a type="button" href="/AccountHome" class="cancelbtn" style="border-radius:5px">Cancel</a>
     </div>
-  </form>
+  </EditForm>
   </div>
 </div>
 </body>
+
+@code
+{
+    private FormDataModel formData = new FormDataModel();
+    private IMongoCollection<User> _newUser;
+
+    public class FormDataModel
+    {
+    public string Email { get; set; }
+    public string EmailRepeat { get; set; }
+    public string Password { get; set; }
+
+    }
+    public class User
+    {
+
+        public ObjectId _id { get; set; }
+        public string LoginID { get; set; }
+        public string PasswordID { get; set; }
+        public string PaidConfirm { get; set; }
+
+
+    }
+    private async void HandleFormSubmit()
+    {
+      const string connectionUri = "mongodb+srv://kolbyzboesel:Kolby344@sportsscores.anxznpk.mongodb.net/?retryWrites=true&w=majority";
+        var settings = MongoClientSettings.FromConnectionString(connectionUri);
+        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+        var client = new MongoClient(settings);
+        var usersList = client.GetDatabase("Login_Data");
+        _newUser = usersList.GetCollection<User>("Login_Info");
+
+        var username = HttpContextAccessor.HttpContext.Request.Cookies["CurrentUser"];
+
+        var filter = Builders<User>.Filter
+            .Eq(r => r.LoginID, username.ToString());
+
+        var oldUser = _newUser.Find(filter).First();
+        var oldId = oldUser._id;
+        var oldPassword = oldUser.PasswordID;
+        var oldUsername = oldUser.LoginID;
+
+        var newEmail = formData.Email;
+        var confirmEmail = formData.EmailRepeat;
+        var password = formData.Password;
+        
+        if(newEmail.ToString().Contains("@")){
+            if(newEmail == confirmEmail){
+                if(oldPassword == password){
+                    User updateUser = new()
+                    {
+                        _id = oldId,
+                        LoginID = newEmail,
+                        PasswordID = oldPassword,
+                        PaidConfirm = "Yes",
+                    };
+
+                    await _newUser.ReplaceOneAsync(filter, updateUser);
+
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentUser", newEmail, null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "ChangedEmail", "yes", null, null, null, null);
+                    NavigationManager.NavigateTo("/AccountHome");
+                } else {
+                    NavigationManager.NavigateTo("/ChangeEmail", forceLoad: true);
+                    await JSRuntime.InvokeAsync<object>("Alert", "Incorrect Password");
+                }
+            }else{
+                NavigationManager.NavigateTo("/ChangeEmail", forceLoad: true);
+                await JSRuntime.InvokeAsync<object>("Alert", "Email Does Not Match");
+            }
+        } else {
+            NavigationManager.NavigateTo("/ChangeEmail", forceLoad: true);
+            await JSRuntime.InvokeAsync<object>("Alert", "Invalid Email, Please Include " + "@" + " Symbol");
+        }
+    }
+}
+

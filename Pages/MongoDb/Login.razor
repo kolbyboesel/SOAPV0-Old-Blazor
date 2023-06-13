@@ -32,11 +32,11 @@
       <label for="psw"><b>Password</b></label>
       <InputText @bind-Value="@formData.Password" type="password" class="form-control" placeholder="Enter Password" id="psw" name="psw" required></InputText>
 
-      <button type="submit">Login</button>
+      <button type="submit" style="border-radius:5px">Login</button>
     </div>
 
     <div class="container" style="background-color:white; border-radius:10px">
-      <a type="button" href="/" class="cancelbtn">Cancel</a>
+      <a type="button" href="/" class="cancelbtn" style="border-radius:5px">Cancel</a>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </EditForm>
@@ -118,6 +118,7 @@
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "true", null, null, null, null);
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedIn", "yes", null, null, null, null);
                     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "Yes", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentUser", currentUser, null, null, null, null);
                     await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "signedUp");
                     NavigationManager.NavigateTo("/AccountHome", forceLoad: true);
                 } else if(currentUser.PaidConfirm == "No")
