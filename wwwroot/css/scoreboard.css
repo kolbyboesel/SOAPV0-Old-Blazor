@@ -63,17 +63,11 @@
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 600px) {
-  .mobileScroll {
-    width:40% !important;
-  }
-}
-
 .scrollmenu {
   background-color: white;
   overflow: auto;
   white-space: nowrap;
-  width: 15%;
+  width: fit-content;
   border-radius: 5px;
   border-color: gray;
   border-style: solid;
