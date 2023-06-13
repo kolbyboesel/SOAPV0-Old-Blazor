@@ -1,0 +1,69 @@
+@page "/ConfirmPayment"
+
+@inject NavigationManager NavigationManager
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Confirm Payment</PageTitle>
+
+
+<head>
+  <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+</body>
+@code
+{
+
+public class User
+{
+    public ObjectId _id { get; set; }
+    public string LoginID { get; set; }
+    public string PasswordID { get; set; }
+    public string PaidConfirm { get; set; }
+
+
+}
+
+    private IMongoCollection<User> _newUser;
+
+protected override async Task OnAfterRenderAsync(bool firstRender)
+  {
+  const string connectionUri = "mongodb+srv://kolbyzboesel:Kolby344@sportsscores.anxznpk.mongodb.net/?retryWrites=true&w=majority";
+        var settings = MongoClientSettings.FromConnectionString(connectionUri);
+        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+        var client = new MongoClient(settings);
+        var usersList = client.GetDatabase("Login_Data");
+        _newUser = usersList.GetCollection<User>("Login_Info");
+
+        var username = HttpContextAccessor.HttpContext.Request.Cookies["CurrentUser"];
+        var password = HttpContextAccessor.HttpContext.Request.Cookies["CurrentPassword"];
+
+        var filter = Builders<User>.Filter
+            .Eq(r => r.LoginID, username.ToString());
+
+        var oldUser = _newUser.Find(filter).First();
+        var oldId = oldUser._id;
+
+        User updateUser = new()
+        {
+            _id = oldId,
+            LoginID = username,
+            PasswordID = password,
+            PaidConfirm = "Yes",
+        };
+
+        await _newUser.ReplaceOneAsync(filter, updateUser);
+
+        await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "CurrentPassword");
+        await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "PaidConfirm");
+        await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "Yes", null, null, null, null);
+        await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "true", null, null, null, null);
+
+        NavigationManager.NavigateTo("/AccountHome",forceLoad:true);
+  }
+}
