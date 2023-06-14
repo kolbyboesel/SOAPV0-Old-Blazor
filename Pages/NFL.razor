@@ -27,18 +27,18 @@
       </div>
       <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw">
         <ul class="site-nav-wrap">
-              <li><a class="Home" href="/">Home</a></li>
-              <li><a class="LiveScores" href="/LiveScores">Live Scores</a></li>
-              <li><a class="BettingOdds" href="/AllBetOdds">Betting Odds</a></li>
+              <li><a class="Home" href="#">Home</a></li>
+              <li><a class="LiveScores" href="#">Live Scores</a></li>
+              <li><a class="BettingOdds" href="#">Betting Odds</a></li>
               <li><a onclick=showNFLScores()>NFL Scores</a></li>
               <li><a onclick=showNFLOdds()>NFL Betting Odds</a></li>
               @if (cookieValue == "true")
               {
               <li><a href="/Signout">Sign Out</a></li>
-              <li><a class="AccountHome" href="/AccountHome">Account Hub</a></li>
+              <li><a class="AccountHome" href="#">Account Hub</a></li>
               } else {
-                <li><a class="Signup" href="/Signup">Sign Up</a></li>
-                <li><a class="Login" href="/Login">Login</a></li>
+                <li><a class="Signup" href="#">Sign Up</a></li>
+                <li><a class="Login" href="#">Login</a></li>
               }
         </ul>
       </div>

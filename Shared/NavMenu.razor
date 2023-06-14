@@ -32,36 +32,36 @@
 </style>
 <div class="site-mobile-menu site-navbar-target" style="width: 100%;">
       <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close js-menu-toggle mt-3 mobileNavClose">
+        <div href="#" class="site-mobile-menu-close js-menu-toggle mt-3 mobileNavClose">
           Close
         </div>
       </div>
       <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw">
         <ul class="site-nav-wrap">
-          <li><a href="/" class="nav-link active Home">Home</a></li>
+          <li><a href="#" class="nav-link active Home">Home</a></li>
               <br>
-              <li><a class="LiveScores" href="/LiveScores">Live Scores</a></li>
-              <li><a class="BettingOdds" href="/AllBetOdds">Betting Odds</a></li>
+              <li><a href="#" class="LiveScores">Live Scores</a></li>
+              <li><a href="#" class="BettingOdds">Betting Odds</a></li>
               <li class="has-children">
                 <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
-                <a>Sports</a>
+                <a href="#">Sports</a>
                 <ul class="dropdown">
-                  <li><a class="MLB" href="/MLB">MLB</a></li>
-                  <li><a class="NFL" href="/NFL">NFL</a></li>
-                  <li><a class="NBA" href="/NBA">NBA</a></li>
-                  <li><a class="NHL" href="/NHL">NHL</a></li>
+                  <li><a href="#" class="MLB">MLB</a></li>
+                  <li><a href="#" class="NFL">NFL</a></li>
+                  <li><a href="#" class="NBA">NBA</a></li>
+                  <li><a href="#" class="NHL">NHL</a></li>
                   </ul>
               </li>
-              <li><a class="Contact" href="/Contact">Contact</a></li>
+              <li><a class="Contact" href="#">Contact</a></li>
               @if (cookieValue == "true")
               {
-              <li><a class="Signout" href="/Signout">Sign Out</a></li>
-              <li><a class="AccountHome" href="/AccountHome">Account Hub</a></li>
+              <li><a href="Signout">Sign Out</a></li>
+              <li><a class="AccountHome" href="#">Account Hub</a></li>
               }
               else
               {
-              <li><a class="Signup" href="/Signup">Sign Up</a></li>
-              <li><a class="Login" href="/Login">Log In</a></li>
+              <li><a class="Signup" href="#">Sign Up</a></li>
+              <li><a class="Login" href="#">Log In</a></li>
               }
         </ul>
       </div>

@@ -516,7 +516,7 @@ body {
         }
 
         .mobileNavClose{
-          position: fixed!important;
+          position: absolute!important;
           bottom:0!important;
           height:6%!important;
           padding-top: 10px!important;

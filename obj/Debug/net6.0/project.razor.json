@@ -531,43 +531,6 @@
         }
       },
       {
-        "HashCode": 1688159593,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MLB",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MLB"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MLB",
-          "Common.TypeNameIdentifier": "MLB",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 629577171,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.MLB",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.MLB"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.MLB",
-          "Common.TypeNameIdentifier": "MLB",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1613981595,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.NFL",
@@ -599,6 +562,43 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.NFL",
           "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1688159593,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.MLB",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MLB"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.MLB",
+          "Common.TypeNameIdentifier": "MLB",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 629577171,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.MLB",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.MLB"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.MLB",
+          "Common.TypeNameIdentifier": "MLB",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
