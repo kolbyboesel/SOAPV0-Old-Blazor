@@ -38,30 +38,30 @@
       </div>
       <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw">
         <ul class="site-nav-wrap">
-          <li><a href="/" class="nav-link active">Home</a></li>
+          <li><a href="/" class="nav-link active Home">Home</a></li>
               <br>
-              <li><a href="/LiveScores">Live Scores</a></li>
-              <li><a href="/AllBetOdds">Betting Odds</a></li>
+              <li><a class="LiveScores" href="/LiveScores">Live Scores</a></li>
+              <li><a class="BettingOdds" href="/AllBetOdds">Betting Odds</a></li>
               <li class="has-children">
                 <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
                 <a>Sports</a>
                 <ul class="dropdown">
-                  <li><a href="/MLB">MLB</a></li>
-                  <li><a href="/NFL">NFL</a></li>
-                  <li><a href="/NBA">NBA</a></li>
-                  <li><a href="/NHL">NHL</a></li>
+                  <li><a class="MLB" href="/MLB">MLB</a></li>
+                  <li><a class="NFL" href="/NFL">NFL</a></li>
+                  <li><a class="NBA" href="/NBA">NBA</a></li>
+                  <li><a class="NHL" href="/NHL">NHL</a></li>
                   </ul>
               </li>
-              <li><a href="/Contact">Contact</a></li>
+              <li><a class="Contact" href="/Contact">Contact</a></li>
               @if (cookieValue == "true")
               {
-              <li><a href="/Signout">Sign Out</a></li>
-              <li><a href="/AccountHome">Account Hub</a></li>
+              <li><a class="Signout" href="/Signout">Sign Out</a></li>
+              <li><a class="AccountHome" href="/AccountHome">Account Hub</a></li>
               }
               else
               {
-              <li><a href="/Signup">Sign Up</a></li>
-              <li><a href="/Login">Log In</a></li>
+              <li><a class="Signup" href="/Signup">Sign Up</a></li>
+              <li><a class="Login" href="/Login">Log In</a></li>
               }
         </ul>
       </div>

@@ -83,8 +83,85 @@ $(function() {
 					$('body').removeClass('offcanvas-menu');
 				}
 	    }
+		})
+		$('body').on('click', '.Home', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/";
+				$('body').removeClass('offcanvas-menu');
 		});
-	}; 
+
+		$('body').on('click', '.LiveScores', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/LiveScores";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.AllBetOdds', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/AllBetOdds";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.MLB', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/MLB";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.NBA', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/NBA";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.NFL', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/NFL";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.NHL', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/NHL";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.Login', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/Login";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.Signup', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/Signup";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.AccountHome', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/AccountHome";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.Contact', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/Contact";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+	};
 	siteMenuClone();
 
 });
