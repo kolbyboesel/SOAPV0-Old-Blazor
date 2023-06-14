@@ -98,7 +98,7 @@ $(function() {
 				$('body').removeClass('offcanvas-menu');
 		});
 
-		$('body').on('click', '.AllBetOdds', function(e) {
+		$('body').on('click', '.BettingOdds', function(e) {
 			var $this = $(this);
 			e.preventDefault();
 				window.location.href = "https://sportscores.azurewebsites.net/AllBetOdds";
