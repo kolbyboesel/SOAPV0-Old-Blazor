@@ -144,3 +144,8 @@ body[b-3ij3p7wwc4] {
     border-style:solid;
   }
   
+  @media screen and (max-width: 1200px) {
+  .hideMobileScreen[b-3ij3p7wwc4]{
+    display: none!important;
+  }
+}

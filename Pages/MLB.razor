@@ -25,25 +25,25 @@
 <div class="headerImage mobileSetting mobilePadding"><img src="/images/mlbLogo.png" style="height: 6vh;"></div>
 <div class="site-mobile-menu site-navbar-target" style="width: 100%">
       <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+        <div class="site-mobile-menu-close js-menu-toggle mt-3 mobileNavClose">
+          Close
         </div>
       </div>
       <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw">
         <ul class="site-nav-wrap">
-              <li><a href="/">Home</a></li>
-              <li><a href="/LiveScores">Live Scores</a></li>
-              <li><a href="/AllBetOdds">Betting Odds</a></li>
+              <li><a class="Home" href="/">Home</a></li>
+              <li><a class="LiveScores" href="/LiveScores">Live Scores</a></li>
+              <li><a class="BettingOdds" href="/AllBetOdds">Betting Odds</a></li>
               <li><a onclick=showMLBNews()>MLB News</a></li>
               <li><a onclick=showMLBScores()>MLB Scores</a></li>
               <li><a onclick=showMLBOdds()>MLB Betting Odds</a></li>
               @if (cookieValue == "true")
               {
               <li><a href="/Signout">Sign Out</a></li>
-              <li><a href="/AccountHome">Account Hub</a></li>
+              <li><a class="AccountHome" href="/AccountHome">Account Hub</a></li>
               } else {
-                <li><a href="/Signup">Sign Up</a></li>
-                <li><a href="/Login">Login</a></li>
+                <li><a class="Signup" href="/Signup">Sign Up</a></li>
+                <li><a class="Login" href="/Login">Login</a></li>
               }
         </ul>
       </div>
@@ -68,7 +68,7 @@
           </nav>
           
           <div class="center-cta-menu text-center d-flex aligin-items-center col-6">
-            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileScreenNav largeScreenNav" style="margin-top: 0!important;"></a>
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileNavToggle" style="margin-top: 0!important;">Menu</a>
           </div>
         </div>
       </div>

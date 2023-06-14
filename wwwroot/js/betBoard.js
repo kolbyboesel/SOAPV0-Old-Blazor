@@ -20,6 +20,7 @@ let underOdds = 0;
 let completedDate = 0;
 
 async function showNBAOdds() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad">NBA Betting Odds</div>`
   html += buildOddsBoard(await getData(NBA_URL));
@@ -27,6 +28,7 @@ async function showNBAOdds() {
   container.innerHTML = html;
 }
 async function showMLBOdds() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad">MLB Betting Odds</div>`
   html += buildOddsBoard(await getData(MLB_URL));
@@ -34,6 +36,7 @@ async function showMLBOdds() {
   container.innerHTML = html;
 }
 async function showNFLOdds() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad">NFL Betting Odds</div>`
   html += buildOddsBoard(await getData(NFL_URL));
@@ -41,6 +44,7 @@ async function showNFLOdds() {
   container.innerHTML = html;
 }
 async function showNHLOdds() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad">NHL Betting Odds</div>`
   html += buildOddsBoard(await getData(NHL_URL));

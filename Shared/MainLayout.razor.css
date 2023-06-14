@@ -144,3 +144,8 @@ body {
     border-style:solid;
   }
   
+  @media screen and (max-width: 1200px) {
+  .hideMobileScreen{
+    display: none!important;
+  }
+}

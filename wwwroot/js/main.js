@@ -161,6 +161,20 @@ $(function() {
 				$('body').removeClass('offcanvas-menu');
 		});
 
+		$('body').on('click', '.ChangeEmail', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/ChangeEmail";
+				$('body').removeClass('offcanvas-menu');
+		});
+
+		$('body').on('click', '.ChangePsw', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+				window.location.href = "https://sportscores.azurewebsites.net/ChangePsw";
+				$('body').removeClass('offcanvas-menu');
+		});
+
 	};
 	siteMenuClone();
 

@@ -23,6 +23,7 @@ async function getData(url) {
 }
 
 async function showNBAScores() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad">NBA Scores</div>`
   html += buildScoreboard(
@@ -37,6 +38,7 @@ async function showNBAScores() {
 }
 
 async function showMLBScores() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad">MLB Scores</div>`
   html += buildScoreboard(
@@ -51,6 +53,7 @@ async function showMLBScores() {
 }
 
 async function showNFLScores() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad">NFL Scores</div>`
   html += buildScoreboard(
@@ -65,6 +68,7 @@ async function showNFLScores() {
 }
 
 async function showNHLScores() {
+  $('body').removeClass('offcanvas-menu');
   let html = "";
   html += `<div class="pageHeader containerPad"ß>NHL Scores</div>`
   html += buildScoreboard(
