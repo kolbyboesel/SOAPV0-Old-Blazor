@@ -9,14 +9,29 @@
   <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
   <link rel="stylesheet" href="/css/loginSignup.css" asp-append-version="true" />
 </head>
+<style>
+  .mainHeader{
+    color: white;
+    font-weight: bold;
+  }
+
+  @@media screen and (max-width: 768px) {
+    .mainHeader{
+      font-size: 2rem!important;
+  }
+    .mobileMainPadding{
+      padding-top: 40vh!important;
+    }
+  }
+</style>
 
 <body>
-<header class="w3-container w3-center" style="height: 25%; padding-top: 15vh; width: 100%; position:absolute">
-  <h1 class="w3-margin w3-jumbo"
-    style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Daily Sports Scores
+<header class="w3-container w3-center mobileMainPadding" style="height: 25%; padding-top: 20vh; width: 100%; position:absolute">
+  <h1 class="mainHeader">
+    Daily Sports Scores
   </h1>
   <h2
-    style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size:2vh">Please create an account to see daily AI betting picks!
+    style="color: white; font-size:1rem">Please create an account to see daily AI betting picks!
   </h2>
 </header>
 
