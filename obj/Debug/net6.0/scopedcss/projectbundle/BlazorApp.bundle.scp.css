@@ -226,7 +226,10 @@ body[b-wk4bcz64v1] {
       @media (max-width: 767.98px) {
         .site-navbar .site-logo[b-wk4bcz64v1] {
           position: relative;
-          left: auto; } }
+          left: auto;
+          width: 100%;
+          display: flex;
+          justify-content: center; } }
       .site-navbar .site-logo a[b-wk4bcz64v1] {
         color: #fff;
         font-size: 1.5rem;
