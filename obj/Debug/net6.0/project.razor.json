@@ -642,43 +642,6 @@
         }
       },
       {
-        "HashCode": 351524226,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.NHL",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NHL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -860386570,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.NHL",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.NHL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1337105258,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.AccountHome",
@@ -710,6 +673,43 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.AccountHome",
           "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 351524226,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.NHL",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NHL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -860386570,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.NHL",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.NHL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

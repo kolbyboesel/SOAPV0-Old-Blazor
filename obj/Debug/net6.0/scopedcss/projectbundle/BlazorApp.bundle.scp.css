@@ -669,7 +669,7 @@ body[b-wk4bcz64v1] {
         }
 
         .mobileNavClose[b-wk4bcz64v1]{
-          position: fixed!important;
+          position: absolute!important;
           bottom:0!important;
           height:6%!important;
           padding-top: 10px!important;
