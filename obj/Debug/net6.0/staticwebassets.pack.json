@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets/BlazorApp.bundle.scp.css"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/MainStyle.css",
+      "PackagePath": "staticwebassets/css/MainStyle.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/ModalElements.css",
+      "PackagePath": "staticwebassets/css/ModalElements.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/NewsStyle.css",
+      "PackagePath": "staticwebassets/css/NewsStyle.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/ScoreboardStyle.css",
+      "PackagePath": "staticwebassets/css/ScoreboardStyle.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Site.css",
+      "PackagePath": "staticwebassets/css/Site.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/SportsAI.css",
+      "PackagePath": "staticwebassets/css/SportsAI.css"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/account.css",
       "PackagePath": "staticwebassets/css/account.css"
     },
@@ -31,14 +55,6 @@
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/kolbyPicks.css",
       "PackagePath": "staticwebassets/css/kolbyPicks.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/loginSignup.css",
-      "PackagePath": "staticwebassets/css/loginSignup.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/news.css",
-      "PackagePath": "staticwebassets/css/news.css"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/FONT-LICENSE",
@@ -79,22 +95,6 @@
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/owl.carousel.min.css",
       "PackagePath": "staticwebassets/css/owl.carousel.min.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/scoreboard.css",
-      "PackagePath": "staticwebassets/css/scoreboard.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/sportsAI.css",
-      "PackagePath": "staticwebassets/css/sportsAI.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/style.css",
-      "PackagePath": "staticwebassets/css/style.css"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/font/icomoon.eot",
@@ -157,60 +157,56 @@
       "PackagePath": "staticwebassets/images/yahooLogo.png"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/bestBets.js",
-      "PackagePath": "staticwebassets/js/bestBets.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/AIBestBets.js",
+      "PackagePath": "staticwebassets/js/AIBestBets.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/betBoard.js",
-      "PackagePath": "staticwebassets/js/betBoard.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/BettingOdds.js",
+      "PackagePath": "staticwebassets/js/BettingOdds.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/bootstrap.min.js",
-      "PackagePath": "staticwebassets/js/bootstrap.min.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/CookieManagement.js",
+      "PackagePath": "staticwebassets/js/CookieManagement.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/cookieInterop.js",
-      "PackagePath": "staticwebassets/js/cookieInterop.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/bootstrap.min.js",
+      "PackagePath": "staticwebassets/js/Imports/bootstrap.min.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/jquery-3.3.1.min.js",
-      "PackagePath": "staticwebassets/js/jquery-3.3.1.min.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets/js/Imports/jquery-3.3.1.min.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/jquery.sticky.js",
-      "PackagePath": "staticwebassets/js/jquery.sticky.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/jquery.sticky.js",
+      "PackagePath": "staticwebassets/js/Imports/jquery.sticky.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/kolbysBets.js",
-      "PackagePath": "staticwebassets/js/kolbysBets.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/js/Imports/owl.carousel.min.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/main.js",
-      "PackagePath": "staticwebassets/js/main.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/popper.min.js",
+      "PackagePath": "staticwebassets/js/Imports/popper.min.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/mlbNews.js",
-      "PackagePath": "staticwebassets/js/mlbNews.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/MLBNews.js",
+      "PackagePath": "staticwebassets/js/MLBNews.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/nbaNews.js",
-      "PackagePath": "staticwebassets/js/nbaNews.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/NBANews.js",
+      "PackagePath": "staticwebassets/js/NBANews.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/owl.carousel.min.js",
-      "PackagePath": "staticwebassets/js/owl.carousel.min.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/NavbarManagement.js",
+      "PackagePath": "staticwebassets/js/NavbarManagement.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/popper.min.js",
-      "PackagePath": "staticwebassets/js/popper.min.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Scoreboard.js",
+      "PackagePath": "staticwebassets/js/Scoreboard.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/scoreboard.js",
-      "PackagePath": "staticwebassets/js/scoreboard.js"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/sportsAI.js",
-      "PackagePath": "staticwebassets/js/sportsAI.js"
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/SportsAI.js",
+      "PackagePath": "staticwebassets/js/SportsAI.js"
     },
     {
       "Id": "obj/Debug/net6.0/staticwebassets/msbuild.BlazorApp.Microsoft.AspNetCore.StaticWebAssets.props",

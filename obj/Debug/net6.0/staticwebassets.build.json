@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ofwM/6aoI9skHBRbOexHCm/lawBEEqoHgm1cXXsBDnM=",
+  "Hash": "A5fIA2knSjfj2X0kVjakcA+tmTO53zIPcpMbofbW2Vw=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -170,12 +170,12 @@
       "OriginalItemSpec": "wwwroot/css/kolbyPicks.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/loginSignup.css",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/MainStyle.css",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "css/loginSignup.css",
+      "RelativePath": "css/MainStyle.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,15 +184,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/loginSignup.css"
+      "OriginalItemSpec": "wwwroot/css/MainStyle.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/news.css",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/ModalElements.css",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "css/news.css",
+      "RelativePath": "css/ModalElements.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,7 +201,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/news.css"
+      "OriginalItemSpec": "wwwroot/css/ModalElements.css"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/NewsStyle.css",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "css/NewsStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/NewsStyle.css"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/FONT-LICENSE",
@@ -374,12 +391,12 @@
       "OriginalItemSpec": "wwwroot/css/owl.carousel.min.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/scoreboard.css",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/ScoreboardStyle.css",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "css/scoreboard.css",
+      "RelativePath": "css/ScoreboardStyle.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -388,15 +405,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/scoreboard.css"
+      "OriginalItemSpec": "wwwroot/css/ScoreboardStyle.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/site.css",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Site.css",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/Site.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -405,15 +422,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot/css/Site.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/sportsAI.css",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/SportsAI.css",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "css/sportsAI.css",
+      "RelativePath": "css/SportsAI.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -422,24 +439,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/sportsAI.css"
-    },
-    {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/style.css",
-      "SourceId": "BlazorApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
-      "BasePath": "_content/BlazorApp",
-      "RelativePath": "css/style.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/style.css"
+      "OriginalItemSpec": "wwwroot/css/SportsAI.css"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/font/icomoon.eot",
@@ -697,12 +697,12 @@
       "OriginalItemSpec": "wwwroot/images/yahooLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/bestBets.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/AIBestBets.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/bestBets.js",
+      "RelativePath": "js/AIBestBets.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -711,15 +711,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/bestBets.js"
+      "OriginalItemSpec": "wwwroot/js/AIBestBets.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/betBoard.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/BettingOdds.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/betBoard.js",
+      "RelativePath": "js/BettingOdds.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -728,15 +728,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/betBoard.js"
+      "OriginalItemSpec": "wwwroot/js/BettingOdds.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/bootstrap.min.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/CookieManagement.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/bootstrap.min.js",
+      "RelativePath": "js/CookieManagement.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -745,15 +745,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/bootstrap.min.js"
+      "OriginalItemSpec": "wwwroot/js/CookieManagement.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/cookieInterop.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/bootstrap.min.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/cookieInterop.js",
+      "RelativePath": "js/Imports/bootstrap.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -762,15 +762,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/cookieInterop.js"
+      "OriginalItemSpec": "wwwroot/js/Imports/bootstrap.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/jquery-3.3.1.min.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/jquery-3.3.1.min.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/jquery-3.3.1.min.js",
+      "RelativePath": "js/Imports/jquery-3.3.1.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -779,15 +779,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/jquery-3.3.1.min.js"
+      "OriginalItemSpec": "wwwroot/js/Imports/jquery-3.3.1.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/jquery.sticky.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/jquery.sticky.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/jquery.sticky.js",
+      "RelativePath": "js/Imports/jquery.sticky.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -796,15 +796,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/jquery.sticky.js"
+      "OriginalItemSpec": "wwwroot/js/Imports/jquery.sticky.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/kolbysBets.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/owl.carousel.min.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/kolbysBets.js",
+      "RelativePath": "js/Imports/owl.carousel.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -813,15 +813,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/kolbysBets.js"
+      "OriginalItemSpec": "wwwroot/js/Imports/owl.carousel.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/main.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Imports/popper.min.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/main.js",
+      "RelativePath": "js/Imports/popper.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -830,15 +830,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/main.js"
+      "OriginalItemSpec": "wwwroot/js/Imports/popper.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/mlbNews.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/MLBNews.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/mlbNews.js",
+      "RelativePath": "js/MLBNews.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -847,15 +847,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/mlbNews.js"
+      "OriginalItemSpec": "wwwroot/js/MLBNews.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/nbaNews.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/NavbarManagement.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/nbaNews.js",
+      "RelativePath": "js/NavbarManagement.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -864,15 +864,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/nbaNews.js"
+      "OriginalItemSpec": "wwwroot/js/NavbarManagement.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/owl.carousel.min.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/NBANews.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/owl.carousel.min.js",
+      "RelativePath": "js/NBANews.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -881,15 +881,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/owl.carousel.min.js"
+      "OriginalItemSpec": "wwwroot/js/NBANews.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/popper.min.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/Scoreboard.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/popper.min.js",
+      "RelativePath": "js/Scoreboard.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -898,15 +898,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/popper.min.js"
+      "OriginalItemSpec": "wwwroot/js/Scoreboard.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/scoreboard.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/SportsAI.js",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/scoreboard.js",
+      "RelativePath": "js/SportsAI.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -915,24 +915,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/scoreboard.js"
-    },
-    {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/js/sportsAI.js",
-      "SourceId": "BlazorApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
-      "BasePath": "_content/BlazorApp",
-      "RelativePath": "js/sportsAI.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/sportsAI.js"
+      "OriginalItemSpec": "wwwroot/js/SportsAI.js"
     }
   ]
 }

@@ -58,7 +58,6 @@ async function showNBABets() {
   </div>
   </div>`;
 
-
   html += buildBestBetBoard(
     await getBetData(
       "https://betigolo-predictions.p.rapidapi.com/basketball/" + currentDate
@@ -87,7 +86,6 @@ async function showMLBBets() {
   <a onclick=showNFLBets() class="w3-hover-text-black">NFL</a>
   </div>
   </div>`;
-
 
   html += buildBestBetBoard(
     await getBetData(
@@ -118,7 +116,6 @@ async function showNFLBets() {
   </div>
   </div>`;
 
-
   html += buildBestBetBoard(
     await getBetData(
       "https://betigolo-predictions.p.rapidapi.com/football/" + currentDate
@@ -140,7 +137,7 @@ async function showNFLBets() {
 async function showNHLBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
-  
+
   let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
   <a onclick=showNBABets() class="w3-hover-text-black">NBA</a>
   <a onclick=showMLBBets() class="w3-hover-text-black">MLB</a>
@@ -168,9 +165,9 @@ async function showNHLBets() {
 
 function round(value) {
   let temp = Math.ceil(value * 100) / 100;
-  let returnValue = temp.toString().substring(0,4);
+  let returnValue = temp.toString().substring(0, 4);
   returnValue = returnValue * 100;
-  let newVal = returnValue.toString().substring(0,2);
+  let newVal = returnValue.toString().substring(0, 2);
   return newVal;
 }
 

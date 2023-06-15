@@ -492,7 +492,9 @@ body {
       color: #fff;
       background: #f44336; }
   
-
+    .mt-3{
+      margin-top: 1rem!important;
+    }
       @media screen and (max-width: 1200px) {
         .mobileNavToggle{
           position: fixed!important;

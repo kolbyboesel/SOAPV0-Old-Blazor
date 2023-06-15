@@ -23,9 +23,9 @@ async function getData(url) {
 }
 
 async function showNBAScores() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NBA Scores</div>`
+  html += `<div class="pageHeader containerPad">NBA Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores?daysFrom=1"
@@ -38,9 +38,9 @@ async function showNBAScores() {
 }
 
 async function showMLBScores() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">MLB Scores</div>`
+  html += `<div class="pageHeader containerPad">MLB Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores?daysFrom=1"
@@ -53,9 +53,9 @@ async function showMLBScores() {
 }
 
 async function showNFLScores() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NFL Scores</div>`
+  html += `<div class="pageHeader containerPad">NFL Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores?daysFrom=1"
@@ -68,9 +68,9 @@ async function showNFLScores() {
 }
 
 async function showNHLScores() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad"ß>NHL Scores</div>`
+  html += `<div class="pageHeader containerPad"ß>NHL Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores?daysFrom=1"
@@ -88,7 +88,7 @@ async function showLiveMLB() {
   <a onclick=showLiveNBA() class="w3-hover-text-black">NBA</a>
   <a onclick=showLiveMLB() style="color:black">MLB</a>
   <a onclick=showLiveNHL() class="w3-hover-text-black">NHL</a>
-  </div></div>`
+  </div></div>`;
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores"),
     "liveScoresContainer"
@@ -104,7 +104,7 @@ async function showLiveNBA() {
   <a onclick=showLiveNBA() class="color:black">NBA</a>
   <a onclick=showLiveMLB() style="w3-hover-text-black">MLB</a>
   <a onclick=showLiveNHL() class="w3-hover-text-black">NHL</a>
-  </div></div>`
+  </div></div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores"
@@ -122,11 +122,9 @@ async function showLiveNHL() {
   <a onclick=showLiveNBA() class="w3-hover-text-black">NBA</a>
   <a onclick=showLiveMLB() style="w3-hover-text-black">MLB</a>
   <a onclick=showLiveNHL() class="color:black">NHL</a>
-  </div></div>`
+  </div></div>`;
   html += buildScoreboard(
-    await getData(
-      "https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores"
-    ),
+    await getData("https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores"),
     "liveScoresContainer"
   );
 
@@ -140,7 +138,7 @@ async function showLiveNFL() {
   <a onclick=showLiveNBA() class="w3-hover-text-black">NBA</a>
   <a onclick=showLiveMLB() style="w3-hover-text-black">MLB</a>
   <a onclick=showLiveNHL() class="w3-hover-text-black">NHL</a>
-  </div></div>`
+  </div></div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores"
@@ -208,16 +206,16 @@ function generateScoreboard(
   containerName
 ) {
   let htmlSegment = `<div class="outer mobileScreen"><div class="scoreboard">`;
-    let gameStatus;
+  let gameStatus;
 
-    if (currentScore.completed) {
-      gameStatus = "FINAL";
-    } else {
-      gameStatus = "INP/TBD";
-    }
+  if (currentScore.completed) {
+    gameStatus = "FINAL";
+  } else {
+    gameStatus = "INP/TBD";
+  }
 
-    if (winningTeam === currentScore.away_team) {
-      htmlSegment += `<div class="header">
+  if (winningTeam === currentScore.away_team) {
+    htmlSegment += `<div class="header">
     <div class="headerDate" style="width: 75%; justify-content: left">${dateTimeValue}</div>
     <div class="headerElement" style="width: 5%; justify-content: center; margin: 10%"">${gameStatus}</div>
   </div>
@@ -229,8 +227,8 @@ function generateScoreboard(
         <div class="team">${currentScore.home_team}</div>
         <div class="score">${homeScore}</div>
       </div>`;
-    } else {
-      htmlSegment += `<div class="header">
+  } else {
+    htmlSegment += `<div class="header">
     <div class="headerDate" style="width: 75%; justify-content: left">${dateTimeValue}</div>
     <div class="headerElement" style="width: 5%; justify-content: center; margin: 10%">${gameStatus}</div>
   </div>
@@ -242,8 +240,7 @@ function generateScoreboard(
         <div class="team">${currentScore.home_team}</div>
         <div class="score">${homeScore}</div>
       </div>`;
-    }
-  
+  }
 
   htmlSegment += `</div>
   </div>`;

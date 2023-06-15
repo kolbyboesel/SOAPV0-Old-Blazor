@@ -20,46 +20,46 @@ let underOdds = 0;
 let completedDate = 0;
 
 async function showNBAOdds() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NBA Betting Odds</div>`
+  html += `<div class="pageHeader containerPad">NBA Betting Odds</div>`;
   html += buildOddsBoard(await getData(NBA_URL));
   let container = document.querySelector("." + "containerNBA");
   container.innerHTML = html;
 }
 async function showMLBOdds() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">MLB Betting Odds</div>`
+  html += `<div class="pageHeader containerPad">MLB Betting Odds</div>`;
   html += buildOddsBoard(await getData(MLB_URL));
   let container = document.querySelector("." + "containerMLB");
   container.innerHTML = html;
 }
 async function showNFLOdds() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NFL Betting Odds</div>`
+  html += `<div class="pageHeader containerPad">NFL Betting Odds</div>`;
   html += buildOddsBoard(await getData(NFL_URL));
   let container = document.querySelector("." + "containerNFL");
   container.innerHTML = html;
 }
 async function showNHLOdds() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NHL Betting Odds</div>`
+  html += `<div class="pageHeader containerPad">NHL Betting Odds</div>`;
   html += buildOddsBoard(await getData(NHL_URL));
   let container = document.querySelector("." + "containerNHL");
   container.innerHTML = html;
 }
 
-async function showAccountMLB(){
+async function showAccountMLB() {
   let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
   <a onclick=showAccountNBA() class="w3-hover-text-black">NBA</a>
   <a onclick=showAccountMLB() style="color:black">MLB</a>
   <a onclick=showAccountNHL() class="w3-hover-text-black">NHL</a>
   <a onclick=showAccountNFL() class="w3-hover-text-black">NFL</a>
   </div>
-  </div>`
+  </div>`;
 
   html += buildOddsBoard(await getData(MLB_URL));
 
@@ -67,13 +67,13 @@ async function showAccountMLB(){
   container.innerHTML = html;
 }
 
-async function showAccountNBA(){
+async function showAccountNBA() {
   let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
   <a onclick=showAccountNBA() style="color:black">NBA</a>
   <a onclick=showAccountMLB() class="w3-hover-text-black">MLB</a>
   <a onclick=showAccountNHL() class="w3-hover-text-black">NHL</a>
   <a onclick=showAccountNFL() class="w3-hover-text-black">NFL</a>
-  </div></div>`
+  </div></div>`;
 
   html += buildOddsBoard(await getData(NBA_URL));
 
@@ -81,14 +81,14 @@ async function showAccountNBA(){
   container.innerHTML = html;
 }
 
-async function showAccountNFL(){
+async function showAccountNFL() {
   let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
   <a onclick=showAccountNBA() class="w3-hover-text-black">NBA</a>
   <a onclick=showAccountMLB() class="w3-hover-text-black">MLB</a>
   <a onclick=showAccountNHL() class="w3-hover-text-black">NHL</a>
   <a onclick=showAccountNFL() style="color:black">NFL</a>
   </div>
-  </div>`
+  </div>`;
 
   html += buildOddsBoard(await getData(NFL_URL));
 
@@ -96,14 +96,14 @@ async function showAccountNFL(){
   container.innerHTML = html;
 }
 
-async function showAccountNHL(){
+async function showAccountNHL() {
   let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
   <a onclick=showAccountNBA() class="w3-hover-text-black">NBA</a>
   <a onclick=showAccountMLB() class="w3-hover-text-black">MLB</a>
   <a onclick=showAccountNHL() style="color:black">NHL</a>
   <a onclick=showAccountNFL() class="w3-hover-text-black">NFL</a>
   </div>
-  </div>`
+  </div>`;
 
   html += buildOddsBoard(await getData(NHL_URL));
 
@@ -132,7 +132,6 @@ async function showAllOdds() {
 }
 
 function buildOddsBoard(allOdds) {
-
   let html = "";
   allOdds.forEach((currentGame) => {
     setValues(currentGame);
@@ -216,7 +215,9 @@ function generateOddsBoard(currentGame) {
         <div class="betTeamElement mobileText">${
           awaySpread + "(" + awaySpreadOdds + ")"
         }</div>
-        <div class="betTeamElement mobileText">${overValue + "(" + overOdds + ")"}</div>
+        <div class="betTeamElement mobileText">${
+          overValue + "(" + overOdds + ")"
+        }</div>
         <div class="betTeamElement mobileText">${awayMoneyline}</div>
       </div>
       <div class="team lose">
@@ -224,7 +225,9 @@ function generateOddsBoard(currentGame) {
         <div class="betTeamElement mobileText">${
           homeSpread + "(" + homeSpreadOdds + ")"
         }</div>
-        <div class="betTeamElement mobileText">${underValue + "(" + underOdds + ")"}</div>
+        <div class="betTeamElement mobileText">${
+          underValue + "(" + underOdds + ")"
+        }</div>
         <div class="betTeamElement mobileText">${homeMoneyline}</div>
       </div>`;
 

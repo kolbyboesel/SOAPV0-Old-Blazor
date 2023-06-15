@@ -19,7 +19,7 @@ async function getNBANewsData(url) {
 }
 
 async function showNBANews() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   buildNBAHomepage(
     await getNBANewsData("https://nba-latest-news.p.rapidapi.com/articles"),
     "containerNBA"

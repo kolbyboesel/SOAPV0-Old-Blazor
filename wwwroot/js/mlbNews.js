@@ -19,7 +19,7 @@ async function getMLBNewsData(url) {
 }
 
 async function showMLBNews() {
-  $('body').removeClass('offcanvas-menu');
+  $("body").removeClass("offcanvas-menu");
   buildMLBHomepage(
     await getMLBNewsData(
       "https://api.sportsdata.io/v3/mlb/scores/json/News?key=cfd056f739b1468db12353517381ca4d"
