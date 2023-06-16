@@ -36,30 +36,30 @@
         </div>
       <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw; overflow:auto">
         <ul class="site-nav-wrap">
-          <li><a href="#" class="nav-link active Home">Home</a></li>
+          <li><a @onclick=renderHome href="" class="nav-link active">Home</a></li>
               <br>
-              <li><a href="#" class="LiveScores">Live Scores</a></li>
-              <li><a href="#" class="BettingOdds">Betting Odds</a></li>
+              <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+              <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
               <li class="has-children">
                 <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
-                <a href="#">Sports</a>
+                <a href="">Sports</a>
                 <ul class="dropdown">
-                  <li><a href="#" class="MLB">MLB</a></li>
-                  <li><a href="#" class="NFL">NFL</a></li>
-                  <li><a href="#" class="NBA">NBA</a></li>
-                  <li><a href="#" class="NHL">NHL</a></li>
+                  <li><a @onclick=renderMLB href="" >MLB</a></li>
+                  <li><a @onclick=renderNFL href="" >NFL</a></li>
+                  <li><a @onclick=renderNBA href="" >NBA</a></li>
+                  <li><a @onclick=renderNHL href="" >NHL</a></li>
                   </ul>
               </li>
-              <li><a class="Contact" href="#">Contact</a></li>
+              <li><a @onclick=renderContact href="">Contact</a></li>
               @if (cookieValue == "true")
               {
               <li><a href="Signout">Sign Out</a></li>
-              <li><a class="AccountHome" href="#">Account Hub</a></li>
+              <li><a @onclick=renderAccount href="">Account Hub</a></li>
               }
               else
               {
-              <li><a class="Signup" href="#">Sign Up</a></li>
-              <li><a class="Login" href="#">Log In</a></li>
+              <li><a @onclick=showSignupModal href="">Sign Up</a></li>
+              <li><a @onclick=renderLogin href="">Log In</a></li>
               }
         </ul>
       </div>
@@ -69,32 +69,32 @@
     <header class="site-navbar mt-3" style="position:fixed;z-index:1">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="/"><img src="/images/logo_transparent.png" style="height: 6vh"></a></div>
+          <div class="site-logo col-6"><a @onclick=renderHome href=""><img src="/images/logo_transparent.png" style="height: 6vh"></a></div>
 
           <nav class="mx-auto site-navigation" style="width:auto!important">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="/" class="nav-link active">Home</a></li>
-              <li><a href="/LiveScores">Live Scores</a></li>
-              <li><a href="/AllBetOdds">Betting Odds</a></li>
+              <li><a @onclick=renderHome href="" class="nav-link active">Home</a></li>
+              <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+              <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
               <li class="has-children">
                 <a>Sports</a>
                 <ul class="dropdown">
-                  <li><a href="/MLB">MLB</a></li>
-                  <li><a href="/NFL">NFL</a></li>
-                  <li><a href="/NBA">NBA</a></li>
-                  <li><a href="/NHL">NHL</a></li>
+                  <li><a @onclick=renderMLB href="">MLB</a></li>
+                  <li><a @onclick=renderNFL href="">NFL</a></li>
+                  <li><a @onclick=renderNBA href="">NBA</a></li>
+                  <li><a @onclick=renderNHL href="">NHL</a></li>
                   </ul>
               </li>
-              <li><a href="/Contact">Contact</a></li>
+              <li><a @onclick=renderContact>Contact</a></li>
               @if (cookieValue == "true")
               {
               <li class="d-lg-none"><a href="/Signout">Sign Out</a></li>
-              <li class="d-lg-none"><a href="/AccountHome">Account Hub</a></li>
+              <li class="d-lg-none"><a @onclick=renderAccount href="">Account Hub</a></li>
               }
               else
               {
-              <li class="d-lg-none"><a href="/Signup">Sign Up</a></li>
-              <li class="d-lg-none"><a href="/Login">Log In</a></li>
+              <li class="d-lg-none"><a @onclick=showSignupModal href="">Sign Up</a></li>
+              <li class="d-lg-none"><a @onclick=renderLogin href="">Log In</a></li>
               }
             </ul>
           </nav>
@@ -104,12 +104,12 @@
               @if (cookieValue == "true")
               {
               <a href="/Signout" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Out</a>
-              <a href="/AccountHome" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Account Hub</a>
+              <a @onclick=renderAccount href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Account Hub</a>
               }
               else
               {
-              <a href="/Signup" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Up</a>
-              <a href="/Login" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a @onclick=showSignupModal href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Up</a>
+              <a @onclick=renderLogin href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
               }
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileNavToggle">Menu</a>
@@ -125,5 +125,62 @@
   protected override async Task OnInitializedAsync()
     {
     cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+  }
+
+  public async Task showSignupModal()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSignupModal", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderMLB()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showMLB", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderNBA()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showNBA", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderNFL()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showNFL", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderNHL()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showNHL", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLogin()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLogin", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderContact()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showContact", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderAccount()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showAccount", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderBettingOdds()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showBettingOdds", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLiveScores()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLiveScores", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderHome()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
   }
 }

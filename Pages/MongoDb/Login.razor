@@ -36,7 +36,7 @@
     </div>
 
     <div class="container" style="background-color:white; border-radius:10px">
-      <a type="button" href="/" class="cancelbtn" style="border-radius:5px">Cancel</a>
+      <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </EditForm>
@@ -47,9 +47,10 @@
 
 @code{
 
-  public void showLogin()
+   public async Task CancelPressed()
   {
-
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "cancelPressed", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
   }
   private string ErrorMessage { get; set; }
 

@@ -1,4 +1,4 @@
-﻿@page "/"
+﻿@page "/Index"
 @inject IJSRuntime JSRuntime
 @inject IHttpContextAccessor HttpContextAccessor
 @inject NavigationManager NavigationManager
@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/MainStyle.css" asp-append-version="true" />
   <link rel="stylesheet" href="/css/ModalElements.css" asp-append-version="true" />
 </head>
+
 <style>
   .mainHeader{
     color: white;
@@ -24,8 +25,6 @@
     }
   }
 </style>
-
-<body>
 <header class="w3-container w3-center mobileMainPadding" style="height: 25%; padding-top: 20vh; width: 100%; position:absolute">
   <h1 class="mainHeader">
     Daily Sports Scores
@@ -36,21 +35,16 @@
 </header>
 
 <div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-    </div >
-</body>
-@code
-{
-  
-}
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div >

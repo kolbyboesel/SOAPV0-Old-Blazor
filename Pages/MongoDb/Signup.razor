@@ -42,7 +42,7 @@
         <button type="submit" style="border-radius:5px">Sign Up</button>
 
         <div class="container" style="padding-left: 0">
-          <a type="button" href="/" class="cancelbtn" style="border-radius:5px">Cancel</a>
+          <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
         </div>
        </div>
   </EditForm>
@@ -51,6 +51,11 @@
 </body>
 @code
 {
+  public async Task CancelPressed()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "cancelPressed", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
   private IMongoCollection<User> _newUser;
 
   public class User

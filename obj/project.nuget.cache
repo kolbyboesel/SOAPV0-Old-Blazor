@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9TpX4Xn7AIqYXVnEwZwM2E1aiAdV5N03wS+DlrOmCcY4I0LQR8dz6c1TJlkYsTIzC/2l9r940uWDMElIrYtXLg==",
+  "dgSpecHash": "wSkUmvlr90rwWv3/XSCTPFK+mMH/YWbbYouM48BZKx78Eiy3JaYC+DBjrJ6cW+Rw114WHpC7+jZB0in0Cs1COg==",
   "success": true,
   "projectFilePath": "/Users/kolbyboesel/Desktop/SportScores/BlazorApp.csproj",
   "expectedPackageFiles": [
@@ -24,10 +24,7 @@
     "/Users/kolbyboesel/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/Users/kolbyboesel/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/kolbyboesel/.nuget/packages/system.text.json/7.0.2/system.text.json.7.0.2.nupkg.sha512",
-    "/Users/kolbyboesel/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512",
-    "/Users/kolbyboesel/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.15/microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512",
-    "/Users/kolbyboesel/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.15/microsoft.netcore.app.host.osx-arm64.6.0.15.nupkg.sha512",
-    "/Users/kolbyboesel/.nuget/packages/microsoft.netcore.app.ref/6.0.15/microsoft.netcore.app.ref.6.0.15.nupkg.sha512"
+    "/Users/kolbyboesel/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512"
   ],
   "logs": []
 }

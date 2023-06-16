@@ -17,8 +17,8 @@
 
 @@media screen and (min-width: 992px) {
         .largeScreenAdjust {
-          width:80%;
-          margin-left: 10%;
+          width:70%;
+          margin-left: 15%;
         }
       }
 </style>
@@ -34,13 +34,19 @@
 <div class="largeScreenAdjust" id="paypal-button-container-P-6TS59700HA1617635MRDVNHY"></div>
     </div>
     <div class="container">
-      <a type="button" href="/" class="cancelbtn" style="border-radius:5px">Cancel</a>
+      <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
     </div>
   </div>
 </div>
 
 @code
 {
+
+  public async Task CancelPressed()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "cancelPressed", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
   private string innerHtmlValue = "";
 
   protected override async Task OnAfterRenderAsync(bool firstRender)

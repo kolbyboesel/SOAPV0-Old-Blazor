@@ -63,6 +63,7 @@ protected override async Task OnAfterRenderAsync(bool firstRender)
         await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "Yes", null, null, null, null);
         await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "true", null, null, null, null);
 
-        NavigationManager.NavigateTo("/AccountHome",forceLoad:true);
+        await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showAccount", "true", null, null, null, null);
+        NavigationManager.NavigateTo("/",forceLoad:true);
   }
 }

@@ -5,6 +5,66 @@
       "PackagePath": "staticwebassets/BlazorApp.bundle.scp.css"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/AIBestBets.css",
+      "PackagePath": "staticwebassets/css/AIBestBets.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/AccountHome.css",
+      "PackagePath": "staticwebassets/css/AccountHome.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/BettingOdds.css",
+      "PackagePath": "staticwebassets/css/BettingOdds.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/Imports/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/Imports/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic/README.md"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic/font/fonts/open-iconic.eot"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic/font/fonts/open-iconic.ttf"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/Imports/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Imports/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/css/Imports/owl.carousel.min.css"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/MainStyle.css",
       "PackagePath": "staticwebassets/css/MainStyle.css"
     },
@@ -27,74 +87,6 @@
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/SportsAI.css",
       "PackagePath": "staticwebassets/css/SportsAI.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/account.css",
-      "PackagePath": "staticwebassets/css/account.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/bestBet.css",
-      "PackagePath": "staticwebassets/css/bestBet.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/betBoard.css",
-      "PackagePath": "staticwebassets/css/betBoard.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/bootstrap/bootstrap.min.css",
-      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/bootstrap/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/contact.css",
-      "PackagePath": "staticwebassets/css/contact.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/kolbyPicks.css",
-      "PackagePath": "staticwebassets/css/kolbyPicks.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/FONT-LICENSE",
-      "PackagePath": "staticwebassets/css/open-iconic"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/ICON-LICENSE",
-      "PackagePath": "staticwebassets/css/open-iconic"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/README.md",
-      "PackagePath": "staticwebassets/css/open-iconic/README.md"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
-      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
-      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
-      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
-      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
-      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
-      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/owl.carousel.min.css",
-      "PackagePath": "staticwebassets/css/owl.carousel.min.css"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/font/icomoon.eot",

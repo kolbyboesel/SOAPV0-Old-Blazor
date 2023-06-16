@@ -1,7 +1,7 @@
 @page "/NHL"
 @inject IHttpContextAccessor HttpContextAccessor
 @inject IJSRuntime JSRuntime
-
+@inject NavigationManager NavigationManager
 
 <PageTitle>NHL</PageTitle>
 
@@ -21,18 +21,18 @@
         </div>
       <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw;overflow:auto">
         <ul class="site-nav-wrap">
-              <li><a class="Home" href="#">Home</a></li>
-              <li><a class="LiveScores" href="#">Live Scores</a></li>
-              <li><a class="BettingOdds" href="#">Betting Odds</a></li>
+              <li><a @onclick=renderHome href="">Home</a></li>
+              <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+              <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
               <li><a onclick=showNHLScores()>NHL Scores</a></li>
               <li><a onclick=showNHLOdds()>NHL Betting Odds</a></li>
               @if (cookieValue == "true")
               {
               <li><a href="/Signout">Sign Out</a></li>
-              <li><a class="AccountHome" href="#">Account Hub</a></li>
+              <li><a @onclick=renderAccount href="">Account Hub</a></li>
               } else {
-                <li><a class="Signup" href="#">Sign Up</a></li>
-                <li><a class="Login" href="#">Login</a></li>
+                <li><a @onclick=showSignupModal href="">Sign Up</a></li>
+                <li><a @onclick=renderLogin href="">Login</a></li>
               }
         </ul>
       </div>
@@ -77,5 +77,39 @@
         innerHtmlValue = "";
         await JSRuntime.InvokeVoidAsync("showNHLScores");
     }
+
+    public async Task showSignupModal()
+    {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSignupModal", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+    }
+
+  public async Task renderLogin()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLogin", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderAccount()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showAccount", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderBettingOdds()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showBettingOdds", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLiveScores()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLiveScores", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderHome()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
 
 }

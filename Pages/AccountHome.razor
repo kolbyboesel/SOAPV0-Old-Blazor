@@ -54,16 +54,16 @@
         </div>
       <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw;overflow:auto">
         <ul class="site-nav-wrap">
-          <li><a href="#" class="Home">Home</a></li>
-          <li><a href="#" class="LiveScores">Live Scores</a></li>
-          <li><a href="#" class="BettingOdds">Betting Odds</a></li>
-          <li><a href="#" class="AccountHome">AI Best Bets</a></li>
+          <li><a @onclick=renderHome href="">Home</a></li>
+          <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+          <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
+          <li><a @onclick=renderAccount href="">AI Best Bets</a></li>
               <li class="has-children">
                 <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false"></span>
                 <a>Manage Account</a>
                 <ul class="dropdown">
-                  <li><a class="ChangeEmail" href="#">Update Email</a></li>
-                  <li><a class="ChangePsw" href="#">Change Password</a></li>
+                  <li><a @onclick=renderChangeEmail href="">Update Email</a></li>
+                  <li><a @onclick=renderChangePsw href="">Change Password</a></li>
                   </ul>
               </li>
               <li><a href="/Signout">Sign Out</a></li>
@@ -81,9 +81,9 @@
               <li class="has-children" style="position:relative;top:2rem;left:50%">
                 <a class="nav-link active">Account Hub</a>
                 <ul class="dropdown">
-                  <li><a href="/AccountHome">AI Best Bets</a></li>
-                  <li><a href="/ChangeEmail">Update Email</a></li>
-                  <li><a href="/ChangePsw">Change Password</a></li>
+                  <li><a @onclick=renderAccount href="">AI Best Bets</a></li>
+                  <li><a @onclick=renderChangeEmail href="">Update Email</a></li>
+                  <li><a @onclick=renderChangePsw href="">Change Password</a></li>
                   </ul>
               </li>
             </ul>
@@ -149,4 +149,51 @@
               }
 
             }
+
+
+    public async Task showSignupModal()
+    {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSignupModal", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+    }
+
+  public async Task renderLogin()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLogin", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderAccount()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showAccount", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderBettingOdds()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showBettingOdds", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLiveScores()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLiveScores", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderHome()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderChangePsw()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showChangePsw", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderChangeEmail()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showChangeEmail", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
 }
