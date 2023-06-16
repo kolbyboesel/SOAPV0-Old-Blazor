@@ -24,7 +24,7 @@
   <!-- Modal Content -->
   
       <!-- Put error message here -->
-  <EditForm Model="@formData" OnValidSubmit="HandleFormSubmit" style="border: none; height:82%" class="modal-content animate mobileScreen">
+  <EditForm Model="@formData" OnValidSubmit="HandleFormSubmit" style="border: none; height:82%;" class="modal-content animate mobileScreen">
     <div class="container">
       <label for="uname"><b>Username</b></label>
       <InputText @bind-Value="@formData.Email" type="text" class="form-control" placeholder="Enter Username" id="uname" name="uname" required></InputText>

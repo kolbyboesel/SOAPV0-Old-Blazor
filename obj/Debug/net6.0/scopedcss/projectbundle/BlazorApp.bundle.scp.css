@@ -35,7 +35,6 @@ body[b-3ij3p7wwc4] {
     color: black;
     width:100%;
     margin:auto;
-    padding-left:5%;
     padding-bottom:15px;
   }
   
@@ -662,8 +661,6 @@ body[b-wk4bcz64v1] {
           background-color: #f44336;
           border-width: 1px!important;
           border-color: #f44336!important;
-          border-top-left-radius: 20px!important;
-          border-top-right-radius: 20px!important;
           font-size: 20px!important;
           color: white!important;
           opacity: 75%;
@@ -687,8 +684,6 @@ body[b-wk4bcz64v1] {
           background-color: #f44336;
           border-width: 1px!important;
           border-color: #f44336!important;
-          border-top-left-radius: 20px!important;
-          border-top-right-radius: 20px!important;
           font-size: 20px!important;
           color: white;
           z-index: 1000;

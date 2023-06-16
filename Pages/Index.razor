@@ -14,6 +14,14 @@
 </head>
 
 <style>
+  .leftInfoBox{
+    width: 50%;
+    float: left;
+  }
+  .rightInfoBox{
+    width: 50%;
+    float: right;
+  }
   .mainHeader{
     color: white;
     font-weight: bold;
@@ -40,6 +48,12 @@
     }
     .imgStyle{
     height:15vh!important
+  }
+  .leftInfoBox{
+    width: 100%;
+  }
+  .rightInfoBox{
+    width: 100%;
   }
   }
   .mobileHomePage{
@@ -120,20 +134,38 @@ body, html {
   </div>
 </div>
 
-@*
+
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+  <h3 class="w3-center" style="color: white!important;">WELCOME TO SPORT SCORES!</h3>
+  <div style="width: 100%;height:fit-content;display:inline-block">
+    <div class="leftInfoBox">
+      <h4 class="w3-center" style="color: white!important;"><em>ABOUT</em></h4>
+      <p style="color: white!important;">Thank you for visiting sportscorespro.com! This website is your hub for sport scores, betting odds, and current news.
+        The currently supported sports are MLB, NFL, NBA, and NHL. A variety of new sports are being added and will be available soon, including College Football,
+        College Basketball, as well as Soccer, including all Europe's top 5 leagues (Ligue 1, Premier League, Serie A, LaLiga, and Bundesliga). Please contact me through
+        the contact page with any bugs noticed, or suggestions for improvements.
+        
+      </p>
     </div>
-
+    <div class="rightInfoBox">
+      <img>
+    </div>
+  </div>
+  <div style="width: 100%;height:fit-content;display:inline-block">
+    <div class="leftInfoBox">
+      <img>
+    </div>
+    <div class="rightInfoBox">
+      <h4 class="w3-center" style="color: white!important;"><em>ACCOUNT BENEFITS</em></h4>
+      <p style="color: white!important;">Tired of losing money sports betting? At sportscorespro.com, we offer a $5 monthly subscription which includes a variety of best 
+        bets for every game. Currently, only MLB, NFL, NBA, and NHL Moneyline and Over predications are supported, but compatibility with all sports from above are being added. 
+        An example pick can be seen on the left, it includes a percentage for both teams to win, as well as percentages for a variety of Over values. The probabilities are calculated by comparing
+        sportsbook odds to data-driven odds for each game. As a result, you're given the greatest +EV betting opportunities. In sports betting, expected value (EV) is a way to measure the probability gap between a bettor’s expectations and the sportsbook’s</p>
+    </div>
+  </div>
+</div>
+@*
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
