@@ -19,6 +19,9 @@
     .mobileHeight {
         height:90px!important;
     }
+    .navDivider{
+      display: none!important;
+    }
     }
 
     .navBarContainer{
@@ -27,6 +30,14 @@
       background-color:#dbb5b2;
       position: fixed;
       z-index: 1;
+    }
+    .navDivider{
+      height: 60px;
+      width: 92%;
+      position: absolute;
+      border-bottom: white;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
     }
 
 </style>
@@ -98,7 +109,7 @@
               }
             </ul>
           </nav>
-          
+          <div class="navDivider"></div>
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto" style="margin-left:auto!important">
               @if (cookieValue == "true")
