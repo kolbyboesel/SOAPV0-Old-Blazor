@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4zfWW4/hu8Y8Bybfu5Tc1SlwyoM38W9VtTfr7olJ0Ik=",
+  "Hash": "gvu4tI2YMUm/mgAx6vnWYnvLKpmypbtR0AxA6ESFvd8=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -593,6 +593,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/nbaLogo.png"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/newBackground.jpg",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "images/newBackground.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/newBackground.jpg"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nflLogo.png",

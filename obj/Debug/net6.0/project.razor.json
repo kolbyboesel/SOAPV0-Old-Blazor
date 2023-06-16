@@ -568,43 +568,6 @@
         }
       },
       {
-        "HashCode": -1390498090,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.HostPage",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "HostPage"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.HostPage",
-          "Common.TypeNameIdentifier": "HostPage",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -181658182,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.HostPage",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.HostPage"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.HostPage",
-          "Common.TypeNameIdentifier": "HostPage",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -1369753325,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Payment",

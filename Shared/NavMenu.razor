@@ -22,7 +22,7 @@
     }
 
     .navBarContainer{
-      height: 60px;
+      height: 70px;
       width: 100vw;
       background-color: #4e54c8;
       position: fixed;
@@ -65,11 +65,11 @@
       </div>
     </div> <!-- .site-mobile-menu -->
     <!-- NAVBAR -->
-    <div class="navBarContainer mobileHeight">
+    <div class="navBarContainer mobileHeight mobileHomePage">
     <header class="site-navbar mt-3" style="position:fixed;z-index:1">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="site-logo col-6"><a @onclick=renderHome href=""><img src="/images/logo_transparent.png" style="height: 6vh"></a></div>
+          <div class="site-logo col-6 hideHome"><a @onclick=renderHome href=""><img src="/images/logo_transparent.png" style="height: 6vh"></a></div>
 
           <nav class="mx-auto site-navigation" style="width:auto!important">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
@@ -117,7 +117,6 @@
 
         </div>
       </div>
-      <div class="mobileDivider showIndex" style="border-bottom:white; border-bottom-width: 1px; border-bottom-style:solid; height:40px; width:94%; margin-left:3%; display:none"></div>
     </header>
   </div>
 @code {

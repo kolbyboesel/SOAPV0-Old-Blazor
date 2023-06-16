@@ -470,12 +470,12 @@ body {
   
   .btn.btn-primary {
     color: white;
-    background: #8f94fb;
-    border-color: #8f94fb; }
+    background: #f44336;
+    border-color: #f44336; }
     .btn.btn-primary:hover {
       background: white;
       border-color: white; 
-      color:#4e54c8;}
+      color:#ffaba5;}
   
   .btn.btn-outline-white {
     background: transparent;
@@ -499,49 +499,52 @@ body {
         .mobileNavToggle{
           position: fixed!important;
           bottom:0!important;
-          height:6%!important;
+          height:6vh!important;
           padding-top: 25px!important;
           margin-left: 0px!important;
-          width: 100%!important;
+          width: 100vw!important;
           text-align: center!important;
           left: 0!important;
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          background-color: #8f94fb;
+          background-color: #f44336;
           border-width: 1px!important;
-          border-color: #8f94fb!important;
+          border-color: #f44336!important;
           border-top-left-radius: 20px!important;
           border-top-right-radius: 20px!important;
           font-size: 20px!important;
           color: white!important;
+          opacity: 75%;
         }
 
         .mobileNavToggle:hover{
-          background-color: white!important;
-          color:#4e54c8!important;
+          background-color: #ffaba5!important;
+          color:white!important;
         }
 
         .mobileNavClose{
-          position: absolute!important;
+          position: fixed!important;
           bottom:0!important;
-          height:6%!important;
+          height:6vh!important;
           padding-top: 10px!important;
           margin-left: 0px!important;
-          width: 100%!important;
+          width: 100vw!important;
           text-align: center!important;
           left: 0!important;
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          background-color: #8f94fb;
+          background-color: #f44336;
           border-width: 1px!important;
-          border-color: #8f94fb!important;
+          border-color: #f44336!important;
           border-top-left-radius: 20px!important;
           border-top-right-radius: 20px!important;
           font-size: 20px!important;
           color: white;
           z-index: 1000;
+          opacity: 75%;
+
         }
 
         .mobileNavClose:hover{
-          background-color: #4e54c8!important;
+          background-color: #ffaba5!important;
           color:white!important;
         }
       }

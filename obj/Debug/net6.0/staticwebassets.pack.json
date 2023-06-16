@@ -133,6 +133,10 @@
       "PackagePath": "staticwebassets/images/nbaLogo.png"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/newBackground.jpg",
+      "PackagePath": "staticwebassets/images/newBackground.jpg"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nflLogo.png",
       "PackagePath": "staticwebassets/images/nflLogo.png"
     },
