@@ -113,12 +113,28 @@
       "PackagePath": "staticwebassets/images/brLogo.png"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/bundesligaLogo.png",
+      "PackagePath": "staticwebassets/images/bundesligaLogo.png"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/espnLogo.png",
       "PackagePath": "staticwebassets/images/espnLogo.png"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/favicon.png",
       "PackagePath": "staticwebassets/images/favicon.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/homeImage.jpeg",
+      "PackagePath": "staticwebassets/images/homeImage.jpeg"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/laligaLogo.png",
+      "PackagePath": "staticwebassets/images/laligaLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/ligue1Logo.png",
+      "PackagePath": "staticwebassets/images/ligue1Logo.png"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/logo_transparent.png",
@@ -129,8 +145,16 @@
       "PackagePath": "staticwebassets/images/mlbLogo.png"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/mlsLogo.png",
+      "PackagePath": "staticwebassets/images/mlsLogo.png"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nbaLogo.png",
       "PackagePath": "staticwebassets/images/nbaLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/ncaaLogo.png",
+      "PackagePath": "staticwebassets/images/ncaaLogo.png"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/newBackground.jpg",
@@ -143,6 +167,18 @@
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nhlLogo.png",
       "PackagePath": "staticwebassets/images/nhlLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/premLogo.png",
+      "PackagePath": "staticwebassets/images/premLogo.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/proExample.png",
+      "PackagePath": "staticwebassets/images/proExample.png"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/serieALogo.png",
+      "PackagePath": "staticwebassets/images/serieALogo.png"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/slamLogo.png",

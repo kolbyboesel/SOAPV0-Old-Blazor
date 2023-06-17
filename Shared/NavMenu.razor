@@ -59,6 +59,15 @@
                   <li><a @onclick=renderNFL href="" >NFL</a></li>
                   <li><a @onclick=renderNBA href="" >NBA</a></li>
                   <li><a @onclick=renderNHL href="" >NHL</a></li>
+                  <li><a @onclick=renderCBaseball href="">College Baseball</a></li>
+                  <li><a @onclick=renderCFB href="">College Football</a></li>
+                  <li><a @onclick=renderCBB href="">College Basketball</a></li>
+                  <li><a @onclick=renderLeague1 href="">Ligue 1</a></li>
+                  <li><a @onclick=renderSerieA href="">Serie A</a></li>
+                  <li><a @onclick=renderLaLiga href="">LaLiga</a></li>
+                  <li><a @onclick=renderPrem href="">Premier League</a></li>
+                  <li><a @onclick=renderBundesliga href="">Bundesliga</a></li>
+                  <li><a @onclick=renderMLS href="">MLS</a></li>
                   </ul>
               </li>
               <li><a @onclick=renderContact href="">Contact</a></li>
@@ -94,6 +103,16 @@
                   <li><a @onclick=renderNFL href="">NFL</a></li>
                   <li><a @onclick=renderNBA href="">NBA</a></li>
                   <li><a @onclick=renderNHL href="">NHL</a></li>
+                  <li><a @onclick=renderCBaseball href="">College Baseball</a></li>
+                  <li><a @onclick=renderCFB href="">College Football</a></li>
+                  <li><a @onclick=renderCBB href="">College Basketball</a></li>
+                  <li><a @onclick=renderLeague1 href="">Ligue 1</a></li>
+                  <li><a @onclick=renderSerieA href="">Serie A</a></li>
+                  <li><a @onclick=renderLaLiga href="">LaLiga</a></li>
+                  <li><a @onclick=renderPrem href="">Premier League</a></li>
+                  <li><a @onclick=renderBundesliga href="">Bundesliga</a></li>
+                  <li><a @onclick=renderMLS href="">MLS</a></li>
+
                   </ul>
               </li>
               <li><a @onclick=renderContact>Contact</a></li>
@@ -191,6 +210,51 @@
   public async Task renderHome()
   {
     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderCBaseball()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showCBaseball", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderCFB()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showCFB", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderCBB()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showCBB", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLeague1()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLeague1", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderSerieA()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSerieA", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLaLiga()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLaLiga", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderPrem()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showPrem", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderBundesliga()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showBundesliga", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderMLS()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showMLS", "true", null, null, null, null);
     NavigationManager.NavigateTo("/",forceLoad:true);
   }
 }

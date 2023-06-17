@@ -66,11 +66,146 @@ async function showNFLScores() {
   let container = document.querySelector("." + "containerNFL");
   container.innerHTML = html;
 }
+ 
+async function showCFBScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">College Football Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/americanfootball_ncaaf/scores?daysFrom=1"
+    ),
+    "containeCFB"
+  );
+
+  let container = document.querySelector("." + "containeCFB");
+  container.innerHTML = html;
+}
+
+async function showCollegeBaseballScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">College Baseball Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/baseball_ncaa/scores?daysFrom=1"
+    ),
+    "containerCBaseball"
+  );
+
+  let container = document.querySelector("." + "containerCBaseball");
+  container.innerHTML = html;
+}
+
+async function showCBBScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">College Basketball Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/basketball_ncaab/scores?daysFrom=1"
+    ),
+    "containerNCAAB"
+  );
+
+  let container = document.querySelector("." + "containerNCAAB");
+  container.innerHTML = html;
+}
+
+async function showPremScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">Premier League Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/soccer_epl/scores?daysFrom=1"
+    ),
+    "containerPrem"
+  );
+
+  let container = document.querySelector("." + "containerPrem");
+  container.innerHTML = html;
+}
+
+async function showLigue1Scores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">Ligue 1 Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/soccer_france_ligue_one/scores?daysFrom=1"
+    ),
+    "containerLigue1"
+  );
+
+  let container = document.querySelector("." + "containerLigue1");
+  container.innerHTML = html;
+}
+
+async function showBundesligaScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">Bundesliga Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/soccer_germany_bundesliga/scores?daysFrom=1"
+    ),
+    "containerNFL"
+  );
+
+  let container = document.querySelector("." + "containerBundesliga");
+  container.innerHTML = html;
+}
+
+async function showSerieAScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">Serie A Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/soccer_italy_serie_a/scores?daysFrom=1"
+    ),
+    "containerSerieA"
+  );
+
+  let container = document.querySelector("." + "containerSerieA");
+  container.innerHTML = html;
+}
+
+async function showLaligaScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">LaLiga Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/soccer_spain_la_liga/scores?daysFrom=1"
+    ),
+    "containerLaLiga"
+  );
+
+  let container = document.querySelector("." + "containerLaLiga");
+  container.innerHTML = html;
+}
+
+async function showMLSScores() {
+  $("body").removeClass("offcanvas-menu");
+  let html = "";
+  html += `<div class="pageHeader containerPad">MLS Scores</div>`;
+  html += buildScoreboard(
+    await getData(
+      "https://odds.p.rapidapi.com/v4/sports/soccer_usa_mls/scores?daysFrom=1"
+    ),
+    "containerMLS"
+  );
+
+  let container = document.querySelector("." + "containerMLS");
+  container.innerHTML = html;
+}
 
 async function showNHLScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad"ß>NHL Scores</div>`;
+  html += `<div class="pageHeader containerPad">NHL Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores?daysFrom=1"

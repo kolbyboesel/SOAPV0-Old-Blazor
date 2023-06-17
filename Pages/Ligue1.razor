@@ -1,0 +1,119 @@
+@page "/Ligue1"
+@inject IJSRuntime JSRuntime
+@inject IHttpContextAccessor HttpContextAccessor
+@inject NavigationManager NavigationManager
+
+<PageTitle>Ligue 1</PageTitle>
+
+<head>
+    <link rel="stylesheet" href="/css/BettingOdds.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/ScoreboardStyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/NewsStyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/AIBestBets.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/MainStyle.css" asp-append-version="true" />
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="headerImage mobileSetting mobilePadding"><img src="/images/ligue1Logo.png" style="height: 6vh;"></div>
+<div class="site-mobile-menu site-navbar-target" style="width: 100%;height:100%">
+        <div class="site-mobile-menu-close js-menu-toggle mt-3 mobileNavClose">
+          Close
+        </div>
+      <div class="site-mobile-menu-body" style="position: fixed; height:fit-content; bottom:0; text-align:center;width:100vw;overflow:auto">
+        <ul class="site-nav-wrap">
+              <li><a @onclick=renderHome href="">Home</a></li>
+              <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+              <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
+              <li><a onclick=showLigue1Scores()>Ligue 1 Scores</a></li>
+              <li><a onclick=showLigue1Odds()>Ligue 1 Betting Odds</a></li>
+              @if (cookieValue == "true")
+              {
+              <li><a href="/Signout">Sign Out</a></li>
+              <li><a @onclick=renderAccount href="">Account Hub</a></li>
+              } else {
+                <li><a @onclick=showSignupModal href="">Sign Up</a></li>
+                <li><a @onclick=renderLogin href="">Login</a></li>
+              }
+        </ul>
+      </div>
+    </div> <!-- .site-mobile-menu -->
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3" style="top:1rem!important">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6" style="width: 40%;"></div>
+
+          <nav class="mx-auto site-navigation" style="width:auto!important; left:15%; ">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li class="has-children" style="position:relative;top:2rem;left:50%">
+                <a class="nav-link active"><img src="/images/ligue1Logo.png" style="height: 6vh;"></a>
+                <ul class="dropdown">
+                  <li><a onclick=showLigue1Scores()>Ligue 1 Scores</a></li>
+                  <li><a onclick=showLigue1Odds()>Ligue 1 Betting Odds</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="center-cta-menu text-center d-flex aligin-items-center col-6">
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileNavToggle" style="margin-top: 0!important;">Menu</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <div class="containerLigue1 largeScreenContainer"></div>
+
+</body>
+
+@code {
+
+  string cookieValue = "";
+  protected override async Task OnInitializedAsync()
+  {
+        cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+  }
+  private string innerHtmlValue = "";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        innerHtmlValue = "";
+        await JSRuntime.InvokeVoidAsync("showLigue1Scores");
+    }
+
+
+    public async Task showSignupModal()
+    {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSignupModal", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+    }
+
+  public async Task renderLogin()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLogin", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderAccount()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showAccount", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderBettingOdds()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showBettingOdds", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLiveScores()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLiveScores", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderHome()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+}
