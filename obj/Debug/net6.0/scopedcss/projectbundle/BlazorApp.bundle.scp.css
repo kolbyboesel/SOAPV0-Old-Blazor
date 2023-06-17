@@ -514,7 +514,6 @@ body[b-wk4bcz64v1] {
           .site-mobile-menu .site-nav-wrap > li > ul > li[b-wk4bcz64v1] {
             display: block; }
             .site-mobile-menu .site-nav-wrap > li > ul > li > a[b-wk4bcz64v1] {
-              padding-left: 40px;
               font-size: 16px; }
             .site-mobile-menu .site-nav-wrap > li > ul > li > ul[b-wk4bcz64v1] {
               padding: 0;
@@ -523,8 +522,7 @@ body[b-wk4bcz64v1] {
                 display: block; }
                 .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li > a[b-wk4bcz64v1] {
                   font-size: 16px;
-                  padding-left: 60px; }
-      .site-mobile-menu .site-nav-wrap[data-class="social"][b-wk4bcz64v1] {
+      .site-mobile-menu .site-nav-wrap[data-class="social"] {
         float: left;
         width: 100%;
         margin-top: 30px;

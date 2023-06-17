@@ -362,7 +362,6 @@ body {
           .site-mobile-menu .site-nav-wrap > li > ul > li {
             display: block; }
             .site-mobile-menu .site-nav-wrap > li > ul > li > a {
-              padding-left: 40px;
               font-size: 16px; }
             .site-mobile-menu .site-nav-wrap > li > ul > li > ul {
               padding: 0;
@@ -371,7 +370,6 @@ body {
                 display: block; }
                 .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li > a {
                   font-size: 16px;
-                  padding-left: 60px; }
       .site-mobile-menu .site-nav-wrap[data-class="social"] {
         float: left;
         width: 100%;
