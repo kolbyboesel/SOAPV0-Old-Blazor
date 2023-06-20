@@ -9,9 +9,21 @@
   font-size: 3vh;
 }
 
+.footer-style{
+  background-color: #f44336;
+  opacity: 75%;
+  position: absolute;
+  width: 100%;
+}
+
 @media screen and (max-width: 766px) {
   .containerPad {
-    padding-top: 105px !important;
+    padding-top: 110px !important;
+  }
+
+  .xs-padding{
+    padding-left: 30px!important;
+    padding-right: 30px!important;
   }
 }
 
@@ -28,9 +40,9 @@
 }
 
 .headerImage {
+  display: none!important;
   padding-top: 4vh;
   width: 100% !important;
-  left: 5%;
   position: fixed;
   text-align: center;
   align-content: center;
@@ -39,6 +51,7 @@
   font-weight: bold;
   font-size: 2.5rem;
   display: block;
+  z-index:2;
 }
 
 .dropdown-menu2 li {
@@ -94,10 +107,27 @@ body.offcanvas-menu:before {
     margin-left: 5%;
   }
 }
+.center-elements{
+  display: grid;
+  align-content: center;
+}
+
+.text-white{
+  color:white!important;
+}
 
 p {
   color: #b3b3b3;
   font-weight: 300;
+}
+
+.background-image{
+  height: 100%;
+  width: 100%;
+}
+
+.display-flex{
+  display: flex;
 }
 
 h1,

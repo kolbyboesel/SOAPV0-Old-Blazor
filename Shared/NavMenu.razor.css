@@ -76,7 +76,8 @@ body {
           left: auto;
           width: 100%;
           display: flex;
-          justify-content: center; } }
+          padding-left: 20px;
+          } }
       .site-navbar .site-logo a {
         color: #fff;
         font-size: 1.5rem;
@@ -370,6 +371,7 @@ body {
                 display: block; }
                 .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li > a {
                   font-size: 16px;
+                }
       .site-mobile-menu .site-nav-wrap[data-class="social"] {
         float: left;
         width: 100%;
@@ -542,3 +544,5 @@ body {
           color:white!important;
         }
       }
+
+      

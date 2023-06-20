@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HRBACENYhUlQtfv2WDWEMltsL9qP8HcTcwY8z8E/VNQ=",
+  "Hash": "yY+me73Lhj3WCZvssn2pfsS+t3gsmwrBGBcoli4yhhM=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/Imports/owl.carousel.min.css"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Index.css",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "css/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Index.css"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/MainStyle.css",

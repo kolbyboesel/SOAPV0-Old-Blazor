@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets/css/Imports/owl.carousel.min.css"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/Index.css",
+      "PackagePath": "staticwebassets/css/Index.css"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/MainStyle.css",
       "PackagePath": "staticwebassets/css/MainStyle.css"
     },

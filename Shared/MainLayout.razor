@@ -1,7 +1,9 @@
 ﻿@inherits LayoutComponentBase
 
 <PageTitle>BlazorApp</PageTitle>
-
+<head>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 <div class="page">
     <div class="navBar">
         <NavMenu />
@@ -11,10 +13,4 @@
             @Body
         </main>
     </div>
-
-    <footer class="footer text-muted hideMobileScreen" style="position: fixed;">
-        <div class="container footerText colorIndex" style="color: black;">
-            &copy; 2023 - SportsScores - <a class="colorIndex" style="color: black;" asp-area="" href="/Privacy">Privacy</a>
-        </div>
-    </footer>
 </div>

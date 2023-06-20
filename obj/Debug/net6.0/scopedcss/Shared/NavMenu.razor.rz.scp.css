@@ -76,7 +76,8 @@ body[b-wk4bcz64v1] {
           left: auto;
           width: 100%;
           display: flex;
-          justify-content: center; } }
+          padding-left: 20px;
+          } }
       .site-navbar .site-logo a[b-wk4bcz64v1] {
         color: #fff;
         font-size: 1.5rem;
@@ -370,7 +371,8 @@ body[b-wk4bcz64v1] {
                 display: block; }
                 .site-mobile-menu .site-nav-wrap > li > ul > li > ul > li > a[b-wk4bcz64v1] {
                   font-size: 16px;
-      .site-mobile-menu .site-nav-wrap[data-class="social"] {
+                }
+      .site-mobile-menu .site-nav-wrap[data-class="social"][b-wk4bcz64v1] {
         float: left;
         width: 100%;
         margin-top: 30px;
@@ -542,3 +544,5 @@ body[b-wk4bcz64v1] {
           color:white!important;
         }
       }
+
+      
