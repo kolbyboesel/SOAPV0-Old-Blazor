@@ -165,6 +165,10 @@
       "PackagePath": "staticwebassets/images/newBackground.jpg"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/newMobileBackground.jpeg",
+      "PackagePath": "staticwebassets/images/newMobileBackground.jpeg"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/images/nflLogo.png",
       "PackagePath": "staticwebassets/images/nflLogo.png"
     },
