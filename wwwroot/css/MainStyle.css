@@ -35,23 +35,25 @@
 
 @media screen and (min-width: 766px) {
   .mobilePadding {
-    padding-top: 0vh;
+    padding-top: 0vh!important;
+    height: 55px!important;
   }
 }
 
 .headerImage {
-  display: none!important;
-  padding-top: 4vh;
+  padding-top: 3vh;
   width: 100% !important;
+  height: 90px;
   position: fixed;
   text-align: center;
-  align-content: center;
-  width: 50%;
   color: white;
   font-weight: bold;
   font-size: 2.5rem;
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   z-index:2;
+
 }
 
 .dropdown-menu2 li {
