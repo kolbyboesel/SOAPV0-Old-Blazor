@@ -103,12 +103,21 @@ body.offcanvas-menu:before {
   visibility: visible;
 }
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 1200px) {
   .largeScreenContainer {
-    width: 90% !important;
-    margin-left: 5%;
+    margin-left: 10%!important;
+    margin-right: 10%!important;
   }
 }
+
+@media screen and (min-width: 780px) {
+  .largeScreenContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+
 .center-elements{
   display: grid;
   align-content: center;
