@@ -70,10 +70,10 @@
   width: fit-content;
   border-color: #f44336;
   border-style: solid;
-  border-width: 1px;
+  border-width: 5px;
   margin: auto;
   margin-top: 10px;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .scrollmenu a {
