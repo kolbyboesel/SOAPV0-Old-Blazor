@@ -17,6 +17,34 @@ function AddNoDataTxt(){
   return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`
 }
 
+function removeAllActive(){
+  let nba = document.getElementById("nbalive");
+  nba.classList.remove("active");
+  let mlb = document.getElementById("mlblive");
+  mlb.classList.remove("active");
+  let nhl = document.getElementById("nhllive");
+  nhl.classList.remove("active");
+  let nfl = document.getElementById("nfllive");
+  nfl.classList.remove("active");
+  let cbb = document.getElementById("cbblive");
+  cbb.classList.remove("active");
+  let cfb = document.getElementById("cfblive");
+  cfb.classList.remove("active");
+  let cbaseball = document.getElementById("cbaseballlive");
+  cbaseball.classList.remove("active");
+  let prem = document.getElementById("premlive");
+  prem.classList.remove("active");
+  let bund = document.getElementById("bundlive");
+  bund.classList.remove("active");
+  let seriea = document.getElementById("seriealive");
+  seriea.classList.remove("active");
+  let ligue1 = document.getElementById("ligue1live");
+  ligue1.classList.remove("active");
+  let laliga = document.getElementById("laligalive");
+  laliga.classList.remove("active");
+  let mls = document.getElementById("mlslive");
+  mls.classList.remove("active");
+}
 async function getData(url) {
   try {
     let res = await fetch(url, options);
@@ -223,6 +251,9 @@ async function showNHLScores() {
 
 /* For Live Scores Page */
 async function showLiveMLB() {
+  removeAllActive();
+  let currentBtn = document.getElementById("mlblive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores"),
@@ -234,6 +265,9 @@ async function showLiveMLB() {
 }
 
 async function showLiveNBA() {
+  removeAllActive();
+  let currentBtn = document.getElementById("nbalive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -251,6 +285,9 @@ async function showLiveNBA() {
 }
 
 async function showLiveNHL() {
+  removeAllActive();
+  let currentBtn = document.getElementById("nhllive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores"),
@@ -266,6 +303,9 @@ async function showLiveNHL() {
 }
 
 async function showLiveNFL() {
+  removeAllActive();
+  let currentBtn = document.getElementById("nfllive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -284,6 +324,9 @@ async function showLiveNFL() {
 
 
 async function showLiveCFB() {
+  removeAllActive();
+  let currentBtn = document.getElementById("cfblive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -301,6 +344,9 @@ async function showLiveCFB() {
 }
 
 async function showLiveCBB() {
+  removeAllActive();
+  let currentBtn = document.getElementById("cbblive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -318,6 +364,9 @@ async function showLiveCBB() {
 }
 
 async function showLiveCBaseball() {
+  removeAllActive();
+  let currentBtn = document.getElementById("cbaseballlive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -335,6 +384,9 @@ async function showLiveCBaseball() {
 }
 
 async function showLivePrem() {
+  removeAllActive();
+  let currentBtn = document.getElementById("premlive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -352,6 +404,9 @@ async function showLivePrem() {
 }
 
 async function showLiveBundesliga() {
+  removeAllActive();
+  let currentBtn = document.getElementById("bundlive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -369,6 +424,9 @@ async function showLiveBundesliga() {
 }
 
 async function showLiveLigue1() {
+  removeAllActive();
+  let currentBtn = document.getElementById("ligue1live");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -386,6 +444,9 @@ async function showLiveLigue1() {
 }
 
 async function showLiveLaliga() {
+  removeAllActive();
+  let currentBtn = document.getElementById("laligalive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -403,6 +464,9 @@ async function showLiveLaliga() {
 }
 
 async function showLiveSerieA() {
+  removeAllActive();
+  let currentBtn = document.getElementById("seriealive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(
@@ -420,6 +484,9 @@ async function showLiveSerieA() {
 }
 
 async function showLiveMLS() {
+  removeAllActive();
+  let currentBtn = document.getElementById("mlslive");
+  currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
     await getData(

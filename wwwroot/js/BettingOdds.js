@@ -38,6 +38,35 @@ function AddNoDataTxt(){
   return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`
 }
 
+function removeAllActiveBet(){
+  let nba = document.getElementById("nbabet");
+  nba.classList.remove("active");
+  let mlb = document.getElementById("mlbbet");
+  mlb.classList.remove("active");
+  let nhl = document.getElementById("nhlbet");
+  nhl.classList.remove("active");
+  let nfl = document.getElementById("nflbet");
+  nfl.classList.remove("active");
+  let cbb = document.getElementById("cbbbet");
+  cbb.classList.remove("active");
+  let cfb = document.getElementById("cfbbet");
+  cfb.classList.remove("active");
+  let cbaseball = document.getElementById("cbaseballbet");
+  cbaseball.classList.remove("active");
+  let prem = document.getElementById("prembet");
+  prem.classList.remove("active");
+  let bund = document.getElementById("bundbet");
+  bund.classList.remove("active");
+  let seriea = document.getElementById("serieabet");
+  seriea.classList.remove("active");
+  let ligue1 = document.getElementById("ligue1bet");
+  ligue1.classList.remove("active");
+  let laliga = document.getElementById("laligabet");
+  laliga.classList.remove("active");
+  let mls = document.getElementById("mlsbet");
+  mls.classList.remove("active");
+}
+
 async function showNBAOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
@@ -154,6 +183,10 @@ async function showMLSodds() {
 
 
 async function showAccountMLB() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("mlbbet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(MLB_URL));
@@ -168,6 +201,10 @@ async function showAccountMLB() {
 }
 
 async function showAccountNBA() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("nbabet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(NBA_URL));
@@ -181,6 +218,10 @@ async function showAccountNBA() {
 }
 
 async function showAccountNFL() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("nflbet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(NFL_URL));
@@ -194,6 +235,10 @@ async function showAccountNFL() {
 }
 
 async function showAccountNHL() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("nhlbet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(NHL_URL));
@@ -207,6 +252,10 @@ async function showAccountNHL() {
 }
 
 async function showAccountCFB() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("cfbbet");
+  currentBtn.classList.add("active");
+  
   let html = "";
 
   html += buildOddsBoard(await getData(CFB_URL));
@@ -220,6 +269,10 @@ async function showAccountCFB() {
 }
 
 async function showAccountCBB() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("cbbbet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(CBB_URL));
@@ -233,6 +286,10 @@ async function showAccountCBB() {
 }
 
 async function showAccountCBaseball() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("cbaseballbet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(CollegeBaseball_URL));
@@ -246,6 +303,10 @@ async function showAccountCBaseball() {
 }
 
 async function showAccountPrem() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("prembet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(Prem_URL));
@@ -259,6 +320,10 @@ async function showAccountPrem() {
 }
 
 async function showAccountLaliga() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("laligabet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(Laliga_URL));
@@ -272,6 +337,10 @@ async function showAccountLaliga() {
 }
 
 async function showAccountLigue1() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("ligue1bet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(Ligue1_URL));
@@ -285,6 +354,10 @@ async function showAccountLigue1() {
 }
 
 async function showAccountBundesliga() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("bundbet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(Bundesliga_URL));
@@ -298,6 +371,10 @@ async function showAccountBundesliga() {
 }
 
 async function showAccountSerieA() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("serieabet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(SerieA_URL));
@@ -311,6 +388,10 @@ async function showAccountSerieA() {
 }
 
 async function showAccountMLS() {
+  removeAllActiveBet();
+  let currentBtn = document.getElementById("mlsbet");
+  currentBtn.classList.add("active");
+
   let html = "";
 
   html += buildOddsBoard(await getData(MLS_URL));

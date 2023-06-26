@@ -8,6 +8,35 @@ const getBets = {
   },
 };
 
+function removeAllActiveAI(){
+  let nba = document.getElementById("nbaai");
+  nba.classList.remove("active");
+  let mlb = document.getElementById("mlbai");
+  mlb.classList.remove("active");
+  let nhl = document.getElementById("nhlai");
+  nhl.classList.remove("active");
+  let nfl = document.getElementById("nflai");
+  nfl.classList.remove("active");
+  let cbb = document.getElementById("cbbai");
+  cbb.classList.remove("active");
+  let cfb = document.getElementById("cfbai");
+  cfb.classList.remove("active");
+  let cbaseball = document.getElementById("cbaseballai");
+  cbaseball.classList.remove("active");
+  let prem = document.getElementById("premai");
+  prem.classList.remove("active");
+  let bund = document.getElementById("bundai");
+  bund.classList.remove("active");
+  let seriea = document.getElementById("serieaai");
+  seriea.classList.remove("active");
+  let ligue1 = document.getElementById("ligue1ai");
+  ligue1.classList.remove("active");
+  let laliga = document.getElementById("laligaai");
+  laliga.classList.remove("active");
+  let mls = document.getElementById("mlsai");
+  mls.classList.remove("active");
+}
+
 function AddNoDataTxt(){
     return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`
 }
@@ -52,6 +81,9 @@ function getDatePlusOne() {
 }
 
 async function showNBABets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("nbaai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
   let html = "";
@@ -79,6 +111,9 @@ async function showNBABets() {
 }
 
 async function showMLBBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("mlbai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
   let html = "";
@@ -106,6 +141,9 @@ async function showMLBBets() {
 }
 
 async function showNFLBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("nflai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
   let html = "";
@@ -133,6 +171,9 @@ async function showNFLBets() {
 }
 
 async function showNHLBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("nhlai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -161,6 +202,9 @@ async function showNHLBets() {
 }
 
 async function showCFBBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("cfbai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -189,6 +233,9 @@ async function showCFBBets() {
 }
 
 async function showCBBBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("cbbai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -217,6 +264,9 @@ async function showCBBBets() {
 }
 
 async function showCBaseballBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("cbaseballai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -245,6 +295,9 @@ async function showCBaseballBets() {
 }
 
 async function showPremBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("premai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -273,6 +326,9 @@ async function showPremBets() {
 }
 
 async function showLaligaBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("laligaai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -301,6 +357,9 @@ async function showLaligaBets() {
 }
 
 async function showSerieABets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("serieaai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -329,6 +388,9 @@ async function showSerieABets() {
 }
 
 async function showLigue1Bets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("ligue1ai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -357,6 +419,9 @@ async function showLigue1Bets() {
 }
 
 async function showBundesligaBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("bundai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
@@ -385,6 +450,9 @@ async function showBundesligaBets() {
 }
 
 async function showMLSBets() {
+  removeAllActiveAI();
+  let currentBtn = document.getElementById("mlsai");
+  currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 

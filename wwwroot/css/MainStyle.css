@@ -9,6 +9,10 @@
   font-size: 3vh;
 }
 
+.active{
+  color: white!important;
+}
+
 .footer-style{
   background-color: #f44336;
   opacity: 75%;

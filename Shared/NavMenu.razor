@@ -99,9 +99,9 @@
 
           <nav class="mx-auto site-navigation" style="width:auto!important">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a @onclick=renderHome href="">Home</a></li>
-              <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
-              <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
+              <li><a @onclick=renderHome id="home" class="home" href="">Home</a></li>
+              <li><a @onclick=renderLiveScores id="live" class="live" href="">Live Scores</a></li>
+              <li><a @onclick=renderBettingOdds id="betting" class="betting" href="">Betting Odds</a></li>
               <li class="has-children">
                 <a>Sports</a>
                 <ul class="dropdown">
@@ -212,7 +212,7 @@
   {
     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLiveScores", "true", null, null, null, null);
     NavigationManager.NavigateTo("/",forceLoad:true);
-  }
+}
   public async Task renderHome()
   {
     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);

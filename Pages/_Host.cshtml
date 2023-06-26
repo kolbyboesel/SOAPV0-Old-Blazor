@@ -114,7 +114,35 @@ async function renderPaypal()
   }).render('#paypal-button-container-P-6TS59700HA1617635MRDVNHY'); // Renders the PayPal button
 }
 </script>
+<script>
+    function removeAll(){
+        let home = document.getElementById("home");
+        home.classList.remove("active");
+        let live = document.getElementById("live");
+        live.classList.remove("active");
+        let betOdds = document.getElementById("betting");
+        betOdds.classList.remove("active");
+    }
 
+    function homeActive(){
+        removeAll();
+        let currentBtn = document.getElementById("home");
+        currentBtn.classList.add("active");
+    }
+
+    function liveActive(){
+        removeAll();
+        let currentBtn = document.getElementById("live");
+        currentBtn.classList.add("active");
+    }
+
+    function bettingActive(){
+        removeAll();
+        let currentBtn = document.getElementById("betting");
+        currentBtn.classList.add("active");
+
+    }
+</script>
 <script>
     function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -123,6 +151,7 @@ async function renderPaypal()
   captionText.innerHTML = element.alt;
 }
 </script>
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
     <script src="/js/Imports/jquery-3.3.1.min.js"></script>
     <script src="/js/Imports/popper.min.js"></script>
     <script src="/js/Imports/bootstrap.min.js"></script>
