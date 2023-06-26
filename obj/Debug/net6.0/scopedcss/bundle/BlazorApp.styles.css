@@ -610,7 +610,7 @@ body[b-wk4bcz64v1] {
               transform: scale(1); }
     .sticky-wrapper .shrink[b-wk4bcz64v1] {
       padding-top: 10px !important;
-      padding-bottom: 10px !important; }
+      padding-bottom: 10px !important; } 
   
   .btn[b-wk4bcz64v1]:after, .btn[b-wk4bcz64v1]:before {
     display: none; }
@@ -622,12 +622,12 @@ body[b-wk4bcz64v1] {
   
   .btn.btn-primary[b-wk4bcz64v1] {
     color: white;
-    background: #f44336;
-    border-color: #f44336; }
+    background: #dbb5b2;
+    border-color: #dbb5b2; }
     .btn.btn-primary:hover[b-wk4bcz64v1] {
       background: white;
       border-color: white; 
-      color:#ffaba5;}
+      color:#f44336;}
   
   .btn.btn-outline-white[b-wk4bcz64v1] {
     background: transparent;

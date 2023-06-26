@@ -13,38 +13,38 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1086418377,
+        "HashCode": 896499686,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AllBetOdds",
+        "Name": "BlazorApp.App",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AllBetOdds"
+            "TagName": "App"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeName": "BlazorApp.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "BlazorApp",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -2010700543,
+        "HashCode": -1834455961,
         "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.AllBetOdds",
+        "Name": "BlazorApp.App",
         "AssemblyName": "BlazorApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp.Pages.AllBetOdds"
+            "TagName": "BlazorApp.App"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeName": "BlazorApp.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "BlazorApp",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -383,43 +383,6 @@
         }
       },
       {
-        "HashCode": 492758108,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.HostPage",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "HostPage"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.HostPage",
-          "Common.TypeNameIdentifier": "HostPage",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1400111659,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.HostPage",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.HostPage"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.HostPage",
-          "Common.TypeNameIdentifier": "HostPage",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -624820393,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.LaLiga",
@@ -488,43 +451,6 @@
         "Metadata": {
           "Common.TypeName": "BlazorApp.Pages.Ligue1",
           "Common.TypeNameIdentifier": "Ligue1",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1760189206,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.LiveScores",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -385499214,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.LiveScores",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.Pages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -1012,6 +938,117 @@
         }
       },
       {
+        "HashCode": 492758108,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.HostPage",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "HostPage"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.HostPage",
+          "Common.TypeNameIdentifier": "HostPage",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1400111659,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.HostPage",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.HostPage"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.HostPage",
+          "Common.TypeNameIdentifier": "HostPage",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1086418377,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AllBetOdds",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AllBetOdds"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -2010700543,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.AllBetOdds",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.AllBetOdds"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1760189206,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.LiveScores",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "LiveScores"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -385499214,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.LiveScores",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.LiveScores"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorApp.Pages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": -787303307,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.AccountHome",
@@ -1044,43 +1081,6 @@
           "Common.TypeName": "BlazorApp.Pages.AccountHome",
           "Common.TypeNameIdentifier": "AccountHome",
           "Common.TypeNamespace": "BlazorApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 896499686,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.App",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "BlazorApp",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1834455961,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.App",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "BlazorApp.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "BlazorApp",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }

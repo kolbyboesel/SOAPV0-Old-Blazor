@@ -13,6 +13,10 @@ const options = {
   },
 };
 
+function AddNoDataTxt(){
+  return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`
+}
+
 async function getData(url) {
   try {
     let res = await fetch(url, options);
@@ -217,23 +221,9 @@ async function showNHLScores() {
   container.innerHTML = html;
 }
 
+/* For Live Scores Page */
 async function showLiveMLB() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" style="color:black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores"),
     "liveScoresContainer"
@@ -244,22 +234,7 @@ async function showLiveMLB() {
 }
 
 async function showLiveNBA() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" style="color:black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores"
@@ -267,53 +242,31 @@ async function showLiveNBA() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveNHL() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" style="color:black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData("https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores"),
     "liveScoresContainer"
   );
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveNFL() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href=""class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" style="color:black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores"
@@ -321,28 +274,17 @@ async function showLiveNFL() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 
 async function showLiveCFB() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" style="color:black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/americanfootball_ncaaf/scores"
@@ -350,27 +292,16 @@ async function showLiveCFB() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveCBB() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" style="color:black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_ncaab/scores"
@@ -378,27 +309,16 @@ async function showLiveCBB() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveCBaseball() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" style="color:black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/baseball_ncaa/scores"
@@ -406,27 +326,16 @@ async function showLiveCBaseball() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLivePrem() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" style="color:black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_epl/scores"
@@ -434,27 +343,16 @@ async function showLivePrem() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveBundesliga() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" style="color:black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_germany_bundesliga/scores"
@@ -462,27 +360,16 @@ async function showLiveBundesliga() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveLigue1() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" style="color:black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_france_ligue_one/scores"
@@ -490,27 +377,16 @@ async function showLiveLigue1() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveLaliga() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" style="color:black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_spain_la_liga/scores"
@@ -518,27 +394,16 @@ async function showLiveLaliga() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveSerieA() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" style="color:black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_italy_serie_a/scores"
@@ -546,34 +411,26 @@ async function showLiveSerieA() {
     "liveScoresContainer"
   );
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
 
 async function showLiveMLS() {
-  let html = `<div class="container" style="width: 100%; align-content:center">
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showLiveNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showLiveMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showLiveNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showLiveNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showLiveCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showLiveCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showLiveCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showLivePrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLiveBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showLiveLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showLiveSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLiveLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showLiveMLS() href="" style="color:black">MLS</a>
-
-  </div></div>`;
+  let html = "";
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_usa_mls/scores"
     ),
     "liveScoresContainer"
   );
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;

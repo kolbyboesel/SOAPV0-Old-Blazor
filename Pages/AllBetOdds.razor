@@ -14,7 +14,27 @@
 </head>
 
 <body>
-<div class="pageHeader containerPad">Betting Odds</div>
+<div class="container responsiveScrollContainer">
+<i class="arrow left leftArrow" style="display: none;"></i>
+  <div class="scrollmenu mobileScroll">
+  <a onclick=showAccountNBA() href="" class="w3-hover-text-white">NBA</a>
+  <a onclick=showAccountMLB() href="" class="w3-hover-text-white">MLB</a>
+  <a onclick=showAccountNHL() href="" class="w3-hover-text-white">NHL</a>
+  <a onclick=showAccountNFL() href="" class="w3-hover-text-white">NFL</a>
+  <a onclick=showAccountCFB() href="" class="w3-hover-text-white">College Football</a>
+  <a onclick=showAccountCBB() href="" class="w3-hover-text-white">College Basketball</a>
+  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-white">College Baseball</a>
+  <a onclick=showAccountPrem() href="" class="w3-hover-text-white">Premier League</a>
+  <a onclick=showAccountLaliga() href="" class="w3-hover-text-white">LaLiga</a>
+  <a onclick=showAccountLigue1() href="" class="w3-hover-text-white">Ligue 1</a>
+  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-white">Bundesliga</a>
+  <a onclick=showAccountSerieA() href="" class="w3-hover-text-white">Serie A</a>
+  <a onclick=showAccountMLS() href="" class="w3-hover-text-white">MLS</a>
+  </div>
+  <i class="arrow right rightArrow" style="display: none;"></i>
+  </div>
+
+<div class="pageHeader pageHeaderDouble">Betting Odds</div>
 
 <div class="betOddsContainer largeScreenContainer">@innerHtmlValue</div>
 </body>

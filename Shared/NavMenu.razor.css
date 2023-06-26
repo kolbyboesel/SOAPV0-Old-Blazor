@@ -458,7 +458,7 @@ body {
               transform: scale(1); }
     .sticky-wrapper .shrink {
       padding-top: 10px !important;
-      padding-bottom: 10px !important; }
+      padding-bottom: 10px !important; } 
   
   .btn:after, .btn:before {
     display: none; }
@@ -470,12 +470,12 @@ body {
   
   .btn.btn-primary {
     color: white;
-    background: #f44336;
-    border-color: #f44336; }
+    background: #dbb5b2;
+    border-color: #dbb5b2; }
     .btn.btn-primary:hover {
       background: white;
       border-color: white; 
-      color:#ffaba5;}
+      color:#f44336;}
   
   .btn.btn-outline-white {
     background: transparent;

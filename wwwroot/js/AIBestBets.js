@@ -54,23 +54,7 @@ function getDatePlusOne() {
 async function showNBABets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" style="color:black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -86,23 +70,7 @@ async function showNBABets() {
     "containerNBA"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" style="color:black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -113,23 +81,7 @@ async function showNBABets() {
 async function showMLBBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" style="color:black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -145,23 +97,7 @@ async function showMLBBets() {
     "containerMLB"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" style="color:black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -172,23 +108,7 @@ async function showMLBBets() {
 async function showNFLBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" style="color:black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
  
   html += buildBestBetBoard(
     await getBetData(
@@ -204,23 +124,7 @@ async function showNFLBets() {
     "containerNFL"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" style="color:black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -232,23 +136,7 @@ async function showNHLBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" style="color:black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -264,23 +152,7 @@ async function showNHLBets() {
     "containerNHL"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" style="color:black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -292,23 +164,7 @@ async function showCFBBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" style="color:black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -324,23 +180,7 @@ async function showCFBBets() {
     "containerCFB"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" style="color:black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -352,23 +192,7 @@ async function showCBBBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" style="color:black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -384,23 +208,7 @@ async function showCBBBets() {
     "containerCBB"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" style="color:black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -412,23 +220,7 @@ async function showCBaseballBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" style="color:black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -444,23 +236,7 @@ async function showCBaseballBets() {
     "containerCBaseball"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" style="color:black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -472,23 +248,7 @@ async function showPremBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" style="color:black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -504,23 +264,7 @@ async function showPremBets() {
     "containerPrem"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" style="color:black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -532,23 +276,7 @@ async function showLaligaBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" style="color:black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -564,23 +292,7 @@ async function showLaligaBets() {
     "containerLaliga"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" style="color:black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -592,23 +304,7 @@ async function showSerieABets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" style="color:black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -624,23 +320,7 @@ async function showSerieABets() {
     "containerSerieA"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" style="color:black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -652,23 +332,7 @@ async function showLigue1Bets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" style="color:black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -684,23 +348,7 @@ async function showLigue1Bets() {
     "containerLigue1"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" style="color:black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -712,23 +360,7 @@ async function showBundesligaBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" style="color:black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -744,23 +376,7 @@ async function showBundesligaBets() {
     "containerBundesliga"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" style="color:black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" class="w3-hover-text-black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 
@@ -772,23 +388,7 @@ async function showMLSBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
 
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" style="color:black">MLS</a>
-
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildBestBetBoard(
     await getBetData(
@@ -804,23 +404,7 @@ async function showMLSBets() {
     "containerMLS"
   );
 
-  if(html == `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showNBABets() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showMLBBets() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showNHLBets() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showNFLBets() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showCFBBets() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showCBBBets() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showCBaseballBets() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showPremBets() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showLaligaBets() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showSerieABets() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showLigue1Bets() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showBundesligaBets() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showMLSBets() href="" style="color:black">MLS</a>
-
-  </div>
-  </div>`){
+  if(html == ""){
     html += AddNoDataTxt();
   }
 

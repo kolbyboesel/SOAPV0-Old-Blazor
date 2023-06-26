@@ -31,14 +31,14 @@
 }
 
     .navBarContainer{
-      height: 60px;
+      height: 65px;
       width: 100vw;
-      background-color:#dbb5b2;
+      background-color:#f44336;
       position: fixed;
       z-index: 1;
     }
     .navDivider{
-      height: 60px;
+      height: 70px;
       width: 92%;
       position: absolute;
       border-bottom: white;
@@ -121,7 +121,7 @@
 
                   </ul>
               </li>
-              <li><a @onclick=renderContact>Contact</a></li>
+              <li><a @onclick=renderContact href="">Contact</a></li>
               @if (cookieValue == "true")
               {
               <li class="d-lg-none"><a href="/Signout">Sign Out</a></li>

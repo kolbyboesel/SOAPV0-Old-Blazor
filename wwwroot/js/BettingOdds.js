@@ -34,6 +34,9 @@ let underValue = 0;
 let overOdds = 0;
 let underOdds = 0;
 let completedDate = 0;
+function AddNoDataTxt(){
+  return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`
+}
 
 async function showNBAOdds() {
   $("body").removeClass("offcanvas-menu");
@@ -73,7 +76,7 @@ async function showCFBOdds() {
   let html = "";
   html += `<div class="pageHeader containerPad">College Football Betting Odds</div>`;
   html += buildOddsBoard(await getData(CFB_URL));
-  let container = document.querySelector("." + "containeCFB");
+  let container = document.querySelector("." + "containerCFB");
   container.innerHTML = html;
 }
 
@@ -151,311 +154,170 @@ async function showMLSodds() {
 
 
 async function showAccountMLB() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" style="color:black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(MLB_URL));
 
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
+  
 }
 
 async function showAccountNBA() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" style="color:black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div></div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(NBA_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountNFL() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" style="color:black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(NFL_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountNHL() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" style="color:black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(NHL_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountCFB() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" style="color:black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(CFB_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountCBB() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" style="color:black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(CBB_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountCBaseball() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" style="color:black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(CollegeBaseball_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountPrem() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" style="color:black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(Prem_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountLaliga() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" style="color:black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(Laliga_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountLigue1() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" style="color:black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(Ligue1_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountBundesliga() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" style="color:black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(Bundesliga_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountSerieA() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" style="color:black">Serie A</a>
-  <a onclick=showAccountMLS() href="" class="w3-hover-text-black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(SerieA_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
 }
 
 async function showAccountMLS() {
-  let html = `<div class="container" style="width: 100%; align-content:center"><div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" class="w3-hover-text-black">NBA</a>
-  <a onclick=showAccountMLB() href="" class="w3-hover-text-black">MLB</a>
-  <a onclick=showAccountNHL() href="" class="w3-hover-text-black">NHL</a>
-  <a onclick=showAccountNFL() href="" class="w3-hover-text-black">NFL</a>
-  <a onclick=showAccountCFB() href="" class="w3-hover-text-black">College Football</a>
-  <a onclick=showAccountCBB() href="" class="w3-hover-text-black">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" class="w3-hover-text-black">College Baseball</a>
-  <a onclick=showAccountPrem() href="" class="w3-hover-text-black">Premier League</a>
-  <a onclick=showAccountLaliga() href="" class="w3-hover-text-black">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" class="w3-hover-text-black">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" class="w3-hover-text-black">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" class="w3-hover-text-black">Serie A</a>
-  <a onclick=showAccountMLS() href="" style="color:black">MLS</a>
-  </div>
-  </div>`;
+  let html = "";
 
   html += buildOddsBoard(await getData(MLS_URL));
+
+  if(html == ""){
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;

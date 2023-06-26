@@ -78,7 +78,7 @@ body {
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-  background-image:linear-gradient(#dbb5b2,#f44336c1 ) !important;
+  background-color: #ffaba5!important;
   height: fit-content;
   min-height: 100vh;
   position: relative;
