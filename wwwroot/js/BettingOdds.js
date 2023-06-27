@@ -503,7 +503,7 @@ function generateOddsBoard(currentGame) {
         <div class="headerElement">O/U</div>
         <div class="headerElement">ML</div>
       </div>
-      <div class="team win divider" style="border-left: none; border-top:none; border-right:none;">
+      <div class="team win" style="border-left: none; border-top:none; border-right:none;">
         <div class="betteam">${currentGame.away_team}</div>
         <div class="betTeamElement mobileText">${
           awaySpread + "(" + awaySpreadOdds + ")"

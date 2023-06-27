@@ -139,13 +139,13 @@
             <div class="ml-auto" style="margin-left:auto!important">
               @if (cookieValue == "true")
               {
-              <a href="/Signout" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Out</a>
-              <a @onclick=renderAccount href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Account Hub</a>
+              <a href="/Signout" class="btn btn-primary border-width-2 d-none d-lg-inline-block redBtnHome"><span class="mr-2 icon-lock_outline"></span>Sign Out</a>
+              <a @onclick=renderAccount href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block redBtnHome"><span class="mr-2 icon-lock_outline"></span>Account Hub</a>
               }
               else
               {
-              <a @onclick=showSignupModal href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Up</a>
-              <a @onclick=renderLogin href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a @onclick=showSignupModal href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block redBtnHome"><span class="mr-2 icon-lock_outline"></span>Sign Up</a>
+              <a @onclick=renderLogin href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block redBtnHome"><span class="mr-2 icon-lock_outline"></span>Log In</a>
               }
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3 mobileNavToggle">Menu</a>

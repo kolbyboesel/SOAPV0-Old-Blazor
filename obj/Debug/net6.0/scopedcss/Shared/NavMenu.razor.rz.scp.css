@@ -69,7 +69,8 @@ body[b-wk4bcz64v1] {
           padding-right: 15px; } }
     .site-navbar .site-logo[b-wk4bcz64v1] {
       position: absolute;
-      left: 5%; }
+      left: 5%;
+      z-index: 5; }
       @media (max-width: 767.98px) {
         .site-navbar .site-logo[b-wk4bcz64v1] {
           position: relative;

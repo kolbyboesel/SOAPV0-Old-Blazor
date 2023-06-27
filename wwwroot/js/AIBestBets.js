@@ -668,7 +668,7 @@ function generateNBABestBetsBoard(
         <div class="headerElement-team">Team Name</div>
         <div class="headerElement-best">Moneyline</div>
       </div>
-      <div class="team divider" style="border-left: none; border-top:none; border-right:none; height:25%">
+      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%">
         <div class="bestBetTeam">${awayTeam}</div>
         <div class="bestBetElement">${awayMoneylineVal}%</div>
       </div>
@@ -678,7 +678,7 @@ function generateNBABestBetsBoard(
         <div class="bestBetElement">${homeMoneylineVal}%</div>
       </div>
       
-      <div class="header" style="height:17.5%">
+      <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
         <div class="headerElement-over">Over 197.5</div>
         <div class="headerElement-over">Over 205.5</div>
         <div class="headerElement-over">Over 213.5</div>
@@ -720,7 +720,7 @@ function generateMLBBestBetsBoard(
         <div class="headerElement-team">Team Name</div>
         <div class="headerElement-best">Moneyline</div>
       </div>
-      <div class="team divider" style="border-left: none; border-top:none; border-right:none; height:25%"">
+      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
         <div class="bestBetTeam">${awayTeam}</div>
         <div class="bestBetElement">${awayMoneylineVal}%</div>
       </div>
@@ -730,7 +730,7 @@ function generateMLBBestBetsBoard(
         <div class="bestBetElement">${homeMoneylineVal}%</div>
       </div> 
 
-      <div class="header" style="height:17.5%">
+      <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
       <div class="headerElement-over">Over 6.5</div>
       <div class="headerElement-over">Over 7.5</div>
       <div class="headerElement-over">Over 8.5</div>
@@ -772,7 +772,7 @@ function generateNHLBestBetsBoard(
         <div class="headerElement-team">Team Name</div>
         <div class="headerElement-best">Moneyline</div>
       </div>
-      <div class="team divider" style="border-left: none; border-top:none; border-right:none; height:25%"">
+      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
         <div class="bestBetTeam">${awayTeam}</div>
         <div class="bestBetElement">${awayMoneylineVal}%</div>
       </div>
@@ -782,7 +782,7 @@ function generateNHLBestBetsBoard(
         <div class="bestBetElement">${homeMoneylineVal}%</div>
       </div> 
       
-    <div class="header" style="height:17.5%">
+    <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
       <div class="headerElement-over">Over 3.5</div>
       <div class="headerElement-over">Over 4.5</div>
       <div class="headerElement-over">Over 5.5</div>
@@ -825,7 +825,7 @@ function generateFootballBestBetsBoard(
         <div class="headerElement-team">Team Name</div>
         <div class="headerElement-best">Moneyline</div>
       </div>
-      <div class="team divider" style="border-left: none; border-top:none; border-right:none; height:25%"">
+      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
         <div class="bestBetTeam">${awayTeam}</div>
         <div class="bestBetElement">${awayMoneylineVal}%</div>
       </div>
@@ -835,7 +835,7 @@ function generateFootballBestBetsBoard(
         <div class="bestBetElement">${homeMoneylineVal}%</div>
       </div> 
       
-    <div class="header" style="height:17.5%">
+    <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
       <div class="headerElement-over">Over 3.5</div>
       <div class="headerElement-over">Over 4.5</div>
       <div class="headerElement-over">Over 5.5</div>
@@ -877,7 +877,7 @@ function generatesSoccerBestBetsBoard(
         <div class="headerElement-team">Team Name</div>
         <div class="headerElement-best">Moneyline</div>
       </div>
-      <div class="team divider" style="border-left: none; border-top:none; border-right:none; height:25%"">
+      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
         <div class="bestBetTeam">${awayTeam}</div>
         <div class="bestBetElement">${awayMoneylineVal}%</div>
       </div>
@@ -887,7 +887,7 @@ function generatesSoccerBestBetsBoard(
         <div class="bestBetElement">${homeMoneylineVal}%</div>
       </div> 
       
-    <div class="header" style="height:17.5%">
+    <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
       <div class="headerElement-over">Over 3.5</div>
       <div class="headerElement-over">Over 4.5</div>
       <div class="headerElement-over">Over 5.5</div>

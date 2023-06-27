@@ -573,7 +573,7 @@ function generateScoreboard(
     <div class="headerDate" style="width: 75%; justify-content: left">${dateTimeValue}</div>
     <div class="headerElement" style="width: 5%; justify-content: center; margin: 10%"">${gameStatus}</div>
   </div>
-      <div class="team win divider" style="border-left: none; border-top:none; border-right:none;">
+      <div class="team win" style="border-left: none; border-top:none; border-right:none;">
         <div class="team">${currentScore.away_team}</div>
         <div class="score">${awayScore}</div>
       </div>
@@ -586,7 +586,7 @@ function generateScoreboard(
     <div class="headerDate" style="width: 75%; justify-content: left">${dateTimeValue}</div>
     <div class="headerElement" style="width: 5%; justify-content: center; margin: 10%">${gameStatus}</div>
   </div>
-      <div class="team lose divider" style="border-left: none; border-top:none; border-right:none;">
+      <div class="team lose" style="border-left: none; border-top:none; border-right:none;">
         <div class="team">${currentScore.away_team}</div>
         <div class="score">${awayScore}</div>
       </div>

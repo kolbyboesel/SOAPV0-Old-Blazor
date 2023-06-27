@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/BlazorApp.bundle.scp.css"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/AIBestBets.css",
       "PackagePath": "staticwebassets/css/AIBestBets.css"
     },

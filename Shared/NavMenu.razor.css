@@ -69,7 +69,8 @@ body {
           padding-right: 15px; } }
     .site-navbar .site-logo {
       position: absolute;
-      left: 5%; }
+      left: 5%;
+      z-index: 5; }
       @media (max-width: 767.98px) {
         .site-navbar .site-logo {
           position: relative;

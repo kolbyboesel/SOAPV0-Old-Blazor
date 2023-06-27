@@ -8,7 +8,9 @@
   text-decoration: underline;
   font-size: 3vh;
 }
-
+.text-black{
+  color: black!important;
+}
 .active{
   color: white!important;
 }
@@ -46,7 +48,8 @@
 
 .headerImage {
   padding-top: 3vh;
-  width: 100% !important;
+  width: 50%!important;
+  margin-left: 25%;
   height: 90px;
   position: fixed;
   text-align: center;
@@ -82,7 +85,7 @@ body {
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-  background-color: #ffaba5!important;
+  background-color: #d8d8d8!important;
   height: fit-content;
   min-height: 100vh;
   position: relative;
@@ -297,8 +300,8 @@ h6,
   display: flex;
   align-items: center;
   font-size: medium;
-  color: white;
-  letter-spacing: 1px;
+  color: black;
+  letter-spacing: 0.5px;
   padding-left: 10px;
 }
 
@@ -312,19 +315,21 @@ h6,
 }
 
 .win .score {
-  color: #eabf4f;
+  color: black;
+  font-weight: bold;
 }
 
 .win .team {
-  color: #eabf4f;
+  color: black;
+  font-weight: bold;
 }
 
 .lose .score {
-  color: white;
+  color: black;
 }
 
 .lose .team {
-  color: white;
+  color: black;
 }
 
 .divider {

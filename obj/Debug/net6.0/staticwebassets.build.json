@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l21I7RySZCuUp9hGgAzAk+2pcn0kfNGUHQ+aNLOLZws=",
+  "Hash": "PAW7N5VAXvutjVh4oF1hbdzKK+mVueNzdLcaoT0pWEI=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/kolbyboesel/Desktop/SportScores/obj/Debug/net6.0/scopedcss/projectbundle/BlazorApp.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/.DS_Store",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScores/wwwroot/css/AccountHome.css",
