@@ -129,7 +129,6 @@
   {
     string tempHome = HttpContextAccessor.HttpContext.Request.Cookies["showHome"];
     if(tempHome == "true"){
-      showHome();
       showIndex = true;
       allFalseExcept("index");
       deleteCookie("showHome");
@@ -185,14 +184,12 @@
     }
     string tempBettingOdds = HttpContextAccessor.HttpContext.Request.Cookies["showBettingOdds"];
     if(tempBettingOdds == "true"){
-      showBetting();
       showBettingOddsBool = true;
       allFalseExcept("bettingodds");
       deleteCookie("showBettingOdds");
     }
     string tempLiveScores = HttpContextAccessor.HttpContext.Request.Cookies["showLiveScores"];
     if(tempLiveScores == "true"){
-      showLive();
       showLiveScoresBool = true;
       allFalseExcept("livescores");
       deleteCookie("showLiveScores");
@@ -280,8 +277,8 @@
     }
   }
 
-  public void showHome(){
-     JSRuntime.InvokeVoidAsync("homeActive");
+  public async Task showHome(){
+     await JSRuntime.InvokeVoidAsync("homeActive");
   }
 
   public void showLive(){

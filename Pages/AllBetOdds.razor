@@ -68,6 +68,7 @@
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         innerHtmlValue = "";
+        await JSRuntime.InvokeVoidAsync("bettingActive");
         await JSRuntime.InvokeVoidAsync("showAccountMLB");
     }
 }
